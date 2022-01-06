@@ -3,5 +3,5 @@ project-3-sound-synthetizer
 
 Tu run the project :
 
-cd test
+cd test </br>
 npm start
