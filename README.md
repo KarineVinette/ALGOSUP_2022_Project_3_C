@@ -6,6 +6,7 @@ https://algosup-2022-project-3-c.web.app
 Tu run the project :
 
 cd test </br>
+npm install
 npm start
 
 
