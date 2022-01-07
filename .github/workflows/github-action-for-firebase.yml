@@ -11,18 +11,6 @@ jobs:
     steps:
       - name: Checkout Repo
         uses: actions/checkout@main
-      - name: Install Node.js
-        uses: actions/setup-node@v1
-        with:
-          node-version: '10.x'
-      - name: Install npm dependencies
-        run: npm install
-      - name: npm init
-        run: npm init -y
-      - name: Start server
-        run: npm start
-      - name: Run build task
-        run: npm run build --if-present
       - name: Deploy to Firebase
         uses: w9jds/firebase-action@master
         with:
