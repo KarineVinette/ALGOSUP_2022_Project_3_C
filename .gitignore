@@ -294,3 +294,4 @@ __pycache__/
 *.xsd.cs
 test/.DS_Store
 *.DS_Store
+*.ionide
