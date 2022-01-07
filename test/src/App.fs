@@ -1,11 +1,26 @@
 module App
 
-open Browser.Dom
 
+
+// // Mutable variable to count the number of times we clicked the button
+// let mutable count = 0
+
+// // Get a reference to our button and cast the Element to an HTMLButtonElement
+// let myButton = document.querySelector(".my-button") :?> Browser.Types.HTMLButtonElement
+
+// // Register our listener
+// myButton.onclick <- fun _ ->
+//     count <- count + 1
+//     myButton.innerText <- sprintf "You clicked: %i time(s)" count
+// Undertone - Programmable music
+// Ported from desktop version: https://github.com/robertpi/undertone
+// Inspired by Overtone / Sonic-PI
+// By Robert Pickering
 open System
 open Fable.Core
 open Fable.Core.JsInterop
 open Browser.Types
+open Browser.Dom
 open Browser
 
 type Note =

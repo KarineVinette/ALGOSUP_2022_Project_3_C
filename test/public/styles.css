@@ -1,0 +1,9 @@
+audio{
+    filter:sepia(0%) saturate(100%) grayscale() contrast(125%) invert(0%);
+}
+
+.center-sound{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
