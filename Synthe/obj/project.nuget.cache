@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "cgW2DaNVauu88EzafXSOQ6/ncS326O1/0A4pLJgTS7S/P9ek3U624A6LMoyTmN1A58Ri3ml+zm3VliPIB+VDaQ==",
+  "success": true,
+  "projectFilePath": "/Users/brendondesvaux/Desktop/F#/Synthe/Synthe.fsproj",
+  "expectedPackageFiles": [
+    "/Users/brendondesvaux/.nuget/packages/fsharp.core/6.0.1/fsharp.core.6.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

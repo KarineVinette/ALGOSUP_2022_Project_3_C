@@ -1,0 +1,140 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/brendondesvaux/Desktop/F#/Synthe/Synthe.Tests/Synthe.Tests.fsproj": {}
+  },
+  "projects": {
+    "/Users/brendondesvaux/Desktop/F#/Synthe/Synthe.fsproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/brendondesvaux/Desktop/F#/Synthe/Synthe.fsproj",
+        "projectName": "Synthe",
+        "projectPath": "/Users/brendondesvaux/Desktop/F#/Synthe/Synthe.fsproj",
+        "packagesPath": "/Users/brendondesvaux/.nuget/packages/",
+        "outputPath": "/Users/brendondesvaux/Desktop/F#/Synthe/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/brendondesvaux/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "FSharp.Core": {
+              "target": "Package",
+              "version": "[5.0.0, )",
+              "generatePathProperty": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/x64/sdk/6.0.101/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/brendondesvaux/Desktop/F#/Synthe/Synthe.Tests/Synthe.Tests.fsproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/brendondesvaux/Desktop/F#/Synthe/Synthe.Tests/Synthe.Tests.fsproj",
+        "projectName": "Synthe.Tests",
+        "projectPath": "/Users/brendondesvaux/Desktop/F#/Synthe/Synthe.Tests/Synthe.Tests.fsproj",
+        "packagesPath": "/Users/brendondesvaux/.nuget/packages/",
+        "outputPath": "/Users/brendondesvaux/Desktop/F#/Synthe/Synthe.Tests/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/brendondesvaux/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/Users/brendondesvaux/Desktop/F#/Synthe/Synthe.fsproj": {
+                "projectPath": "/Users/brendondesvaux/Desktop/F#/Synthe/Synthe.fsproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "FSharp.Core": {
+              "target": "Package",
+              "version": "[5.0.0, )",
+              "generatePathProperty": true
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.11.0, )",
+              "generatePathProperty": true
+            },
+            "NUnit": {
+              "target": "Package",
+              "version": "[3.13.2, )",
+              "generatePathProperty": true
+            },
+            "NUnit3TestAdapter": {
+              "target": "Package",
+              "version": "[4.0.0, )",
+              "generatePathProperty": true
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[3.1.0, )",
+              "generatePathProperty": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/x64/sdk/6.0.101/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
