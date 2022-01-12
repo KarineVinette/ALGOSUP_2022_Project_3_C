@@ -1,4 +1,9 @@
+<<<<<<< Updated upstream
 ﻿module waves =
+=======
+﻿module waves 
+
+>>>>>>> Stashed changes
     open System
     open XPlot.GoogleCharts
 
@@ -23,4 +28,9 @@
 
     let sawWave = Array.init limit (fun i -> (2.*amp/Pi)* Math.Atan(tan((2.*Pi*float i)/freq)))
 
+<<<<<<< Updated upstream
     sawWave |> Chart.Line |> Chart.WithOptions(Options(curveType = "function")) |> Chart.Show
+=======
+    sawWave |> Chart.Line |> Chart.WithOptions(Options(curveType = "function")) |> Chart.Show
+
+>>>>>>> Stashed changes

@@ -39,6 +39,29 @@
               "version": "[6.0.1, )",
               "generatePathProperty": true
             },
+<<<<<<< Updated upstream
+=======
+            "SFML.Audio": {
+              "target": "Package",
+              "version": "[2.5.0, )"
+            },
+            "SFML.Graphics": {
+              "target": "Package",
+              "version": "[2.5.0, )"
+            },
+            "SFML.Net": {
+              "target": "Package",
+              "version": "[2.5.0, )"
+            },
+            "SFML.System": {
+              "target": "Package",
+              "version": "[2.5.0, )"
+            },
+            "SFML.Window": {
+              "target": "Package",
+              "version": "[2.5.0, )"
+            },
+>>>>>>> Stashed changes
             "XPlot.GoogleCharts": {
               "target": "Package",
               "version": "[3.0.1, )"
@@ -58,6 +81,21 @@
             "XPlot.Plotly.WPF": {
               "target": "Package",
               "version": "[1.3.0, )"
+<<<<<<< Updated upstream
+=======
+            },
+            "sfml-graphics": {
+              "target": "Package",
+              "version": "[2.4.2, )"
+            },
+            "sfml-system": {
+              "target": "Package",
+              "version": "[2.4.2, )"
+            },
+            "sfml-window": {
+              "target": "Package",
+              "version": "[2.4.2, )"
+>>>>>>> Stashed changes
             }
           },
           "imports": [

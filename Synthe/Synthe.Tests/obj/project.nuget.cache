@@ -1,10 +1,18 @@
 {
   "version": 2,
+<<<<<<< Updated upstream
   "dgSpecHash": "NIGSKva028c6nEuaghbGcpuIbv/ZgsdwXE9YldxKaIHzXn9nqrC6B8mCQmop8G9p4+WFfeyOvbB7diwFYddHEg==",
+=======
+  "dgSpecHash": "bn0fFNxnEh0L7rE8RYrSeDdWOu0c3b4bd9C29b+T7KDXIAljAFeoLsxlRU/9MK/irOPkw1bYCahAfacjvy0Fag==",
+>>>>>>> Stashed changes
   "success": true,
   "projectFilePath": "/Users/brendondesvaux/Desktop/F#/Synthe/Synthe.Tests/Synthe.Tests.fsproj",
   "expectedPackageFiles": [
     "/Users/brendondesvaux/.nuget/packages/coverlet.collector/3.1.0/coverlet.collector.3.1.0.nupkg.sha512",
+<<<<<<< Updated upstream
+=======
+    "/Users/brendondesvaux/.nuget/packages/csfml/2.5.0/csfml.2.5.0.nupkg.sha512",
+>>>>>>> Stashed changes
     "/Users/brendondesvaux/.nuget/packages/deedle/2.1.0/deedle.2.1.0.nupkg.sha512",
     "/Users/brendondesvaux/.nuget/packages/fsharp.core/6.0.1/fsharp.core.6.0.1.nupkg.sha512",
     "/Users/brendondesvaux/.nuget/packages/giraffe.viewengine/1.2.0/giraffe.viewengine.1.2.0.nupkg.sha512",
@@ -111,6 +119,20 @@
     "/Users/brendondesvaux/.nuget/packages/runtime.win-arm64.runtime.native.system.data.sqlclient.sni/4.4.0/runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
     "/Users/brendondesvaux/.nuget/packages/runtime.win-x64.runtime.native.system.data.sqlclient.sni/4.4.0/runtime.win-x64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
     "/Users/brendondesvaux/.nuget/packages/runtime.win-x86.runtime.native.system.data.sqlclient.sni/4.4.0/runtime.win-x86.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
+<<<<<<< Updated upstream
+=======
+    "/Users/brendondesvaux/.nuget/packages/sfml-graphics/2.4.2/sfml-graphics.2.4.2.nupkg.sha512",
+    "/Users/brendondesvaux/.nuget/packages/sfml-graphics.redist/2.4.2/sfml-graphics.redist.2.4.2.nupkg.sha512",
+    "/Users/brendondesvaux/.nuget/packages/sfml-system/2.4.2/sfml-system.2.4.2.nupkg.sha512",
+    "/Users/brendondesvaux/.nuget/packages/sfml-system.redist/2.4.2/sfml-system.redist.2.4.2.nupkg.sha512",
+    "/Users/brendondesvaux/.nuget/packages/sfml-window/2.4.2/sfml-window.2.4.2.nupkg.sha512",
+    "/Users/brendondesvaux/.nuget/packages/sfml-window.redist/2.4.2/sfml-window.redist.2.4.2.nupkg.sha512",
+    "/Users/brendondesvaux/.nuget/packages/sfml.audio/2.5.0/sfml.audio.2.5.0.nupkg.sha512",
+    "/Users/brendondesvaux/.nuget/packages/sfml.graphics/2.5.0/sfml.graphics.2.5.0.nupkg.sha512",
+    "/Users/brendondesvaux/.nuget/packages/sfml.net/2.5.0/sfml.net.2.5.0.nupkg.sha512",
+    "/Users/brendondesvaux/.nuget/packages/sfml.system/2.5.0/sfml.system.2.5.0.nupkg.sha512",
+    "/Users/brendondesvaux/.nuget/packages/sfml.window/2.5.0/sfml.window.2.5.0.nupkg.sha512",
+>>>>>>> Stashed changes
     "/Users/brendondesvaux/.nuget/packages/system.buffers/4.5.0/system.buffers.4.5.0.nupkg.sha512",
     "/Users/brendondesvaux/.nuget/packages/system.codedom/5.0.0/system.codedom.5.0.0.nupkg.sha512",
     "/Users/brendondesvaux/.nuget/packages/system.collections/4.3.0/system.collections.4.3.0.nupkg.sha512",
