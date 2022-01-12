@@ -7,15 +7,26 @@
     <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">/Users/brendondesvaux/.nuget/packages/</NuGetPackageRoot>
     <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">/Users/brendondesvaux/.nuget/packages/</NuGetPackageFolders>
     <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
-    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">5.9.0</NuGetToolVersion>
+    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">6.0.0</NuGetToolVersion>
   </PropertyGroup>
   <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <SourceRoot Include="/Users/brendondesvaux/.nuget/packages/" />
   </ItemGroup>
-  <PropertyGroup>
-    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
-  </PropertyGroup>
+  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Content Include="$(NuGetPackageRoot)xplot.plotly.interactive/4.0.6/contentFiles/any/any/Modules/XPlot.Plotly.Interactive/XPlot.Plotly.Interactive.psd1" Condition="Exists('$(NuGetPackageRoot)xplot.plotly.interactive/4.0.6/contentFiles/any/any/Modules/XPlot.Plotly.Interactive/XPlot.Plotly.Interactive.psd1')">
+      <NuGetPackageId>XPlot.Plotly.Interactive</NuGetPackageId>
+      <NuGetPackageVersion>4.0.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>Modules/XPlot.Plotly.Interactive/XPlot.Plotly.Interactive.psd1</TargetPath>
+      <DestinationSubDirectory>Modules/XPlot.Plotly.Interactive/</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>Modules/XPlot.Plotly.Interactive/XPlot.Plotly.Interactive.psd1</Link>
+    </Content>
+  </ItemGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <PkgFSharp_Core Condition=" '$(PkgFSharp_Core)' == '' ">/Users/brendondesvaux/.nuget/packages/fsharp.core/5.0.0</PkgFSharp_Core>
+    <PkgFSharp_Core Condition=" '$(PkgFSharp_Core)' == '' ">/Users/brendondesvaux/.nuget/packages/fsharp.core/6.0.1</PkgFSharp_Core>
+    <PkgMicrosoft_CodeAnalysis_Analyzers Condition=" '$(PkgMicrosoft_CodeAnalysis_Analyzers)' == '' ">/Users/brendondesvaux/.nuget/packages/microsoft.codeanalysis.analyzers/3.3.2</PkgMicrosoft_CodeAnalysis_Analyzers>
   </PropertyGroup>
 </Project>

@@ -1,13 +1,14 @@
 ﻿module Synthe.tests
 
+open Program
 open NUnit.Framework
-open Undertone
+
 
 [<SetUp>]
 let Setup () =
     ()
 
-[<Test>]
-let Wavesine() =
-    let result = Creation.sine 49.9
-    Assert.Equals(43.432432432342, result)
+//[<Test>]
+//let sineWave =
+//    let result = waves.sinWave 44100. 22. 432.
+//    Assert.Equals(43.432432432342, result)

@@ -1,30 +1,27 @@
 ﻿<Properties StartupConfiguration="{1F9D29D9-477B-44E1-8C79-1BD8E2A2A7C2}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Program.fs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Synthe.Tests/UnitTest1.fs">
     <Files>
-      <File FileName="Synthe.Tests/UnitTest1.fs" Line="2" Column="1" />
-      <File FileName="Program.fs" Line="318" Column="1" />
+      <File FileName="Synthe.Tests/UnitTest1.fs" Line="15" Column="1" />
+      <File FileName="Program.fs" Line="1" Column="1" />
+      <File FileName="Waves.fs" Line="22" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Synthe" expanded="True">
-            <Node name="Synthe" expanded="True">
-              <Node name="Program.fs" selected="True" />
+            <Node name="Synthe.Tests" expanded="True">
+              <Node name="UnitTest1.fs" selected="True" />
             </Node>
-            <Node name="Synthe.Tests" expanded="True" />
+            <Node name="Synthez" expanded="True" />
           </Node>
-        </State>
-      </Pad>
-      <Pad Id="MonoDevelop.UnitTesting.TestPad">
-        <State name="__root__">
-          <Node name="Synthe" expanded="True" selected="True" />
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Synthe.Tests PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Synthe PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.ItemProperties.Synthez PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
