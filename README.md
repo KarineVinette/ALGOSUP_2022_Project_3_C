@@ -8,6 +8,8 @@ Tu run the project :
 cd test </br>
 npm start
 
+link to trello : https://trello.com/b/l22gbvK3/algosup2022project3c
+
 
 
 
