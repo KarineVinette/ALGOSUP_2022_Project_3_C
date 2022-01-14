@@ -32,7 +32,7 @@ The project is using...
 
 ## Technologies and Softwares
 
-[![made-with-FSharp](https://img.shields.io/badge/-FSharp-blue)](https://fsharp.org/) [![made-with-SFML](https://img.shields.io/badge/-SFML-brightgreen)](https://www.sfml-dev.org/index-fr.php) 
+[![made-with-FSharp](https://img.shields.io/badge/Language%20Used-FSharp-blue)](https://fsharp.org/) [![made-with-SFML](https://img.shields.io/badge/-SFML-brightgreen)](https://www.sfml-dev.org/index-fr.php) 
 
 [![made-with-Visual-Studio-Code](https://img.shields.io/badge/Softwares%20Used:-Visual%20Studio%20Code-0078d7.svg)](https://code.visualstudio.com) 
 
