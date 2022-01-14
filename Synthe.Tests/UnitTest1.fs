@@ -7,7 +7,7 @@ open waves
 
 [<SetUp>]
 let Setup () =
-()
+    ()
 
 [<Test>]
 let sineWave() =

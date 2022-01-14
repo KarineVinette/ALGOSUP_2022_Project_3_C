@@ -41,6 +41,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Synthez.fsproj" />
+    <ProjectReference Include="..\Synthe\Synthez.fsproj" />
   </ItemGroup>
 </Project>
