@@ -26,5 +26,5 @@
         let sample x = (x + 1.)/2. * 255. |> byte 
 
         let data = Array.init 160000 (fun i -> sin (float i/float 8) |> sample)
-        let stream = File.Create(@"../../../createdSound/test1.wav") 
+        let stream = File.Create(@"../../../createdSound/testSin.wav") 
         write stream data
