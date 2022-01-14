@@ -8,6 +8,8 @@
   <ItemGroup>
     <Compile Include="Program.fs" />
     <Compile Include="Waves.fs" />
+    <Compile Include="playFileSound.fs" />
+    <Compile Include="CreateSound.fs" />
   </ItemGroup>
 
   <ItemGroup>
