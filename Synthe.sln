@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.810.12
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Synthez", "Synthe\Synthez.fsproj", "{1F9D29D9-477B-44E1-8C79-1BD8E2A2A7C2}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Synthez", "Synthe/Synthez.fsproj", "{1F9D29D9-477B-44E1-8C79-1BD8E2A2A7C2}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Synthe.Tests", "Synthe.Tests\Synthe.Tests.fsproj", "{CA6A2D6D-835C-4B0E-9956-E06A77564982}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Synthe.Tests", "Synthe.Tests/Synthe.Tests.fsproj", "{CA6A2D6D-835C-4B0E-9956-E06A77564982}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
