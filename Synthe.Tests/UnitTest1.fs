@@ -1,6 +1,5 @@
 ﻿module Synthe.tests
 
-open Program
 open NUnit.Framework
 open waves
 
