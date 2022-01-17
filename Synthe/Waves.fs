@@ -12,32 +12,32 @@ module waves
 
     type Note  =
         | A
-        | A#
+        | ADiese
         | B
         | C
-        | C#
+        | CDiese
         | D
-        | D#
+        | DDiese
         | E
         | F
-        | F#
+        | FDiese
         | G
-        | G#
+        | GDiese
 
     let NotesValues note  = 
                 match note with
                 | A -> 440.
-                | A# -> 466.16
+                | ADiese -> 466.16
                 | B -> 493.88
                 | C -> 261.63
-                | C# -> 277.18 
+                | CDiese -> 277.18 
                 | D -> 293.66
-                | D# -> 311.13
+                | DDiese -> 311.13
                 | E -> 329.63
                 | F -> 349.23
-                | F# -> 369.99
+                | FDiese -> 369.99
                 | G -> 392.
-                | G# -> 415.31
+                | GDiese -> 415.31
 
     let sinWave = Array.init limit (fun i -> amp * sin((freq/ Pi) * float i))
     let sinbyte = Array.init limit (fun i -> amp * sin((freq/ Pi) * float i) |> sample)
