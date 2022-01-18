@@ -4,7 +4,10 @@
         open System.IO
         open SFML.Audio
         open System.Threading
-        
+
+        let fusedData wave =
+            wave |> Array.concat
+
         let write stream (data:byte[]) =
             let writer = new BinaryWriter(stream)
             // RIFF
@@ -27,11 +30,9 @@
 
         let sample x = (x + 1.)/2. * 255. |> byte 
 
-        let data = waves.sinbyte
-        // let stream = File.Create(@"../../../createdSound/test1.wav") 
-        // let stream = waves.sinbyte
-        // write stream data
-        // let data1 = waves.sinbyte  
+        let data1 = waves.sinbyte
+        let data2 = waves.squarebyte
+        let data3 = fusedData [|data1;data2|]  
 
         type PlaySound()=
                 member x.play stream =
@@ -47,6 +48,6 @@
                 // convert is used to convert data's bytes in stream
         
         let convert = new MemoryStream()
-        write convert data
+        write convert data3
 
         p.play(convert)
