@@ -5,7 +5,7 @@ module waves
 
     let sample x = (x + 1.)/2. * 255. |> byte
     let Pi = Math.PI
-    let amp = 1.
+    let amp = 10.
     let freq = 440.
     let limit = 120000
 

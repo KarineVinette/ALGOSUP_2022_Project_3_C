@@ -1,10 +1,12 @@
-﻿module CreateSound 
-    module sound = 
+﻿//namespace CreateSound 
+    module createSound 
 
         open System.IO
+        open SFML.Audio
+        open System.Threading
         
         let write stream (data:byte[]) =
-            use writer = new BinaryWriter(stream)
+            let writer = new BinaryWriter(stream)
             // RIFF
             writer.Write("RIFF"B)
             let size = 36 + data.Length in writer.Write(size)
@@ -25,6 +27,26 @@
 
         let sample x = (x + 1.)/2. * 255. |> byte 
 
-        let data = Array.init 160000 (fun i -> sin (float i/float 8) |> sample)
-        let stream = File.Create(@"../../../createdSound/testSin.wav") 
-        write stream data
+        let data = waves.sinbyte
+        // let stream = File.Create(@"../../../createdSound/test1.wav") 
+        // let stream = waves.sinbyte
+        // write stream data
+        // let data1 = waves.sinbyte  
+
+        type PlaySound()=
+                member x.play stream =
+                    let buffer = new SoundBuffer(stream:Stream)
+                    let sound = new Sound(buffer)
+                    sound.Play()
+                
+                    do while sound.Status = SoundStatus.Playing do 
+                        Thread.Sleep(1)
+                
+        let p = new PlaySound()
+
+                // convert is used to convert data's bytes in stream
+        
+        let convert = new MemoryStream()
+        write convert data
+
+        p.play(convert)

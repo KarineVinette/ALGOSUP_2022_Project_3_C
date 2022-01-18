@@ -1,1 +1,1 @@
-namespace Syntetiseur
+namespace synthesizer
