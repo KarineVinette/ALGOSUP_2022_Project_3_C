@@ -74,12 +74,7 @@ An application programming interface (API) is a connection between computers or 
 
 #### [Synthesis / Synthesizer](https://en.wikipedia.org/wiki/Synthesizer)
 
-### Octave :
 
-```
-An octave is the interval between one musical pitch and another with double its frequency. 
-
-```
 
 ## In Scope :
 
@@ -99,7 +94,7 @@ An octave is the interval between one musical pitch and another with double its 
 
 ## Out of scope
 
-...
+We could make this project as an android/ios app.
 
 ## Test Plan
 
