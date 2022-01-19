@@ -39,4 +39,4 @@ Everyone who wants to play with sound synthesis, create music or sounds.
 
 ## Use case :
 
-
+![Use Case](https://github.com/KarineVinette/ALGOSUP_2022_Project_3_C/blob/main/documents/UseCase.png?raw=true)
