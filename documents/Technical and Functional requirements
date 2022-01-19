@@ -1,4 +1,4 @@
-Technical specifications:
+<h1>Technical specifications:
 
 Purpose:
 The purpose of the project is to develop requirements for sound synthetis.
@@ -6,15 +6,18 @@ The purpose of the project is to develop requirements for sound synthetis.
 Scope:
 The scope of the project is the delivery of an application that creates and plays sounds.
 
+Applicable References:
+- Create sounds
+- Apply options
+- record and read sounds
+
+
 Language: F#
 Library: SFML
 
 
 
-
-
-
-Functional specifications:
+<h1>Functional specifications:
 
 Client : everyone who wants to play with sound synthesis
 
