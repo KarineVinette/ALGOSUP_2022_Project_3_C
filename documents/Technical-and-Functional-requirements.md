@@ -1,4 +1,4 @@
-<h1>Technical specifications:
+# Technical specifications:
 
 Purpose:
 The purpose of the project is to develop requirements for sound synthetis.
@@ -12,12 +12,12 @@ Applicable References:
 - record and read sounds
 
 
-Language: F#
+Language: F#<br>
 Library: SFML
 
 
 
-<h1>Functional specifications:
+# Functional specifications:
 
 Client : everyone who wants to play with sound synthesis
 
