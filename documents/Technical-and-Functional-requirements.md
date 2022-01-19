@@ -95,6 +95,8 @@ An octave is the interval between one musical pitch and another with double its 
 
 ## Out of scope
 
+...
+
 ## Test Plan
 
 We are actually working with Test-Driven Development (TDD) so we can assure the code we produce is verified and working.
