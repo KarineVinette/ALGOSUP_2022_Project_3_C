@@ -46,6 +46,9 @@ The context of the project is to create a library that could be used by a develo
 
 dotnet [5.0](https://dotnet.microsoft.com/en-us/download/dotnet/5.0)
 
+## Organisation
+![Organigram](https://github.com/KarineVinette/ALGOSUP_2022_Project_3_C/blob/main/documents/Orga.png?raw=true)
+
 ## Risks
 
 -   Multiplatform sound playing
