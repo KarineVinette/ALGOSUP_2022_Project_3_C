@@ -1,5 +1,11 @@
 Technical specifications:
 
+Purpose:
+The purpose of the project is to develop requirements for sound synthetis.
+
+Scope:
+The scope of the project is the delivery of an application that creates and plays sounds.
+
 Language: F#
 Library: SFML
 
