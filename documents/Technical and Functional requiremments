@@ -1,0 +1,18 @@
+Technical specifications:
+
+Language: F#
+Library: SFML
+
+
+
+
+
+
+Functional specifications:
+
+Client : everyone who wants to play with sound synthesis
+
+- create a song
+- play a sound
+- record a song
+- play with options
