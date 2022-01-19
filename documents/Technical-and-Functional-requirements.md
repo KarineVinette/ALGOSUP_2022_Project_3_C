@@ -20,6 +20,7 @@
  - [Bobis Alexandre](https://github.com/AlexandreBobis)
  - [MIDA Nicolas](https://github.com/Nicolas-Mida)
  - [Archimbaud Malo](https://github.com/Malo-Archimbaud)
+ - [Lorut-Gauriat Martin](https://github.com/MartinLorutGauriat)
 
 ### Reviewers :
 
