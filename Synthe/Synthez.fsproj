@@ -2,16 +2,20 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>net5.0</TargetFramework>
+    <TargetFramework>net6.0</TargetFramework>
   </PropertyGroup>
 
+  <!-- <ItemGroup>
+    <Folder Include="Basic_Filters" />
+  </ItemGroup> -->
   <ItemGroup>
     <!-- <Compile Include="Program.fs" /> -->
     <Compile Include="Waves.fs" />
-    <Compile Include="CreateSound.fs" />
+    <!-- <Compile Include="CreateSound.fs" /> -->
     <!-- <Compile Include="playFileSound.fs" /> -->
-    <Compile Include="WriteWithoutSave.fs" />
-    <Compile Include="ReadWithoutSave.fs" />
+    <!-- <Compile Include="WriteWithoutSave.fs" /> -->
+    <!-- <Compile Include="ReadWithoutSave.fs" /> -->
+    <Compile Include="BasicFilters.fs" />
   </ItemGroup>
 
   <ItemGroup>
