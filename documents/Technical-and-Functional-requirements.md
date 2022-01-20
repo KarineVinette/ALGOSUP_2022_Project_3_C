@@ -94,7 +94,7 @@ An application programming interface (API) is a connection between computers or 
 
 ## Out of scope
 
-We could make this project as an android/ios app.
+We could make this project as an android/ios app.<br>
 We could make an web project with Fable.
 
 ## Test Plan
