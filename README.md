@@ -8,7 +8,7 @@ Tu run the project :
 Insert commands here
 ```
 
-link to trello : https://trello.com/b/l22gbvK3/algosup2022project3c
+Link to trello : https://trello.com/b/l22gbvK3/algosup2022project3c
 
 
 ## Project Name:
