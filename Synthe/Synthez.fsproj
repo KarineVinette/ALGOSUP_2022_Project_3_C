@@ -11,11 +11,11 @@
   <ItemGroup>
     <!-- <Compile Include="Program.fs" /> -->
     <Compile Include="Waves.fs" />
-    <!-- <Compile Include="CreateSound.fs" /> -->
-    <!-- <Compile Include="playFileSound.fs" /> -->
-    <!-- <Compile Include="WriteWithoutSave.fs" /> -->
-    <!-- <Compile Include="ReadWithoutSave.fs" /> -->
-    <Compile Include="BasicFilters.fs" />
+    <Compile Include="CreateSound.fs" /> 
+    <Compile Include="playFileSound.fs" /> 
+    <Compile Include="WriteWithoutSave.fs" /> 
+    <Compile Include="ReadWithoutSave.fs" />
+    <!-- <Compile Include="BasicFilters.fs" />  -->
   </ItemGroup>
 
   <ItemGroup>
