@@ -1,0 +1,48 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Audio\" />
+    <Folder Include="Compress\" />
+    <Folder Include="Visual\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="Audio\Waves.fs" />
+    <!-- <Compile Include="Visual\Charts.fs" /> -->
+    <!-- <Compile Include="Compress\CreateSound.fs" /> -->
+    <Compile Include="Compress\PlayWithoutSaving.fs" />
+    <!-- <Compile Include="playFileSound.fs" /> -->
+    <!-- <Compile Include="WriteWithoutSave.fs" /> -->
+    <!-- <Compile Include="ReadWithoutSave.fs" /> -->
+    <!-- <Compile Include="Program.fs" /> -->
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="XPlot.Plotly" Version="4.0.6">
+      <GeneratePathProperty></GeneratePathProperty>
+    </PackageReference>
+    <PackageReference Include="XPlot.Plotly.Interactive" Version="4.0.6">
+      <GeneratePathProperty></GeneratePathProperty>
+    </PackageReference>
+    <PackageReference Include="XPlot.GoogleCharts" Version="3.0.1">
+      <GeneratePathProperty></GeneratePathProperty>
+    </PackageReference>
+    <PackageReference Include="XPlot.GoogleCharts.Deedle" Version="3.0.1">
+      <GeneratePathProperty></GeneratePathProperty>
+    </PackageReference>
+    <PackageReference Include="XPlot.Plotly.WPF" Version="1.3.0">
+      <GeneratePathProperty></GeneratePathProperty>
+    </PackageReference>
+    <PackageReference Include="SFML.Audio" Version="2.5.0">
+      <GeneratePathProperty></GeneratePathProperty>
+    </PackageReference>
+    <PackageReference Include="sfml-system" Version="2.4.2">
+      <GeneratePathProperty></GeneratePathProperty>
+    </PackageReference>
+  </ItemGroup>
+</Project>

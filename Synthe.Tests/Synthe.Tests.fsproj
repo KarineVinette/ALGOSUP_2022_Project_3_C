@@ -8,8 +8,18 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Synthe\Synthe.fsproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Compile Include="UnitTest1.fs" />
     <Compile Include="Program.fs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="AudioT\" />
+    <Folder Include="VisualT\" />
+    <Folder Include="CompressT\" />
   </ItemGroup>
 
   <ItemGroup>
