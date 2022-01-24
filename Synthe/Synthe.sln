@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.810.12
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Synthez", "Synthez.fsproj", "{EDB8C929-1CA1-492D-B9E6-057F192ADFE1}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Synthe", "Synthe.fsproj", "{EDB8C929-1CA1-492D-B9E6-057F192ADFE1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
