@@ -18,7 +18,7 @@ let triangle() =
    Assert.AreEqual(120000, result)
 
 [<Test>]
-let squarre() =
+let square() =
    let result = squareWave.Length
    Assert.AreEqual(120000, result)
 
