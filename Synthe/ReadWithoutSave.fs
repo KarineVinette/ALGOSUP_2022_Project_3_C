@@ -1,4 +1,4 @@
-module lecture =
+module lecture 
         open System
         open System.Threading
         open SFML.Audio

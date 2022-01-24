@@ -2,6 +2,7 @@ module BasicFilters
     open waves
     open XPlot.Plotly
     open System
+
     module byFixedAmount =
 
         let byFixedAmount (modifier:float) (wave:float array) =
@@ -76,6 +77,9 @@ module BasicFilters
                 ]
         Flange(sinWave) |> Chart.Line  |> Chart.Show
 
+    module Chords = 
+        let addWaves = Array.map2(fun x y -> (x+y)/2.) triangle squareWave
+        //addWaves |> Chart.Line |> Chart.Show
     // module reverb =
 
     //     let reverb
