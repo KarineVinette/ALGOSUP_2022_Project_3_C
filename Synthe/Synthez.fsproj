@@ -15,7 +15,7 @@
     <Compile Include="playFileSound.fs" /> 
     <Compile Include="WriteWithoutSave.fs" /> 
     <Compile Include="ReadWithoutSave.fs" />
-    <Compile Include="BasicFilters.fs" />
+    <Compile Include="basicFilters.fs" />
   </ItemGroup>
 
   <ItemGroup>
