@@ -4,7 +4,7 @@ module lecture
         open SFML.Audio
         open System.IO
         open createSound
-        open waves
+        open Waves
 
         let Pi = Math.PI
         let amp = 1.
