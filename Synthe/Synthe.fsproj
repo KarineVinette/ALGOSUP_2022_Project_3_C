@@ -17,7 +17,7 @@
     <Compile Include="Compress\CreateSound.fs" /> 
     <Compile Include="Compress\PlayWithoutSaving.fs" />
     <Compile Include="Audio/playFileSound.fs" />
-    <Compile Include="Audio/WriteWithoutSave.fs" />
+    <!-- <Compile Include="Audio/WriteWithoutSave.fs" /> -->
     <Compile Include="Audio/ReadWithoutSave.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
