@@ -1,5 +1,5 @@
 module BasicFilters
-    open waves
+    open Waves
     open XPlot.Plotly
     open System
 
@@ -78,7 +78,7 @@ module BasicFilters
         Flange(sinWave) |> Chart.Line  |> Chart.Show
 
     module Chords = 
-        let addWaves = Array.map2(fun x y -> (x+y)/2.) triangle squareWave
+        let addWaves = Array.map2(fun x y -> (x+y)/2.) triangleWave squareWave
         //addWaves |> Chart.Line |> Chart.Show
     // module reverb =
 

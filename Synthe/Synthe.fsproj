@@ -19,7 +19,8 @@
     <Compile Include="Audio/playFileSound.fs" />
     <!-- <Compile Include="Audio/WriteWithoutSave.fs" /> -->
     <Compile Include="Audio/ReadWithoutSave.fs" />
-    <Compile Include="Program.fs" />
+    <Compile Include="basicFilters.fs" />
+    <!-- <Compile Include="Program.fs" /> -->
   </ItemGroup>
 
   <ItemGroup>
