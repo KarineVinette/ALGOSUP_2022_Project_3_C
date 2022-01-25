@@ -1,6 +1,6 @@
 ﻿//namespace CreateSound 
     module createSound 
-
+        open Waves
         open System.IO
         open SFML.Audio
         open System.Threading
@@ -30,8 +30,8 @@
 
         let sample x = (x + 1.)/2. * 255. |> byte 
 
-        let data1 = waves.sinbyte
-        let data2 = waves.squarebyte
+        let data1 = sinbyte
+        let data2 = squarebyte
         let data3 = fusedData [|data1;data2|]  
 
         type PlaySound()=
