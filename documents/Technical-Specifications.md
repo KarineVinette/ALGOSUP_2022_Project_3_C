@@ -1,3 +1,9 @@
+## Tecnical Specifications ( 26/01/2022 )
+
+### Context :
+
+The context of the project is to create a library that could be used by a developer/artist to create, modify, listen to and save sounds used for musical purposes as well as do the same to an entire list of said sounds. 
+
 ### Team :
 
  - [Vinette Karine](https://github.com/KarineVinette) (Team Manager)
