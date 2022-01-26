@@ -1,4 +1,4 @@
-## Tecnical Specifications ( 26/01/2022 )
+## Technical Specifications ( 26/01/2022 )
 
 ### Context :
 
