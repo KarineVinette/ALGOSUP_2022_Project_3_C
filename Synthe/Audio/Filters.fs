@@ -136,6 +136,6 @@ module BasicFilters
                 else
                     if multiplicator > minAmp then
                         multiplicator <- multiplicator - 0.1
-                wave[count] <- multiplicator * sin((2. * freq * Pi) / sampleRate)
+                // wave.[count] <- multiplicator * sin((2. * freq * Pi) / sampleRate)
                 count <- count + 1
             wave
