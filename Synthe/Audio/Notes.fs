@@ -42,4 +42,4 @@ module Note
         | 6 -> noteFrequenceWithoutOctave * 4.
         | 7 -> noteFrequenceWithoutOctave * 8.
         | 8 -> noteFrequenceWithoutOctave * 16.
-        | _ -> 0
+        | _ -> 0. // We should be able to catch an error and print that we are not playing a sound because the octave is wrong
