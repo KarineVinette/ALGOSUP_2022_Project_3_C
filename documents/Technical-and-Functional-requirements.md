@@ -63,16 +63,8 @@ _Windows_
 
 [**Github**](https://github.com/KarineVinette/ALGOSUP_2022_Project_3_C)
 
-## Terminology :
 
-### API :
 
-```
-An application programming interface (API) is a connection between computers or between computer programs. It is a type of software interface, offering a service to other pieces of software
-
-```
-
-#### [Synthesis / Synthesizer](https://en.wikipedia.org/wiki/Synthesizer)
 
 
 
