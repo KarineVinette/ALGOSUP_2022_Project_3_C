@@ -115,17 +115,6 @@ module BasicFilters
 
     module LowFrequencyOscillator =
 
-        // let AM (wave:float array) maxAmp minAmp =
-        //     let mutable multiplicator = amp
-        //     while multiplicator in 0..maxAmp do 
-        //         if multiplicator < maxAmp then
-        //             multiplicator <- multiplicator + 0.1
-        //         else
-
-        //     while multiplicator in 0..minAmp do
-        //         if multiplicator > minAmp  then
-        //             multiplicator <- multiplicator - 0.1
-
         let AM (wave:float array) maxAmp minAmp =
             let mutable multiplicator:float = amp
             let mutable count = 0
