@@ -23,6 +23,8 @@ module Charts =
 
   // Chords.addWaves |> Chart.Line |> Chart.Show
 
+  LowFrequencyOscillator.AM sinWave 8. 0.1 |> Chart.Line |> Chart.Show
+
 
   // sinWave |> Chart.Line |> Chart.WithOptions(Options(curveType = "function")) |> Chart.Show
   // triangleWave |> Chart.Line |> Chart.WithOptions(Options(curveType = "function")) |> Chart.Show
