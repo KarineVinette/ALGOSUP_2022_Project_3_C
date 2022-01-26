@@ -24,5 +24,18 @@
 
 ### Dotnet version :
 
-dotnet [5.0](https://dotnet.microsoft.com/en-us/download/dotnet/5.0)
+dotnet [5.0](https://dotnet.microsoft.com/en-us/download/dotnet/5.0)<br>
 why ?
+
+## Risks
+
+-   Multiplatform sound playing
+
+## Device Compatibility :
+
+- MacOS  
+- Windows
+
+### Download at :
+
+[**Github**](https://github.com/KarineVinette/ALGOSUP_2022_Project_3_C)
