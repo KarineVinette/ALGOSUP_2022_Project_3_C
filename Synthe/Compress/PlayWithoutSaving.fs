@@ -30,9 +30,7 @@
 
         let sample x = (x + 1.)/2. * 255. |> byte 
 
-        let data1 = sinbyte
-        let data2 = squarebyte
-        let data3 = fusedData [|data1;data2|]  
+        let data = sinbyte
 
         type PlaySound()=
                 member x.play stream =
@@ -48,6 +46,6 @@
                 // convert is used to convert data's bytes in stream
         
         let convert = new MemoryStream()
-        write convert data3
+        write convert data
 
         p.play(convert)

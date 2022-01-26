@@ -3,15 +3,11 @@ module lecture
         open System.Threading
         open SFML.Audio
         open System.IO
-        open createSound
+        open creation
         open Waves
 
-        let Pi = Math.PI
-        let amp = 1.
-        let freq = 440.
-
         let sample x = (x + 1.)/2. * 255. |> byte
-        let data = trianglebyte 
+        let data = sinbyte 
 
         type PlaySound()=
                         member x.play stream =

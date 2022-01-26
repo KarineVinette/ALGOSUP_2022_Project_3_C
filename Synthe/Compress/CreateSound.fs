@@ -2,7 +2,7 @@ module creation
     open System.IO
 
     let write stream (data:byte[]) =
-        use writer = new BinaryWriter(stream)
+        let writer = new BinaryWriter(stream)
         // RIFF
         writer.Write("RIFF"B)
         let size = 36 + data.Length in writer.Write(size)
