@@ -39,3 +39,17 @@ why ?
 ### Download at :
 
 [**Github**](https://github.com/KarineVinette/ALGOSUP_2022_Project_3_C)
+
+## Out of scope
+
+We could make this project as an android/ios app.<br>
+We could make an web project with Fable.
+
+## Test Plan
+
+We are actually working with Test-Driven Development (TDD) so we can assure the code we produce is verified and working.
+
+## User Access
+
+The client will have access to the library containing all the necessary functions to use the functionalities of a synthesizer and a document "How to use" to explain the functionalities and how to use them.
+
