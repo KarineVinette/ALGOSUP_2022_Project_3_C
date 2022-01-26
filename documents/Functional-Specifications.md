@@ -7,3 +7,7 @@ For our project, we are in the case of Software synthesizers.
 ## Project Target
 
 A developer who wants to use a library for playing with sound synthesis, creating music or sounds.
+
+## Specifications
+
+
