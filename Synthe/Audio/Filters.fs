@@ -112,3 +112,30 @@ module BasicFilters
             wave2
 
         // echo sinWave 0.6 0.001 |> Chart.Line |> Chart.Show
+
+    module LowFrequencyOscillator =
+
+        // let AM (wave:float array) maxAmp minAmp =
+        //     let mutable multiplicator = amp
+        //     while multiplicator in 0..maxAmp do 
+        //         if multiplicator < maxAmp then
+        //             multiplicator <- multiplicator + 0.1
+        //         else
+
+        //     while multiplicator in 0..minAmp do
+        //         if multiplicator > minAmp  then
+        //             multiplicator <- multiplicator - 0.1
+
+        let AM (wave:float array) maxAmp minAmp =
+            let mutable multiplicator:float = amp
+            let mutable count = 0
+            let sampleRate = 44100.
+            while multiplicator < maxAmp + 1. && count < limit-1 do 
+                if multiplicator < maxAmp then
+                    multiplicator <- multiplicator + 0.1
+                else
+                    if multiplicator > minAmp then
+                        multiplicator <- multiplicator - 0.1
+                wave[count] <- multiplicator * sin((2. * freq * Pi) / sampleRate)
+                count <- count + 1
+            wave
