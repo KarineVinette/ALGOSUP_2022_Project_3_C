@@ -14,6 +14,7 @@
   <ItemGroup>
     <Compile Include="Audio\Notes.fs" />
     <Compile Include="Audio\Waves.fs" />
+    <Compile Include="Audio\Filters.fs" />
     <Compile Include="Compress\CreateSound.fs" /> 
     <!-- <Compile Include="Compress\PlayWithoutSaving.fs" /> -->
     <!-- <Compile Include="Audio\playFileSound.fs" /> -->
