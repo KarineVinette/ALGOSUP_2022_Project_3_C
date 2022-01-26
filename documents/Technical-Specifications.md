@@ -11,3 +11,18 @@
 
  - [Robert Pickering](https://github.com/robertpi)
  - [Franck Jeannin](https://github.com/frje)
+
+### Language :
+
+[**F#**](https://fsharp.org/)
+
+### Library :
+
+ - [**SFML**](https://www.sfml-dev.org/index.php)  
+  
+ - [**XPlot**](https://fslab.org/XPlot)
+
+### Dotnet version :
+
+dotnet [5.0](https://dotnet.microsoft.com/en-us/download/dotnet/5.0)
+why ?
