@@ -7,7 +7,7 @@ module lecture
         open Waves
 
         let sample x = (x + 1.)/2. * 255. |> byte
-        let data = sinbyte 
+        let data = test noteArray
 
         type PlaySound()=
                         member x.play stream =

@@ -30,7 +30,7 @@
 
         let sample x = (x + 1.)/2. * 255. |> byte 
 
-        let data = sinbyte
+        let data = sawbyte
 
         type PlaySound()=
                 member x.play stream =

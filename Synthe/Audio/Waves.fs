@@ -11,7 +11,7 @@ module Waves
     let freq  = NotesValues A 4 // Note are from A to G 
     let limit = 44100
     let sampleRate = 44100.
-    let noteArray = [|NotesValues C 4; NotesValues D 4; NotesValues E 4; NotesValues F 4; NotesValues G 4; NotesValues A 4; NotesValues B 4; NotesValues C 6; NotesValues C 1; |]
+    let noteArray = [|NotesValues C 4; NotesValues D 4; NotesValues E 4; NotesValues F 4; NotesValues G 4; NotesValues A 4; NotesValues B 4; NotesValues C 5;|]
 
     let sinbyte freq amp = Array.init limit (fun i -> amp * sin((2. * freq * Pi * float i)/sampleRate) |> sample)
     let sinWave =  Array.init limit (fun i -> amp * sin((2. * freq * Pi * float i)/sampleRate))
