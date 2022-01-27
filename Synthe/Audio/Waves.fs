@@ -12,7 +12,7 @@ module Waves
     let sampleRate = 44100.
                     
 
-    let sinbyte (ti:float) freq = Array.init (int((limit:float)*ti)) (fun i -> 1. * sin((2. * freq * Pi * float i)/sampleRate) |> sample)
+    let sinbyte (ti:float) freq = Array.init (int(float(limit)*ti)) (fun i -> 1. * sin((2. * freq * Pi * float i)/sampleRate) |> sample)
     let sinWave = Array.init limit (fun i -> amp * sin((2. * freq * Pi * float i)/sampleRate))
     // let porteuse =  Array.init limit (fun i -> amp * sin((2. * 50000. * Pi * float i)/sampleRate))
     // let modulante =  Array.init limit (fun i -> amp * sin((2. * 1000. * Pi * float i)/sampleRate))

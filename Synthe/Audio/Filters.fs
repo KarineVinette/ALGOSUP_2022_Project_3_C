@@ -141,7 +141,7 @@ module BasicFilters
         //     wave
 
         let AM (wavep: float array) (wavem: float array) = 
-            let newWave = Array.init limit (fun i -> wavem[i] + wavep[i])
+            let newWave = Array.init limit (fun i -> wavem.[i] + wavep.[i])
             newWave
 
         // AM sinWave 8. -8. |> Chart.Line |> Chart.Show

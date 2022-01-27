@@ -48,7 +48,7 @@ module Song
         |]
 
     let test (song:byte [][] ) =  // The most unbelievable thing to play a song
-            let mutable wave2 = sinbyte 1 0.
+            let mutable wave2 = sinbyte 1. 0.
             for j in 0..song.Length-1 do
                 let delay = Array.init (int(sampleRate/100.)) (fun i -> 0. |> sample)
                 wave2 <- Array.concat[|wave2; delay; song.[j]|]
