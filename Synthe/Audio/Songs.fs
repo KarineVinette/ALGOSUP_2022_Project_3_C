@@ -2,6 +2,7 @@ module Song
 
     open Waves
     open Note
+    open BasicFilters
 
     let GoldenWind =[|
         FDiese Black 5; 
@@ -47,7 +48,20 @@ module Song
         B White 5;
         |]
 
-    let test (song:byte [][] ) =  // The most unbelievable thing to play a song
+    // beginning of Unravel song 
+    let Unravel = [|
+        ADiese HalfNote 5;
+        C Black 6;
+        ADiese Black 5;
+        A HalfNote 5;
+        G Black 5;
+        C Black 6;
+        ADiese Black 5;
+
+
+        |]
+
+    let test (song: byte [][] ) =  // The most unbelievable thing to play a song
             let mutable wave2 = sinbyte 1. 0.
             for j in 0..song.Length-1 do
                 let delay = Array.init (int(sampleRate/100.)) (fun i -> 0. |> sample)

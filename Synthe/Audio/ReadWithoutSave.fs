@@ -9,7 +9,7 @@ module lecture
         open Song
 
         let sample x = (x + 1.)/2. * 255. |> byte
-        let data = test GoldenWind
+        let data = test Unravel
 
         type PlaySound()=
                         member x.play stream =
