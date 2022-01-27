@@ -5,9 +5,11 @@ module lecture
         open System.IO
         open creation
         open Waves
+        open BasicFilters
+        open Song
 
         let sample x = (x + 1.)/2. * 255. |> byte
-        let data = test noteArray
+        let data = test GoldenWind
 
         type PlaySound()=
                         member x.play stream =

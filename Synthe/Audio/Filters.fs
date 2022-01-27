@@ -18,7 +18,7 @@ module BasicFilters
 
         let overdrive (flatten:float) (wave: float array) limit =
 
-            for i in 0..limit do
+            for i in 0..limit-1 do
                 if wave.[i] > flatten then
                     wave.[i] <- flatten
                 elif wave.[i] < 0.0 - flatten then
@@ -26,9 +26,9 @@ module BasicFilters
 
             wave
 
-        //let sin = overdrive 0.7 sinWave (limit - 1)
+        // let sin = overdrive 0.7 sinWave (limit - 1)
 
-        //sin |> Chart.Line |> Chart.Show
+        // sin |> Chart.Line |> Chart.Show
 
     module enveloppe =
 
@@ -79,8 +79,8 @@ module BasicFilters
         // Flange(sinWave) |> Chart.Line  |> Chart.Show
 
     module Chords = 
-        let addWaves = Array.map2(fun x y -> (x+y)/2.) triangleWave squareWave
-        //addWaves |> Chart.Line |> Chart.Show
+        let addWaves = Array.map2(fun x y -> (x+y)/2.) sinWave squareWave
+        // addWaves |> Chart.Line |> Chart.Show
     
     module reverb =
 
@@ -88,9 +88,9 @@ module BasicFilters
         let reverb (wave: float []) reduc = 
             let mutable wave2 = wave
             let mutable amp2 = amp
-            while amp2 > 0.1 do
+            while amp2 * reduc > 0.1 do
                 amp2 <- amp2 * reduc
-                let r = Array.init (limit) (fun i -> amp2 * sin((freq / Pi) * float i))
+                let r = Array.init (limit) (fun i -> amp2 * sin((2. * freq * Pi * float i)/sampleRate))
                 let newWave = Array.concat [|wave2; r|]
                 wave2 <- newWave
             wave2
@@ -103,28 +103,45 @@ module BasicFilters
         let echo (wave: float []) reduc (delay:float) = 
             let mutable wave2 = wave
             let mutable amp2 = amp
-            while amp2 > 0.1 do
+            while amp2 * reduc > 0.1 do
                 amp2 <- amp2 * reduc
                 let del = Array.init (int(delay * sampleRate))(fun i -> 0.)
-                let e = Array.init (limit) (fun i -> amp2 * sin((freq / Pi) * float i))
+                let e = Array.init (limit) (fun i -> amp2 * sin((2. * freq * Pi * float i)/sampleRate))
                 let newWave = Array.concat [|wave2; del; e|]
                 wave2 <- newWave
             wave2
 
-        // echo sinWave 0.6 0.001 |> Chart.Line |> Chart.Show
+        // echo sinWave 0.5 0.1 |> Chart.Line |> Chart.Show
 
     module LowFrequencyOscillator =
 
-        let AM (wave:float array) maxAmp minAmp =
-            let mutable multiplicator:float = amp
-            let mutable count = 0
-            let sampleRate = 44100.
-            while multiplicator < maxAmp + 1. && count < limit-1 do 
-                if multiplicator < maxAmp then
-                    multiplicator <- multiplicator + 0.1
-                else
-                    if multiplicator > minAmp then
-                        multiplicator <- multiplicator - 0.1
-                // wave.[count] <- multiplicator * sin((2. * freq * Pi) / sampleRate)
-                count <- count + 1
-            wave
+        // let AM (wave:float array) maxAmp minAmp =
+        //     let mutable multiplicator = amp
+        //     while multiplicator in 0..maxAmp do 
+        //         if multiplicator < maxAmp then
+        //             multiplicator <- multiplicator + 0.1
+        //         else
+
+        //     while multiplicator in 0..minAmp do
+        //         if multiplicator > minAmp  then
+        //             multiplicator <- multiplicator - 0.1
+
+        // let AM (wave:float array) maxAmp minAmp =
+        //     let mutable multiplicator:float = amp
+        //     let mutable count = 0
+        //     let sampleRate = 44100.
+        //     while multiplicator < maxAmp do 
+        //         if multiplicator < maxAmp then
+        //             multiplicator <- multiplicator + 0.1
+        //         else
+        //             if multiplicator > minAmp then
+        //                 multiplicator <- multiplicator - 0.1
+        //         wave[count] <- multiplicator * sin((2. * freq * Pi) / sampleRate)
+        //         count <- count + 1
+        //     wave
+
+        let AM (wavep: float array) (wavem: float array) = 
+            let newWave = Array.init limit (fun i -> wavem[i] + wavep[i])
+            newWave
+
+        // AM sinWave 8. -8. |> Chart.Line |> Chart.Show
