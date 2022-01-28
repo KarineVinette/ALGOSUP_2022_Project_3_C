@@ -48,6 +48,31 @@ module Song
         B White 5;
         |]
 
+    let Solvieg =[|
+        E White 5
+        C HalfNote 5
+        E HalfNote 5
+        A HalfNote 5
+        B HalfNote 5
+        B HalfNote 5
+        A HalfNote 5
+        G Round 5
+        G White 5
+        E HalfNote 5
+        G HalfNote 5
+        C HalfNote 6
+        D HalfNote 6
+        B Black 5
+        E White 6
+        E HalfNote 6
+        HalfSil HalfSilence 0 
+        B Black 4
+        E White 5
+        E HalfNote 5
+        Sil Silence 0
+        MSil MSilence 0
+        |]
+
     // beginning of Unravel song 
     let Unravel = [|
         ADiese HalfNote 5;
