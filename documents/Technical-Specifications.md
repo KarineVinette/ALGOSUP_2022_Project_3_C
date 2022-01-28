@@ -31,7 +31,7 @@ The context of the project is to create a library that could be used by a develo
 ### Dotnet version :
 
 dotnet [5.0](https://dotnet.microsoft.com/en-us/download/dotnet/5.0)<br>
-why ?
+we use this version because there is an issue with the last version on mac.
 
 ## Risks
 
