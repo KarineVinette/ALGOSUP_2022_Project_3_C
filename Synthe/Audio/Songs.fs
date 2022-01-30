@@ -73,6 +73,55 @@ module Song
         MSil MSilence 0
         |]
 
+    let Gadjet = [|
+        G QuarterNote 5
+        ADiese QuarterNote 5
+        B QuarterNote 5
+        CDiese QuarterNote 6
+        DDiese HalfNote 6
+        B HalfNote 5
+        D HalfNote 6
+        ADiese HalfNote 5
+        CDiese HalfNote 6
+        B HalfNote 5
+        G QuarterNote 5
+        ADiese QuarterNote 5
+        B QuarterNote 5
+        CDiese QuarterNote 6
+        DDiese HalfNote 6
+        GDiese HalfNote 6
+        G White 6
+        HalfSil HalfSilence 0
+        E QuarterNote 6
+        B QuarterNote 5
+        B QuarterNote 5
+        B QuarterNote 5
+        E HalfNote 6
+        B HalfNote 5
+        D HalfNote 6
+        ADiese HalfNote 5
+        CDiese HalfNote 6
+        B HalfNote 5
+        MSil MSilence 0
+        G QuarterNote 5
+        ADiese QuarterNote 5
+        B QuarterNote 5
+        CDiese QuarterNote 6
+        DDiese HalfNote 6
+        B HalfNote 5
+        D HalfNote 6
+        ADiese HalfNote 5
+        CDiese HalfNote 6
+        B HalfNote 5
+        G QuarterNote 5
+        ADiese QuarterNote 5
+        B QuarterNote 5
+        CDiese QuarterNote 6
+        DDiese HalfNote 6
+        G HalfNote 6
+        G White 6
+        MSil MSilence 0 
+        |]
     // beginning of Unravel song 
     let Unravel = [|
         ADiese HalfNote 5;
