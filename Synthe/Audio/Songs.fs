@@ -48,30 +48,30 @@ module Song
         B White 5;
         |]
 
-    let Solvieg =[|
-        E White 5
-        C HalfNote 5
-        E HalfNote 5
-        A HalfNote 5
-        B HalfNote 5
-        B HalfNote 5
-        A HalfNote 5
-        G Round 5
-        G White 5
-        E HalfNote 5
-        G HalfNote 5
-        C HalfNote 6
-        D HalfNote 6
-        B Black 5
-        E White 6
-        E HalfNote 6
-        HalfSil HalfSilence 0 
-        B Black 4
-        E White 5
-        E HalfNote 5
-        Sil Silence 0
-        MSil MSilence 0
-        |]
+    // let Solvieg =[|
+    //     E White 5
+    //     C HalfNote 5
+    //     E HalfNote 5
+    //     A HalfNote 5
+    //     B HalfNote 5
+    //     B HalfNote 5
+    //     A HalfNote 5
+    //     G Round 5
+    //     G White 5
+    //     E HalfNote 5
+    //     G HalfNote 5
+    //     C HalfNote 6
+    //     D HalfNote 6
+    //     B Black 5
+    //     E White 6
+    //     E HalfNote 6
+    //     HalfSil HalfSilence 0 
+    //     B Black 4
+    //     E White 5
+    //     E HalfNote 5
+    //     Sil Silence 0
+    //     MSil MSilence 0
+    //     |]
 
     let Gadjet = [|
         G QuarterNote 5
@@ -91,7 +91,7 @@ module Song
         DDiese HalfNote 6
         GDiese HalfNote 6
         G White 6
-        HalfSil HalfSilence 0
+        Silence HalfNote 
         E QuarterNote 6
         B QuarterNote 5
         B QuarterNote 5
@@ -102,7 +102,7 @@ module Song
         ADiese HalfNote 5
         CDiese HalfNote 6
         B HalfNote 5
-        MSil MSilence 0
+        Silence Round 
         G QuarterNote 5
         ADiese QuarterNote 5
         B QuarterNote 5
@@ -120,8 +120,9 @@ module Song
         DDiese HalfNote 6
         G HalfNote 6
         G White 6
-        MSil MSilence 0 
+        MSil Round 0 
         |]
+        
     // beginning of Unravel song 
     let Unravel = [|
         ADiese HalfNote 5;
@@ -162,6 +163,6 @@ module Song
     let test (song: byte [][] ) =  // The most unbelievable thing to play a song
             let mutable wave2 = sinbyte 1. 0.
             for j in 0..song.Length-1 do
-                let delay = Array.init (int(sampleRate/100.)) (fun i -> 0. |> sample)
+                let delay = Array.init (int(sampleRate/1000.)) (fun i -> 0. |> sample)
                 wave2 <- Array.concat[|wave2; delay; song.[j]|]
             wave2
