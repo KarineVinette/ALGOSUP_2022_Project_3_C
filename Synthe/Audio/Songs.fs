@@ -1137,6 +1137,106 @@ module Song =
 
 
     |]
+    
+    let Crazy = [|
+        D Black 5
+        Sil Silence 0
+        F Black 5
+        HalfSil HalfSilence 0
+        D HalfNote 5
+        HalfSil HalfSilence 0
+        D HalfNote 5
+        G Black 5
+        D Black 5
+        C Black 5
+        D Black 5
+        Sil Silence 0
+        A Black 5
+        HalfSil HalfSilence 0
+        D HalfNote 5
+        HalfSil HalfSilence 0
+        D HalfNote 5
+        ADiese Black 5
+        A Black 5
+        F Black 5
+        D Black 5
+        A Black 5
+        D Black 6
+        D HalfNote 5
+        C HalfNote 5
+        HalfSil HalfSilence 0
+        C HalfNote 5
+        A Black 4
+        E Black 5
+        D Black 5
+        Sil Silence 0
+        D HalfNote 5
+        HalfSil HalfSilence 0
+        D Black 5
+        D HalfNote 5
+        C HalfNote 5
+        HalfSil HalfSilence 0
+        C HalfNote 5 
+        HalfSil HalfSilence 0
+        C HalfNote 5
+        A Black 4
+        C Black 5
+        Sil Silence 0
+        A HalfNote 5
+        HalfSil HalfSilence 0
+        A HalfNote 5
+        HalfSil HalfSilence 0
+        A HalfNote 5
+        C HalfNote 6
+        HalfSil HalfSilence 0
+        C HalfNote 6
+        HalfSil HalfSilence 0
+        C HalfNote 6
+        B HalfNote 5
+        HalfSil HalfSilence 0
+        B HalfNote 5
+        HalfSil HalfSilence 0
+        Sil Silence 0
+        A HalfNote 5
+        HalfSil HalfSilence 0
+        A HalfNote 5
+        HalfSil HalfSilence 0
+        A HalfNote 5
+        C HalfNote 6
+        HalfSil HalfSilence 0
+        C HalfNote 6
+        B HalfNote 5
+        HalfSil HalfSilence 0
+        A HalfNote 5
+        HalfSil HalfSilence 0
+        Sil Silence 0
+        Sil Silence 0
+        F HalfNote 5
+        HalfSil HalfSilence 0
+        F HalfNote 5
+        HalfSil HalfSilence 0
+        F HalfNote 5
+        HalfSil HalfSilence 0
+        F HalfNote 5
+        G HalfNote 5
+        HalfSil HalfSilence 0
+        G HalfNote 5
+        HalfSil HalfSilence 0
+        G HalfNote 5
+        G Black 5
+        G Black 5
+        A HalfNote 5
+        HalfSil HalfSilence 0
+        A HalfNote 5
+        HalfSil HalfSilence 0
+        A HalfNote 5
+        HalfSil HalfSilence 0
+        G HalfNote 5
+        A HalfNote 5
+        HalfSil HalfSilence 0
+        A HalfNote 5
+        A White 5
+    |]
 
     let test (song: byte [][] ) =  // The most unbelievable thing to play a song
             let mutable wave2 = sinbyte 1. 0.
