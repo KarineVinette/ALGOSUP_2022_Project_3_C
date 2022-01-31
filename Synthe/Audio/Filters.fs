@@ -115,33 +115,12 @@ module BasicFilters
 
     module LowFrequencyOscillator =
 
-        // let AM (wave:float array) maxAmp minAmp =
-        //     let mutable multiplicator = amp
-        //     while multiplicator in 0..maxAmp do 
-        //         if multiplicator < maxAmp then
-        //             multiplicator <- multiplicator + 0.1
-        //         else
-
-        //     while multiplicator in 0..minAmp do
-        //         if multiplicator > minAmp  then
-        //             multiplicator <- multiplicator - 0.1
-
-        // let AM (wave:float array) maxAmp minAmp =
-        //     let mutable multiplicator:float = amp
-        //     let mutable count = 0
-        //     let sampleRate = 44100.
-        //     while multiplicator < maxAmp do 
-        //         if multiplicator < maxAmp then
-        //             multiplicator <- multiplicator + 0.1
-        //         else
-        //             if multiplicator > minAmp then
-        //                 multiplicator <- multiplicator - 0.1
-        //         wave[count] <- multiplicator * sin((2. * freq * Pi) / sampleRate)
-        //         count <- count + 1
-        //     wave
-
         let AM (wavep: float array) (wavem: float array) = 
-            let newWave = Array.init limit (fun i -> wavem.[i] + wavep.[i])
+            let newWave = Array.init limit (fun i -> wavem.[i] * wavep.[i])
             newWave
 
-        // AM sinWave 8. -8. |> Chart.Line |> Chart.Show
+        let FM (wavep: float array) (wavem: float array) =
+            let newWave = Array.init limit (fun i -> 1. * sin((2. * Pi * 500. * float i) + (1./10.)*(500. - 10.) * wavem.[i]))
+            newWave
+
+        
