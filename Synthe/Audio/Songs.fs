@@ -131,8 +131,32 @@ module Song
         G Black 5;
         C Black 6;
         ADiese Black 5;
+        |]
 
-
+    let LaVieEnRose = [|
+        GDiese White 4;
+        GDiese Black 4;
+        G Black 4;
+        F PBlack 4;
+        DDiese Black 4;
+        C PBlack 4;
+        GDiese Black 4;
+        G PBlack 4;
+        G PBlack 4;
+        F Black 4;
+        DDiese PBlack 4;
+        C Black 4;
+        GDiese PBlack 3;
+        G Black 4;
+        F PBlack 4;
+        F PBlack 4;
+        DDiese Black 4;
+        C Black 4;
+        G Black 3;
+        GDiese Black 3;
+        G Black 4;
+        F Round 4;
+        DDiese White 4;
         |]
 
     let test (song: byte [][] ) =  // The most unbelievable thing to play a song

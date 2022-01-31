@@ -17,6 +17,8 @@ let main argv =
             -> PlaySong(Solvieg) |> ignore ; printfn "1"
         | "Gadjet" 
             -> PlaySong(Gadjet) |> ignore ; printfn "2"
+        | "LaVieEnRose" 
+            -> PlaySong(LaVieEnRose) |> ignore ; printfn "3"
         | "SinWave"
             -> sinVisu "a" |> ignore ; printfn "a"
         | "SqWave"
