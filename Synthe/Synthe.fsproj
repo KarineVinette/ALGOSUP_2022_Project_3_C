@@ -20,8 +20,8 @@
     <!-- <Compile Include="Compress\PlayWithoutSaving.fs" /> -->
     <!-- <Compile Include="Audio\playFileSound.fs" /> -->
     <Compile Include="Audio\ReadWithoutSave.fs" />
-    <Compile Include="Visual\Charts.fs" />
-    <Compile Include="Program.fs" />
+    <!-- <Compile Include="Visual\Charts.fs" /> -->
+    <!-- <Compile Include="Program.fs" /> -->
   </ItemGroup>
 
   <ItemGroup>

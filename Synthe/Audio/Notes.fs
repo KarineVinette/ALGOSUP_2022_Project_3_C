@@ -1,7 +1,8 @@
-module Note
+namespace SyntheAudio
+open System
+open Waves
 
-    open System
-    open Waves
+module Note =
 
     type Length = 
         | HalfSilence

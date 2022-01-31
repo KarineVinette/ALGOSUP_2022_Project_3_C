@@ -1,15 +1,16 @@
-module lecture 
-        open System
-        open System.Threading
-        open SFML.Audio
-        open System.IO
-        open creation
-        open Waves
-        open BasicFilters
-        open Song
+namespace SyntheAudio
+
+open System
+open System.Threading
+open SFML.Audio
+open System.IO
+open Song
+open SyntheCompress
+
+module PlaySong = 
 
         let sample x = (x + 1.)/2. * 255. |> byte
-        let data = test Gadjet
+        let data = test Unravel
 
         type PlaySound()=
                         member x.play stream =
@@ -25,6 +26,6 @@ module lecture
                 // convert is used to convert data's bytes in stream
         
         let convert = new MemoryStream()
-        write convert data
+        CreateWavFile.write convert data
 
         p.play(convert)
