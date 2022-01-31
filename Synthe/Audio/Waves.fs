@@ -8,7 +8,7 @@ module Waves =
     let amp = 1.
     let freq = 100000.
     let sampleRate = 44100.
-    let limit = int(sampleRate/(60./60.))
+    let limit = int(sampleRate/(130./60.))
                     
 
     let sinbyte (ti:float) freq  = Array.init (int(float(limit)*ti)) (fun i -> 1. * sin((2. * freq * Pi * float i)/sampleRate) |> sample)

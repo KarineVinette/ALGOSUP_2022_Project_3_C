@@ -4,6 +4,8 @@ open Waves
 module Note =
 
     type Length = 
+        | QuarterSilence
+        | TrioletSilence
         | HalfSilence
         | Silence
         | MSilence
@@ -33,7 +35,9 @@ module Note =
 
     let getLength (length:Length) =
         match length with 
-        | HalfSilence -> 0.25
+        | QuarterSilence -> 0.25
+        | TrioletSilence -> 0.33
+        | HalfSilence -> 0.5
         | Silence -> 1.
         | MSilence -> 4.
         | HalfNote -> 0.5
@@ -47,6 +51,16 @@ module Note =
         | PWhite -> 3.
         | Round -> 4.
 
+    let QSilence(length:Length) (octave:int) =
+        let NoteFreq = getFreq 0. octave
+        let NoteLength = getLength length
+        sinbyte NoteLength NoteFreq
+
+    let TrSilence(length:Length) (octave:int) =
+        let NoteFreq = getFreq 0. octave
+        let NoteLength = getLength length
+        sinbyte NoteLength NoteFreq
+    
     let HalfSil (length:Length) (octave:int) =
         let NoteFreq = getFreq 0. octave
         let NoteLength = getLength length
