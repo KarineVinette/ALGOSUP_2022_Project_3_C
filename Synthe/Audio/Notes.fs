@@ -1,7 +1,7 @@
-module Note
+namespace SyntheAudio
+open Waves
 
-    open System
-    open Waves
+module Note =
 
     type Length = 
         | HalfSil

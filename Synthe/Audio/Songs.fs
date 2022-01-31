@@ -1,8 +1,8 @@
-module Song
+namespace SyntheAudio
+open Note
+open Waves
 
-    open Waves
-    open Note
-    open BasicFilters
+module Song =
 
     let GoldenWind =[|
         FDiese Black 5; 
