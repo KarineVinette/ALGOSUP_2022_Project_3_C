@@ -134,29 +134,34 @@ module Song
         |]
 
     let LaVieEnRose = [|
-        GDiese White 4;
-        GDiese Black 4;
-        G Black 4;
-        F PBlack 4;
-        DDiese Black 4;
-        C PBlack 4;
-        GDiese Black 4;
-        G PBlack 4;
-        G PBlack 4;
-        F Black 4;
+        GDiese PWhite 4;
+        G PHalfNote 4;
+        F PHalfNote 4;
+        HalfSil HalfSilence 0;
+        DDiese PHalfNote 4;
+        C PHalfNote 4;
+        HalfSil HalfSilence 0;
+        GDiese PHalfNote 4;
+        G PWhite 4;
+        Sil Silence 0;
+        F PHalfNote 4;
+        DDiese PHalfNote 4;
+        HalfSil HalfSilence 0;
+        C PHalfNote 4;
+        GDiese PHalfNote 3;
+        HalfSil HalfSilence 0;
+        G PHalfNote 4;
+        F PWhite 4;
+        Sil Silence 4;
+        DDiese PHalfNote 4;
+        C PHalfNote 4;
+        HalfSil HalfSilence 0;
+        G PHalfNote 3;
+        GDiese PHalfNote 3;
+        HalfSil HalfSilence 0;
+        G PHalfNote 4;
+        F PWhite 4;
         DDiese PBlack 4;
-        C Black 4;
-        GDiese PBlack 3;
-        G Black 4;
-        F PBlack 4;
-        F PBlack 4;
-        DDiese Black 4;
-        C Black 4;
-        G Black 3;
-        GDiese Black 3;
-        G Black 4;
-        F Round 4;
-        DDiese White 4;
         |]
 
     let test (song: byte [][] ) =  // The most unbelievable thing to play a song
