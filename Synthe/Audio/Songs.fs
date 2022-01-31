@@ -1,5 +1,6 @@
 namespace SyntheAudio
 open Note
+open Waves
 
 module Song =
 
@@ -47,30 +48,30 @@ module Song =
         B White 5;
         |]
 
-    let Solvieg =[|
-        E White 5
-        C HalfNote 5
-        E HalfNote 5
-        A HalfNote 5
-        B HalfNote 5
-        B HalfNote 5
-        A HalfNote 5
-        G Round 5
-        G White 5
-        E HalfNote 5
-        G HalfNote 5
-        C HalfNote 6
-        D HalfNote 6
-        B Black 5
-        E White 6
-        E HalfNote 6
-        HalfSil HalfSilence 0 
-        B Black 4
-        E White 5
-        E HalfNote 5
-        Sil Silence 0
-        MSil MSilence 0
-        |]
+    // let Solvieg =[|
+    //     E White 5
+    //     C HalfNote 5
+    //     E HalfNote 5
+    //     A HalfNote 5
+    //     B HalfNote 5
+    //     B HalfNote 5
+    //     A HalfNote 5
+    //     G Round 5
+    //     G White 5
+    //     E HalfNote 5
+    //     G HalfNote 5
+    //     C HalfNote 6
+    //     D HalfNote 6
+    //     B Black 5
+    //     E White 6
+    //     E HalfNote 6
+    //     HalfSil HalfSilence 0 
+    //     B Black 4
+    //     E White 5
+    //     E HalfNote 5
+    //     Sil Silence 0
+    //     MSil MSilence 0
+    //     |]
 
     let Gadjet = [|
         G QuarterNote 5
@@ -90,7 +91,7 @@ module Song =
         DDiese HalfNote 6
         GDiese HalfNote 6
         G White 6
-        HalfSil HalfSilence 0
+        Silence HalfNote 
         E QuarterNote 6
         B QuarterNote 5
         B QuarterNote 5
@@ -101,7 +102,7 @@ module Song =
         ADiese HalfNote 5
         CDiese HalfNote 6
         B HalfNote 5
-        MSil MSilence 0
+        Silence Round 
         G QuarterNote 5
         ADiese QuarterNote 5
         B QuarterNote 5
@@ -119,8 +120,9 @@ module Song =
         DDiese HalfNote 6
         G HalfNote 6
         G White 6
-        MSil MSilence 0 
+        MSil Round 0 
         |]
+        
     // beginning of Unravel song 
     let Unravel = [|
         ADiese HalfNote 5;
@@ -132,35 +134,40 @@ module Song =
         ADiese Black 5;
         |]
 
-    let LaVieEnRose = [|
-        GDiese White 4;
-        GDiese Black 4;
-        G Black 4;
-        F PBlack 4;
-        DDiese Black 4;
-        C PBlack 4;
-        GDiese Black 4;
-        G PBlack 4;
-        G PBlack 4;
-        F Black 4;
-        DDiese PBlack 4;
-        C Black 4;
-        GDiese PBlack 3;
-        G Black 4;
-        F PBlack 4;
-        F PBlack 4;
-        DDiese Black 4;
-        C Black 4;
-        G Black 3;
-        GDiese Black 3;
-        G Black 4;
-        F Round 4;
-        DDiese White 4;
-        |]
+    // let LaVieEnRose = [|
+    //     GDiese PWhite 4;
+    //     G PHalfNote 4;
+    //     F PHalfNote 4;
+    //     HalfSil HalfSilence 0;
+    //     DDiese PHalfNote 4;
+    //     C PHalfNote 4;
+    //     HalfSil HalfSilence 0;
+    //     GDiese PHalfNote 4;
+    //     G PWhite 4;
+    //     Sil Silence 0;
+    //     F PHalfNote 4;
+    //     DDiese PHalfNote 4;
+    //     HalfSil HalfSilence 0;
+    //     C PHalfNote 4;
+    //     GDiese PHalfNote 3;
+    //     HalfSil HalfSilence 0;
+    //     G PHalfNote 4;
+    //     F PWhite 4;
+    //     Sil Silence 4;
+    //     DDiese PHalfNote 4;
+    //     C PHalfNote 4;
+    //     HalfSil HalfSilence 0;
+    //     G PHalfNote 3;
+    //     GDiese PHalfNote 3;
+    //     HalfSil HalfSilence 0;
+    //     G PHalfNote 4;
+    //     F PWhite 4;
+    //     DDiese PBlack 4;
+    //     |]
 
     let test (song: byte [][] ) =  // The most unbelievable thing to play a song
-                let mutable wave2 = Waves.sinbyte 1. 0.
-                for j in 0..song.Length-1 do
-                    let delay = Array.init (int(Waves.sampleRate/100.)) (fun i -> 0. |> Waves.sample)
-                    wave2 <- Array.concat[|wave2; delay; song.[j]|]
-                wave2
+            let mutable wave2 = sinbyte 1. 0.
+            for j in 0..song.Length-1 do
+                let delay = Array.init (int(sampleRate/1000.)) (fun i -> 0. |> sample)
+                wave2 <- Array.concat[|wave2; delay; song.[j]|]
+            wave2
