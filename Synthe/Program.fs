@@ -2,6 +2,7 @@ module test
 
 open Song
 open Charts
+open lecture
 open System
 open System.IO
 
@@ -11,9 +12,11 @@ let main argv =
     for arg in argv do
         match arg with 
         | "GoldenWind" 
-            ->  GoldenWind |> ignore ; printfn "0"
+            ->  PlaySong(GoldenWind) |> ignore ; printfn "0"
         | "Solvieg" 
-            -> Solvieg |> ignore ; printfn "1"
+            -> PlaySong(Solvieg) |> ignore ; printfn "1"
+        | "Gadjet" 
+            -> PlaySong(Gadjet) |> ignore ; printfn "2"
         | "SinWave"
             -> sinVisu "a" |> ignore ; printfn "a"
         | "SqWave"
