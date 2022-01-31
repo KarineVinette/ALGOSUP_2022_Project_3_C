@@ -14,6 +14,8 @@ let main argv =
         match arg with 
         | "GoldenWind" 
             ->  GoldenWind |> ignore ; printfn "0"
+        | "LVER"
+            -> PlaySong(LVER) |> ignore ; printfn "1"
         // | "Solvieg" 
         //     -> Solvieg |> ignore ; printfn "1"
         // | "SinWave"

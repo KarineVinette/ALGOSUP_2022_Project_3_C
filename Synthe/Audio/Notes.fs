@@ -121,7 +121,3 @@ module Note
         let NoteFreq = getFreq 415.305 octave
         let NoteLength = getLength length 
         sinbyte NoteLength NoteFreq
-
-    let Silence (length:Length) =
-        let SilenceLength = getLength length
-        sinbyte SilenceLength 0.
