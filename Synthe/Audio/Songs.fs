@@ -358,14 +358,14 @@ module Song =
         D QuarterNote 6;
 
         C Black 6;
-        G Black 6;
+        G Black 5;
         E HalfNote 6;
-        G HalfNote 6;
+        G HalfNote 5;
         F HalfNote 6;
         E QuarterNote 6;
         D QuarterNote 6;
         C Black 6;
-        G Black 6;
+        G Black 5;
         A Black 5;
         A HalfNote 5;
         B HalfNote 5;
@@ -373,24 +373,24 @@ module Song =
         C HalfNote 6;
         B HalfNote 5;
         A HalfNote 5;
-        G Black 6;
-        G Black 6;
-        G White 6;
+        G Black 5;
+        G Black 5;
+        G White 5;
         E HalfNote 6;
         G HalfNote 6;
         F HalfNote 6;
         E QuarterNote 6;
         D QuarterNote 6;
         C Black 6;
-        G Black 6;
+        G Black 5;
         E HalfNote 6;
-        G HalfNote 6;
+        G HalfNote 5;
         F HalfNote 6;
         E QuarterNote 6;
         D QuarterNote 6;
 
         C Black 6;
-        G Black 6;
+        G Black 5;
         A Black 5;
         A HalfNote 5;
         B HalfNote 5;
@@ -398,7 +398,7 @@ module Song =
         C HalfNote 6;
         B HalfNote 5;
         A HalfNote 5;
-        G Black 6;
+        G Black 5;
         F Black 6;
         E Black 6;
         E Black 6;
@@ -449,6 +449,12 @@ module Song =
         D Black 6;
         B HalfNote 5;
         C HalfNote 6;
+        
+        D Black 6;
+        C HalfNote 6;
+        B HalfNote 5;
+        A Black 5;
+        Sil Silence 0;
         |]
 
     let test (song: byte [][] ) =  // The most unbelievable thing to play a song
