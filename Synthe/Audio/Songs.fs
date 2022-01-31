@@ -134,36 +134,36 @@ module Song
         ADiese Black 5;
         |]
 
-    let LaVieEnRose = [|
-        GDiese PWhite 4;
-        G PHalfNote 4;
-        F PHalfNote 4;
-        HalfSil HalfSilence 0;
-        DDiese PHalfNote 4;
-        C PHalfNote 4;
-        HalfSil HalfSilence 0;
-        GDiese PHalfNote 4;
-        G PWhite 4;
-        Sil Silence 0;
-        F PHalfNote 4;
-        DDiese PHalfNote 4;
-        HalfSil HalfSilence 0;
-        C PHalfNote 4;
-        GDiese PHalfNote 3;
-        HalfSil HalfSilence 0;
-        G PHalfNote 4;
-        F PWhite 4;
-        Sil Silence 4;
-        DDiese PHalfNote 4;
-        C PHalfNote 4;
-        HalfSil HalfSilence 0;
-        G PHalfNote 3;
-        GDiese PHalfNote 3;
-        HalfSil HalfSilence 0;
-        G PHalfNote 4;
-        F PWhite 4;
-        DDiese PBlack 4;
-        |]
+    // let LaVieEnRose = [|
+    //     GDiese PWhite 4;
+    //     G PHalfNote 4;
+    //     F PHalfNote 4;
+    //     HalfSil HalfSilence 0;
+    //     DDiese PHalfNote 4;
+    //     C PHalfNote 4;
+    //     HalfSil HalfSilence 0;
+    //     GDiese PHalfNote 4;
+    //     G PWhite 4;
+    //     Sil Silence 0;
+    //     F PHalfNote 4;
+    //     DDiese PHalfNote 4;
+    //     HalfSil HalfSilence 0;
+    //     C PHalfNote 4;
+    //     GDiese PHalfNote 3;
+    //     HalfSil HalfSilence 0;
+    //     G PHalfNote 4;
+    //     F PWhite 4;
+    //     Sil Silence 4;
+    //     DDiese PHalfNote 4;
+    //     C PHalfNote 4;
+    //     HalfSil HalfSilence 0;
+    //     G PHalfNote 3;
+    //     GDiese PHalfNote 3;
+    //     HalfSil HalfSilence 0;
+    //     G PHalfNote 4;
+    //     F PWhite 4;
+    //     DDiese PBlack 4;
+    //     |]
 
     let test (song: byte [][] ) =  // The most unbelievable thing to play a song
             let mutable wave2 = sinbyte 1. 0.

@@ -4,6 +4,9 @@ module Note
     open Waves
 
     type Length = 
+        | HalfSil
+        | Sil
+        | MSil
         | EightNote
         | QuarterNote
         | Triolet
@@ -30,6 +33,9 @@ module Note
 
     let getLength (length:Length) =
         match length with 
+        | HalfSil -> 0.5
+        | Sil -> 1.
+        | MSil -> 4.
         | HalfNote -> 0.5
         | PHalfNote -> 0.75
         | Triolet -> 0.33
