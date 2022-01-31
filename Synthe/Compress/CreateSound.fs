@@ -1,5 +1,7 @@
-module creation 
-    open System.IO
+namespace SyntheCompress
+open System.IO
+
+module CreateWavFile = 
 
     let write stream (data:byte[]) =
         let writer = new BinaryWriter(stream)
@@ -24,6 +26,6 @@ module creation
     let sample x = (x + 1.)/2. * 255. |> byte
 
     let data = Array.init 160000 (fun i -> sin (float i/float 8) |> sample) 
-    let stream = File.Create("./Audio/CreatedSounds/soundTest1.wav") 
+    let stream = File.Create("./Audio/CreatedSounds/soundTest2.wav") 
 
     write stream data

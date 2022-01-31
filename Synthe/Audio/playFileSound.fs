@@ -1,9 +1,9 @@
-﻿module playSynth
+﻿namespace SyntheAudio
 open System
 open System.Threading
 open SFML.Audio 
 
-
+module PlayWithURL =
 
 let PlaySound (url:string) = //Allow to choose your file
     let buffer = new SoundBuffer(url) //Storage for audio sample defining a sound

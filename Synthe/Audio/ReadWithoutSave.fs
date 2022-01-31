@@ -1,34 +1,33 @@
-module lecture
-
+namespace SyntheAudio
 open System
 open System.Threading
 open SFML.Audio
 open System.IO
-open creation
 open Waves
-open BasicFilters
 open Song
+open SyntheCompress
 
-type PlaySound()=
-        member x.play stream =
-                let buffer = new SoundBuffer(stream:Stream)
-                let sound = new Sound(buffer)
-                sound.Play()
+module Play = 
+        type PlaySound()=
+                member x.play stream =
+                        let buffer = new SoundBuffer(stream:Stream)
+                        let sound = new Sound(buffer)
+                        sound.Play()
 
-                do while sound.Status = SoundStatus.Playing do 
-                        Thread.Sleep(1)
+                        do while sound.Status = SoundStatus.Playing do 
+                                Thread.Sleep(1)
 
 
-let PlaySong (song:byte[][]) =
-        let sample x = (x + 1.)/2. * 255. |> byte
-        let data = test song
+        let PlaySong (song:byte[][]) =
+                let sample x = (x + 1.)/2. * 255. |> byte
+                let data = test song
 
-                
-        let p = new PlaySound()
+                        
+                let p = new PlaySound()
 
-                // convert is used to convert data's bytes in stream
+                        // convert is used to convert data's bytes in stream
 
-        let convert = new MemoryStream()
-        write convert data
+                let convert = new MemoryStream()
+                CreateWavFile.write convert data
 
-        p.play(convert)
+                p.play(convert)
