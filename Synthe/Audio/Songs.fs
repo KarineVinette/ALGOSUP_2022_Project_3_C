@@ -3,7 +3,397 @@ open Note
 open Waves
 
 module Song =
+    
+    // https://www.youtube.com/watch?v=eVTXPUF4Oz4
+    let InTheEnd = [|
+        // Intro
+        DDiese HalfNote 4;
+        ADiese HalfNote 4;
+        ADiese HalfNote 4;
+        FDiese HalfNote 4;
+        F HalfNote 4;
+        F HalfNote 4;
+        F HalfNote 4;
+        F QuarterNote 4;
+        FDiese QuarterNote 4;
+        DDiese HalfNote 4;
+        ADiese HalfNote 4;
+        ADiese HalfNote 4;
+        FDiese HalfNote 4;
+        F HalfNote 4;
+        F HalfNote 4;
+        F HalfNote 4;
+        F QuarterNote 4;
+        FDiese QuarterNote 4;
+        DDiese HalfNote 4;
+        ADiese HalfNote 4;
+        ADiese HalfNote 4;
+        FDiese HalfNote 4;
+        F HalfNote 4;
+        F HalfNote 4;
+        F HalfNote 4;
+        F QuarterNote 4;
+        FDiese QuarterNote 4;
+        DDiese HalfNote 4;
+        ADiese HalfNote 4;
+        ADiese HalfNote 4;
+        FDiese HalfNote 4;
+        F PHalfNote 4; // Reverb needed
+        ADiese Triolet 3;
+        ADiese HalfNote 3;
+        B HalfNote 3;
+        ADiese QuarterNote 3;
 
+        // First Verse
+        F White 5;
+        ADiese PBlack 5;
+        FDiese HalfNote 5;
+        F White 5;
+        DDiese Black 5;
+        ADiese HalfNote 3;
+        B Triolet 3;
+        ADiese QuarterNote 3;
+        F White 5;
+        ADiese PBlack 5;
+        FDiese HalfNote 5;
+        F White 5;
+        DDiese Black 5;
+        ADiese HalfNote 3;
+        B HalfNote 3;
+        ADiese QuarterNote 3;
+        DDiese HalfNote 4;
+        ADiese HalfNote 4;
+        ADiese HalfNote 4;
+        FDiese HalfNote 4;
+        F HalfNote 4;
+        F HalfNote 4;
+        F HalfNote 4;
+        F QuarterNote 4;
+        FDiese QuarterNote 4;
+        DDiese HalfNote 4;
+        ADiese HalfNote 4;
+        ADiese HalfNote 4;
+        FDiese HalfNote 4;
+        F HalfNote 4;
+        F HalfNote 4;
+        CDiese HalfNote 4;
+        DDiese HalfNote 4;
+        F QuarterNote 4;
+        DDiese HalfNote 4;
+        ADiese HalfNote 4;
+        ADiese HalfNote 4;
+        FDiese HalfNote 4;
+        F HalfNote 4;
+        F HalfNote 4;
+        F HalfNote 4;
+        F QuarterNote 4;
+        FDiese QuarterNote 4;
+        DDiese HalfNote 4;
+        ADiese HalfNote 4;
+        ADiese HalfNote 4;
+        FDiese HalfNote 4;
+        F PHalfNote 4;
+        HalfSil HalfSilence 0;
+
+        // Chorus
+        ADiese Triolet 3;
+        CDiese HalfNote 4;
+        DDiese HalfNote 4;
+        DDiese QuarterNote 4;
+        F HalfNote 4;
+        F Triolet 4;
+        F Triolet 4;
+        CDiese HalfNote 4;
+        CDiese PBlack 4;
+        ADiese EightNote 3;
+        CDiese EightNote 4;
+        DDiese QuarterNote 4;
+        F PHalfNote 4;
+        DDiese QuarterNote 4;
+        F QuarterNote 4;
+        DDiese QuarterNote 4;
+        F QuarterNote 4;
+        FDiese QuarterNote 4;
+        F QuarterNote 4;
+        DDiese QuarterNote 4;
+        DDiese Triolet 4;
+        ADiese Triolet 3;
+        CDiese HalfNote 4;
+        DDiese HalfNote 4;
+        DDiese QuarterNote 4;
+        F HalfNote 4;
+        F Triolet 4;
+        F Triolet 4;
+        CDiese HalfNote 4;
+        CDiese PBlack 4;
+        ADiese EightNote 3;
+        CDiese EightNote 4;
+        DDiese QuarterNote 4;
+        F PHalfNote 4;
+        DDiese QuarterNote 4;
+        F QuarterNote 4;
+        DDiese QuarterNote 4;
+        F QuarterNote 4;
+        DDiese QuarterNote 4;
+        F QuarterNote 4;
+        FDiese QuarterNote 4;
+        F QuarterNote 4;
+        DDiese QuarterNote 4;
+        CDiese Triolet 4;
+        DDiese EightNote 4;
+        CDiese EightNote 4;
+        ADiese EightNote 3;
+        HalfSil HalfSilence 0;
+
+        // Second Verse
+        F White 5;
+        ADiese PBlack 5;
+        FDiese HalfNote 5;
+        F White 5;
+        DDiese Black 5;
+        ADiese HalfNote 3;
+        B Triolet 3;
+        ADiese QuarterNote 3;
+        F White 5;
+        ADiese PBlack 5;
+        FDiese HalfNote 5;
+        F White 5;
+        DDiese Black 5;
+        ADiese HalfNote 3;
+        B HalfNote 3;
+        ADiese QuarterNote 3;
+        DDiese HalfNote 4;
+        ADiese HalfNote 4;
+        ADiese HalfNote 4;
+        FDiese HalfNote 4;
+        F HalfNote 4;
+        F HalfNote 4;
+        F HalfNote 4;
+        F QuarterNote 4;
+        FDiese QuarterNote 4;
+        DDiese HalfNote 4;
+        ADiese HalfNote 4;
+        ADiese HalfNote 4;
+        FDiese HalfNote 4;
+        F HalfNote 4;
+        F HalfNote 4;
+        CDiese HalfNote 4;
+        DDiese HalfNote 4;
+        F QuarterNote 4;
+        DDiese HalfNote 4;
+        ADiese HalfNote 4;
+        ADiese HalfNote 4;
+        FDiese HalfNote 4;
+        F HalfNote 4;
+        F HalfNote 4;
+        F HalfNote 4;
+        F QuarterNote 4;
+        FDiese QuarterNote 4;
+        DDiese HalfNote 4;
+        ADiese HalfNote 4;
+        ADiese HalfNote 4;
+        FDiese HalfNote 4;
+        F PHalfNote 4;
+        HalfSil HalfSilence 0;
+
+        // Chorus
+        ADiese Triolet 3;
+        CDiese HalfNote 4;
+        DDiese HalfNote 4;
+        DDiese QuarterNote 4;
+        F HalfNote 4;
+        F Triolet 4;
+        F Triolet 4;
+        CDiese HalfNote 4;
+        CDiese PBlack 4;
+        ADiese EightNote 3;
+        CDiese EightNote 4;
+        DDiese QuarterNote 4;
+        F PHalfNote 4;
+        DDiese QuarterNote 4;
+        F QuarterNote 4;
+        DDiese QuarterNote 4;
+        F QuarterNote 4;
+        FDiese QuarterNote 4;
+        F QuarterNote 4;
+        DDiese QuarterNote 4;
+        DDiese Triolet 4;
+        HalfSil HalfSilence 0;
+        ADiese Triolet 3;
+        CDiese HalfNote 4;
+        DDiese HalfNote 4;
+        DDiese QuarterNote 4;
+        F HalfNote 4;
+        F Triolet 4;
+        F Triolet 4;
+        CDiese HalfNote 4;
+        CDiese PBlack 4;
+        ADiese EightNote 3;
+        CDiese EightNote 4;
+        DDiese QuarterNote 4;
+        F PHalfNote 4;
+        DDiese QuarterNote 4;
+        F QuarterNote 4;
+        DDiese QuarterNote 4;
+        F QuarterNote 4;
+        DDiese QuarterNote 4;
+        F QuarterNote 4;
+        FDiese QuarterNote 4;
+        F QuarterNote 4;
+        DDiese QuarterNote 4;
+        CDiese Triolet 4;
+        DDiese EightNote 4;
+        CDiese EightNote 4;
+        ADiese EightNote 3;
+        HalfSil HalfSilence 0;
+
+        // Third Verse
+        FDiese Triolet 3;
+        CDiese Triolet 4;
+        CDiese HalfNote 4;
+        CDiese PBlack 4;
+        FDiese PHalfNote 3;
+        GDiese HalfNote 3;
+        ADiese PHalfNote 3;
+        CDiese Triolet 4;
+        CDiese Triolet 4;
+        CDiese HalfNote 4;
+        FDiese HalfNote 3;
+        FDiese HalfNote 3;
+        ADiese HalfNote 3;
+        GDiese PBlack 3;
+        CDiese Triolet 4;
+        CDiese Triolet 4;
+        CDiese PHalfNote 4;
+        FDiese HalfNote 3;
+        FDiese HalfNote 3;
+        FDiese HalfNote 3;
+        ADiese HalfNote 3;
+        GDiese HalfNote 3;
+        FDiese HalfNote 3;
+        ADiese HalfNote 3;
+        GDiese PBlack 3;
+        ADiese EightNote 3;
+        GDiese EightNote 3;
+        FDiese QuarterNote 3;
+        HalfSil HalfSilence 0;
+        ADiese Triolet 3;
+        FDiese Triolet 4;
+        FDiese HalfNote 4;
+        FDiese PBlack 4;
+        DDiese PHalfNote 4;
+        F PBlack 4;
+        FDiese Triolet 4;
+        FDiese Triolet 4;
+        FDiese HalfNote 4;
+        DDiese HalfNote 4;
+        DDiese HalfNote 4;
+        FDiese HalfNote 4;
+        FDiese PBlack 4;
+        FDiese Triolet 4;
+        FDiese Triolet 4;
+        FDiese PHalfNote 4;
+        DDiese HalfNote 4;
+        DDiese Triolet 4;
+        DDiese Triolet 4;
+        FDiese HalfNote 4;
+        F HalfNote 4;
+        DDiese HalfNote 4;
+        FDiese HalfNote 4;
+        F PBlack 4;
+        FDiese EightNote 4;
+        F EightNote 4;
+        DDiese Triolet 4;
+        HalfSil HalfSilence 0;
+
+        // Chorus
+        ADiese Triolet 3;
+        CDiese HalfNote 4;
+        DDiese HalfNote 4;
+        DDiese QuarterNote 4;
+        F HalfNote 4;
+        F Triolet 4;
+        F Triolet 4;
+        CDiese HalfNote 4;
+        CDiese PBlack 4;
+        ADiese EightNote 3;
+        CDiese EightNote 4;
+        DDiese QuarterNote 4;
+        F PHalfNote 4;
+        DDiese QuarterNote 4;
+        F QuarterNote 4;
+        DDiese QuarterNote 4;
+        F QuarterNote 4;
+        FDiese QuarterNote 4;
+        F QuarterNote 4;
+        DDiese QuarterNote 4;
+        DDiese Triolet 4;
+        ADiese Triolet 3;
+        CDiese HalfNote 4;
+        DDiese HalfNote 4;
+        DDiese QuarterNote 4;
+        F HalfNote 4;
+        F Triolet 4;
+        F Triolet 4;
+        CDiese HalfNote 4;
+        CDiese PBlack 4;
+        ADiese EightNote 3;
+        CDiese EightNote 4;
+        DDiese QuarterNote 4;
+        F PHalfNote 4;
+        DDiese QuarterNote 4;
+        F QuarterNote 4;
+        DDiese QuarterNote 4;
+        F QuarterNote 4;
+        DDiese QuarterNote 4;
+        F QuarterNote 4;
+        FDiese QuarterNote 4;
+        F QuarterNote 4;
+        DDiese QuarterNote 4;
+        CDiese Triolet 4;
+        DDiese EightNote 4;
+        CDiese EightNote 4;
+        ADiese EightNote 3;
+        HalfSil HalfSilence 0;
+
+        // Outro
+        DDiese PHalfNote 4;
+        ADiese PHalfNote 4;
+        ADiese PHalfNote 4;
+        FDiese PHalfNote 4;
+        F PHalfNote 4;
+        F PHalfNote 4;
+        F PHalfNote 4;
+        F HalfNote 4;
+        FDiese HalfNote 4;
+        DDiese PHalfNote 4;
+        ADiese PHalfNote 4;
+        ADiese PHalfNote 4;
+        FDiese PHalfNote 4;
+        F PHalfNote 4;
+        F PHalfNote 4;
+        F PHalfNote 4;
+        F HalfNote 4;
+        FDiese HalfNote 4;
+        DDiese PHalfNote 4;
+        ADiese PHalfNote 4;
+        ADiese PHalfNote 4;
+        FDiese PHalfNote 4;
+        F PHalfNote 4;
+        F PHalfNote 4;
+        F PHalfNote 4;
+        F HalfNote 4;
+        FDiese PBlack 4;
+        DDiese HalfNote 4;
+        FDiese HalfNote 4;
+        ADiese HalfNote 4;
+        DDiese HalfNote 5;
+        F HalfNote 5;
+        FDiese HalfNote 5;
+        F PBlack 5;
+        |]
+    
+    
     let GoldenWind =[|
         FDiese Black 5; 
         F White 5;
@@ -214,13 +604,21 @@ module Song =
         
     //beginning of Unravel song 
     let Unravel = [|
-        ADiese HalfNote 5;
-        C Black 6;
-        ADiese Black 5;
-        A HalfNote 5;
-        G Black 5;
-        C Black 6;
-        ADiese Black 5;
+        ADiese HalfNote 5
+        C Black 6
+        ADiese Black 5
+        A HalfNote 5
+        G Black 5
+        C Black 6
+        ADiese Black 5
+        A Black 5
+        G Black 5
+        G HalfNote 5
+        F PBlack 5
+        DDiese PBlack 5
+        DDiese Black 5
+        F HalfNote 5
+        D Black 5
         |]
 
     let LVER = [|
@@ -360,7 +758,7 @@ module Song =
         C Black 6;
         G Black 5;
         E HalfNote 6;
-        G HalfNote 6;
+        G HalfNote 5;
         F HalfNote 6;
         E QuarterNote 6;
         D QuarterNote 6;
@@ -384,13 +782,13 @@ module Song =
         C Black 6;
         G Black 5;
         E HalfNote 6;
-        G HalfNote 6;
+        G HalfNote 5;
         F HalfNote 6;
         E QuarterNote 6;
         D QuarterNote 6;
 
         C Black 6;
-        G Black 6;
+        G Black 5;
         A Black 5;
         A HalfNote 5;
         B HalfNote 5;
@@ -398,7 +796,7 @@ module Song =
         C HalfNote 6;
         B HalfNote 5;
         A HalfNote 5;
-        G Black 6;
+        G Black 5;
         F Black 6;
         E Black 6;
         E Black 6;
@@ -449,6 +847,12 @@ module Song =
         D Black 6;
         B HalfNote 5;
         C HalfNote 6;
+        
+        D Black 6;
+        C HalfNote 6;
+        B HalfNote 5;
+        A Black 5;
+        Sil Silence 0;
         |]
 
     let RR =[|  // A finir
