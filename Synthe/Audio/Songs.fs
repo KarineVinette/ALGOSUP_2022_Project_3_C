@@ -214,13 +214,21 @@ module Song =
         
     //beginning of Unravel song 
     let Unravel = [|
-        ADiese HalfNote 5;
-        C Black 6;
-        ADiese Black 5;
-        A HalfNote 5;
-        G Black 5;
-        C Black 6;
-        ADiese Black 5;
+        ADiese HalfNote 5
+        C Black 6
+        ADiese Black 5
+        A HalfNote 5
+        G Black 5
+        C Black 6
+        ADiese Black 5
+        A Black 5
+        G Black 5
+        G HalfNote 5
+        F PBlack 5
+        DDiese PBlack 5
+        DDiese Black 5
+        F HalfNote 5
+        D Black 5
         |]
 
     let LVER = [|
