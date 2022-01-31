@@ -10,8 +10,11 @@ module Note
         | EightNote
         | QuarterNote
         | HalfNote
+        | PHalfNote
         | Black
+        | PBlack
         | White
+        | PWhite
         | Round
 
     let getFreq freq octave =
@@ -32,11 +35,14 @@ module Note
         | HalfSilence -> 0.25
         | Silence -> 1.
         | MSilence -> 4.
+        | PHalfNote -> 0.75
         | HalfNote -> 0.5
         | QuarterNote -> 0.25
         | EightNote -> 0.125
         | Black -> 1.
+        | PBlack -> 1.5
         | White -> 2.
+        | PWhite -> 3.
         | Round -> 4.
 
     let HalfSil (length:Length) (octave:int) =
