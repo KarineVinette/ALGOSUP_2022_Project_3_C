@@ -63,11 +63,15 @@ module Program =
             | "Echo"
                 -> Echoed "j" |> ignore ; printfn "j"   
             | "Reverb"
-                -> Reverbed "k" |> ignore ; printfn "j"   
+                -> Reverbed "k" |> ignore ; printfn "k"   
             | "AM"
-                -> AM "k" |> ignore ; printfn "k" 
+                -> AM "l" |> ignore ; printfn "l" 
             | "FM"
-                -> FM "l" |> ignore ; printfn "l"
+                -> FM "m" |> ignore ; printfn "m"
+            | "HighPass"
+                -> HighPass "n" |> ignore ; printfn "n"
+            | "LowPass"
+                -> LowPass "o" |> ignore ; printfn "o"
             | "help"
                 -> printfn  " 
                             All the commands should start with 'dotnet run <commandName>'
@@ -89,6 +93,7 @@ module Program =
                             - SinWave               Visualise a SinWave using GoogleCharts
                             - SqWave                Visualise a SquareWave using GoogleCharts
                             - SawWave               Visualise a SawToothWave using GoogleCharts
+                            - Sus                   He does seems really sus...
                             - TriangleWave          Visualise a TriangleWave using GoogleCharts
                             - ByFixedAmount         Visualise a SinWave using GoogleCharts with amplitude modified by a fixed amount
                             - Overdrive             Visualise an overdriven sound
@@ -101,10 +106,45 @@ module Program =
                             - FM                    Visualise a SinWave using GoogleCharts modified frequency modulation
                             
                             "
-            | "HighPass"
-                -> HighPass "m" |> ignore ; printfn "m"
-            | "LowPass"
-                -> LowPass "m" |> ignore ; printfn "m"
+            | "Sus"
+                -> Mogus |> ignore ; printfn "
+
+                                ░█░█░█░█░█▀▀░█▀█
+                                ░█▄█░█▀█░█▀▀░█░█
+                                ░▀░▀░▀░▀░▀▀▀░▀░▀
+                                ░▀█▀░█░█░█▀▀
+                                ░░█░░█▀█░█▀▀
+                                ░░▀░░▀░▀░▀▀▀
+                                ░▀█▀░█▄█░█▀█░█▀█░█▀▀░▀█▀░█▀█░█▀▄
+                                ░░█░░█░█░█▀▀░█░█░▀▀█░░█░░█░█░█▀▄
+                                ░▀▀▀░▀░▀░▀░░░▀▀▀░▀▀▀░░▀░░▀▀▀░▀░▀
+                                ░▀█▀░█▀▀
+                                ░░█░░▀▀█
+                                ░▀▀▀░▀▀▀
+                                ░█▀▀░█░█░█▀▀
+                                ░▀▀█░█░█░▀▀█
+                                ░▀▀▀░▀▀▀░▀▀▀
+
+                                           ⣠⣤⣤⣤⣤⣤⣶⣦⣤⣄⡀        
+                                        ⢀⣴⣿⡿⠛⠉⠙⠛⠛⠛⠛⠻⢿⣿⣷⣤⡀     
+                                        ⣼⣿⠋       ⢀⣀⣀⠈⢻⣿⣿⡄    
+                                       ⣸⣿⡏   ⣠⣶⣾⣿⣿⣿⠿⠿⠿⢿⣿⣿⣿⣄   
+                                       ⣿⣿⠁  ⢰⣿⣿⣯⠁       ⠈⠙⢿⣷⡄ 
+                                  ⣀⣤⣴⣶⣶⣿⡟   ⢸⣿⣿⣿⣆          ⣿⣷ 
+                                 ⢰⣿⡟⠋⠉⣹⣿⡇   ⠘⣿⣿⣿⣿⣷⣦⣤⣤⣤⣶⣶⣶⣶⣿⣿⣿ 
+                                 ⢸⣿⡇  ⣿⣿⡇    ⠹⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠃ 
+                                 ⣸⣿⡇  ⣿⣿⡇     ⠉⠻⠿⣿⣿⣿⣿⡿⠿⠿⠛⢻⣿⡇  
+                                 ⣿⣿⠁  ⣿⣿⡇                ⢸⣿⣧  
+                                 ⣿⣿   ⣿⣿⡇                ⢸⣿⣿  
+                                 ⣿⣿   ⣿⣿⡇                ⢸⣿⣿  
+                                 ⢿⣿⡆  ⣿⣿⡇                ⢸⣿⡇  
+                                 ⠸⣿⣧⡀ ⣿⣿⡇                ⣿⣿⠃  
+                                  ⠛⢿⣿⣿⣿⣿⣇     ⣰⣿⣿⣷⣶⣶⣶⣶⠶ ⢠⣿⣿   
+                                       ⣿⣿     ⣿⣿⡇ ⣽⣿⡏⠁  ⢸⣿⡇   
+                                       ⣿⣿     ⣿⣿⡇ ⢹⣿⡆   ⣸⣿⠇   
+                                       ⢿⣿⣦⣄⣀⣠⣴⣿⣿⠁ ⠈⠻⣿⣿⣿⣿⡿⠏    
+                                       ⠈⠛⠻⠿⠿⠿⠿⠋⠁                
+                            "
             |_ 
                 -> printfn "Unknown command"  |> ignore
         0

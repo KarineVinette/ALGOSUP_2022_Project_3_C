@@ -693,7 +693,19 @@ module Song =
         B White 5
         A White 5
         |]
-
+    let Mogus = [| //temps 100
+        A HalfNote 4
+        C HalfNote 5
+        D HalfNote 5
+        DDiese HalfNote 5
+        D HalfNote 5
+        C HalfNote 5
+        A HalfNote 4
+        Sil Silence 0
+        G QuarterNote 4
+        C QuarterNote 5
+        A QuarterNote 4
+        |]
     let Kalinka = [|
         E Black 6;
         D Black 6;
