@@ -6,8 +6,6 @@ open System.IO
 open Waves
 
 module Effect =
-    let sampleRate = 44100.
-    let limit = 44100
     let time = 0.5
 
 // Modify the wave’s amplitude by a fixed amount
@@ -20,7 +18,7 @@ module Effect =
     // newwave |> Chart.Line |> Chart.Show
 
 // Cut off the wave at specific amplitude to given the “overdriven” often used in rock songs
-    let Overdrive (flatten:float) (wave: float array) limit =
+    let Overdrive (flatten:float) (wave: float array) =
 
         for i in 0..limit-1 do
             if wave.[i] > flatten then

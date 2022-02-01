@@ -1237,7 +1237,7 @@ module Song =
 
     |]
     
-    let Crazy = [|
+    let Crazy = [|  // tempo 200
         D Black 5
         Sil Silence 0
         F Black 5
