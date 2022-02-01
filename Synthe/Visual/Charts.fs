@@ -66,7 +66,7 @@ module Charts =
           vAxis = Axis(title = "Amplitude"),
           hAxis = Axis(title = "Frequency")
           )
-      Overdrive 0.6 sinWave 44100 |> Chart.Line |> Chart.WithOptions options |> Chart.Show
+      Overdrive 0.6 sinWave  |> Chart.Line |> Chart.WithOptions options |> Chart.Show
 
     let Enveloped title=
       let options =
