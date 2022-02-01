@@ -50,6 +50,8 @@ module Program =
                 -> PlaySong(Unravel) |> ignore ; printfn "15"
             | "ZeldaOverworld"
                 -> PlaySong(ZeldaOverworld) |> ignore ; printfn "16"
+            | "LettreAElise"
+                -> PlaySong(LettreAElise) |> ignore ; printfn "16"
             
             // | "ReadWOSave"
             //     ->  ignore ; printfn ""

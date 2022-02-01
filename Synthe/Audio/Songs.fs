@@ -723,6 +723,7 @@ module Song =
         B White 5
         A White 5
         |]
+
     let Mogus = [| //temps 100
         A HalfNote 4
         C HalfNote 5
@@ -736,6 +737,7 @@ module Song =
         C QuarterNote 5
         A QuarterNote 4
         |]
+        
     let Kalinka = [| // Tempo: 90
         E Black 6;
         D Black 6;
@@ -1391,6 +1393,50 @@ module Song =
         C QuarterNote 5
         A QuarterNote 4
         |]
+        
+    let LettreAElise = [| // tempo 105
+        E QuarterNote 5
+        DDiese QuarterNote 5
+        E QuarterNote 5
+        DDiese QuarterNote 5
+        E QuarterNote 5
+        B QuarterNote 4
+        D QuarterNote 5
+        C QuarterNote 5
+        A HalfNote 4
+        Sil Silence 4
+        C QuarterNote 4
+        E QuarterNote 4
+        A QuarterNote 4
+        B QuarterNote 4
+        Sil Silence 4
+        E QuarterNote 4
+        GDiese QuarterNote 4
+        B QuarterNote 4
+        C HalfNote 5
+        Sil Silence 4
+        E QuarterNote 4
+        E QuarterNote 5
+        DDiese QuarterNote 5
+        E QuarterNote 5
+        DDiese QuarterNote 5
+        E QuarterNote 5
+        B QuarterNote 4
+        D QuarterNote 5
+        C QuarterNote 5
+        A HalfNote 4
+        Sil Silence 4
+        C QuarterNote 4
+        E QuarterNote 4
+        A QuarterNote 4
+        B QuarterNote 4
+        Sil Silence 4
+        E QuarterNote 4
+        C QuarterNote 5
+        B QuarterNote 4
+        A QuarterNote 4
+
+    |]
 
     let SongAssemble (song: byte [][] ) = 
             let mutable wave2 = sinbyte 1. 0.
