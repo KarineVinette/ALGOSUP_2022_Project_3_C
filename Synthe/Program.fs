@@ -98,12 +98,16 @@ module Program =
                             - RR                    Play 'Rick Roll, Never Gonna Give You Up'
                             - Megalovania           Play the original theme from the game 'Undertale' 
                             - Zelda                 Play the original theme from the game 'Zelda'
+                            - Lac                   Play 'Les Lacs du Connemara' de 'Michel Sardou'
+                            - Unravel               Play the original theme from 'Unravel'
                             - Kalinka               Play the traditional russian song 'Kalinka' from 'Ivan Larionov'
                             - TOM                   Play 'A-ha, Take On Me'
+                            - LVER                  Play 'La Vie En Rose' from 'Edith Piaf'
                             - Crazy                 Play 'CrazyFrog' from 'Alex F'
+                            - Numb                  Play 'Numb' from 'Linkin Park'                              
                             - InTheEnd              Play 'In The End' from 'Linkin Park'
                             - PlayFile              Play a selected file
-                            - PlayWOSave            Play a without saving to disk
+                            - LettreAElise          Play 'Lettre A Elise' from 'Bethoveen' 
                             - SaveFile              Save file on the disk in './Audio/CreatedSounds/SavedSound.wav'
                             - SinWave               Visualise a SinWave using GoogleCharts
                             - SqWave                Visualise a SquareWave using GoogleCharts

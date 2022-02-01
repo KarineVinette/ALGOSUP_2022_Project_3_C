@@ -725,17 +725,17 @@ module Song =
         |]
 
     let Mogus = [| //temps 100
-        A HalfNote 4
         C HalfNote 5
-        D HalfNote 5
         DDiese HalfNote 5
-        D HalfNote 5
+        F HalfNote 5
+        FDiese HalfNote 5
+        F HalfNote 5
+        DDiese HalfNote 5
         C HalfNote 5
-        A HalfNote 4
         Sil Silence 0
-        G QuarterNote 4
+        ADiese HalfNote 5
+        D QuarterNote 5
         C QuarterNote 5
-        A QuarterNote 4
         |]
         
     let Kalinka = [| // Tempo: 90
