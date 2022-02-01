@@ -1577,17 +1577,17 @@ module Song =
         |]
 
     let Amogus = [| // Tempo: 100
-        A HalfNote 4
-        C HalfNote 5
-        D HalfNote 5
-        DDiese HalfNote 5
-        D HalfNote 5
-        C HalfNote 5
-        A HalfNote 4
+        A HalfNote 5
+        C HalfNote 6
+        D HalfNote 6
+        DDiese HalfNote 6
+        D HalfNote 6
+        C HalfNote 6
+        A PHalfNote 5
         Sil Silence 0
-        G QuarterNote 4
-        C QuarterNote 5
-        A QuarterNote 4
+        G QuarterNote 5
+        C QuarterNote 6
+        A QuarterNote 5
         |]
         
     let LettreAElise = [| // tempo 105
