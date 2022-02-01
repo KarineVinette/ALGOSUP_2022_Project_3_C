@@ -1097,7 +1097,7 @@ module Song =
         E Black 5
         |]
 
-    let ZeldaOverworld = [|
+    let ZeldaOverworld = [| // tempo 130
         A White 5
         A Triolet 5
         A Triolet 5
@@ -1132,7 +1132,110 @@ module Song =
         E QuarterNote 5
         E HalfNote 5
         E HalfNote 5
-        |]
+
+        A Black 5
+        E PBlack 5
+        A HalfNote 5
+        A QuarterNote 5
+        B QuarterNote 5
+        CDiese QuarterNote 6
+        D QuarterNote 6
+        E White 6
+        HalfSil HalfSilence 6
+        E HalfNote 6
+        E Triolet 6
+        F Triolet 6
+        G Triolet 6
+        A White 6
+        HalfSil HalfSilence 6
+        A HalfNote 6
+        A Triolet 6
+        G Triolet 6
+        F Triolet 6
+        G PHalfNote 6
+        F QuarterNote 6
+        E White 6
+        E Black 6
+        D HalfNote 6
+        D QuarterNote 6
+        E QuarterNote 6
+        F White 6
+        E HalfNote 6
+        D HalfNote 6
+        C HalfNote 6
+        C QuarterNote 6
+        D QuarterNote 6
+        E White 6
+        D HalfNote 6
+        C HalfNote 6
+        B HalfNote 5
+        B QuarterNote 5
+        CDiese QuarterNote 6
+        DDiese White 6
+        FDiese Black 6
+        E HalfNote 6
+        E QuarterNote 5
+        E QuarterNote 5
+        E HalfNote 5
+        E QuarterNote 5
+        E QuarterNote 5
+        E HalfNote 5
+        E QuarterNote 5
+        E QuarterNote 5
+        E HalfNote 5
+        E HalfNote 5
+        A Black 5
+        E PBlack 5
+        A HalfNote 5
+        A QuarterNote 5
+        B QuarterNote 5
+        CDiese QuarterNote 6
+        D QuarterNote 6
+        E White 6
+        HalfSil HalfSilence 6
+        E HalfNote 6
+        E Triolet 6
+        F Triolet 6
+        G Triolet 6
+        A White 6
+        Sil Silence 6
+        C Black 7
+        B Black 6
+        GDiese White 6
+        E Black 6
+        F PWhite 6
+        A Black 6
+        GDiese Black 6
+        E White 6
+        E Black 6
+        F PWhite 6
+        A Black 6
+        GDiese Black 6
+        E White 6
+        CDiese Black 6
+        D PWhite 6
+        F Black 6
+        E Black 6
+        C White 6
+        A Black 5
+        B HalfNote 5
+        B QuarterNote 5
+        CDiese QuarterNote 6
+        DDiese White 6
+        FDiese Black 6
+        E HalfNote 6
+        E QuarterNote 5
+        E QuarterNote 5
+        E HalfNote 5
+        E QuarterNote 5
+        E QuarterNote 5
+        E HalfNote 5
+        E QuarterNote 5
+        E QuarterNote 5
+        E HalfNote 5
+        E HalfNote 5
+
+    |]
     
     let Crazy = [|
         D Black 5
