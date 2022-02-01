@@ -5,6 +5,8 @@ open Waves
 module Song =
 
     let Numb = [|
+
+        // Intro
         CDiese QuarterNote 5
         E QuarterNote 5
         CDiese QuarterNote 5
@@ -32,6 +34,71 @@ module Song =
         CDiese QuarterNote 5
         E QuarterNote 5
         CDiese QuarterNote 5
+        HalfSil HalfSilence 0
+
+        // First Verse
+        FDiese QuarterNote 4
+        CDiese QuarterNote 5
+        CDiese QuarterNote 5
+        CDiese QuarterNote 5
+        CDiese QuarterNote 5
+        D QuarterNote 5
+        CDiese HalfNote 5
+        CDiese QuarterNote 5
+        B QuarterNote 4
+        A PHalfNote 4
+        HalfSil HalfSilence 0
+        CDiese QuarterNote 5
+        CDiese QuarterNote 5
+        B QuarterNote 4
+        A HalfNote 4
+        B HalfNote 4
+        E QuarterNote 4
+        CDiese QuarterNote 5
+        CDiese QuarterNote 5
+        B QuarterNote 4
+        A HalfNote 4
+        B HalfNote 4
+        HalfSil HalfSilence 0
+
+        FDiese QuarterNote 4
+        CDiese QuarterNote 5
+        CDiese QuarterNote 5
+        CDiese QuarterNote 5
+        CDiese QuarterNote 5
+        D QuarterNote 5
+        CDiese HalfNote 5
+        CDiese QuarterNote 5
+        B QuarterNote 4
+        A PHalfNote 4
+        HalfSil HalfSilence 0
+        CDiese QuarterNote 5
+        CDiese QuarterNote 5
+        B QuarterNote 4
+        A HalfNote 4
+        B PHalfNote 4
+        CDiese QuarterNote 5
+        B HalfNote 4
+        A HalfNote 4
+        B HalfNote 4
+        CDiese Black 5
+        Sil Silence 0
+
+        CDiese QuarterNote 5
+        CDiese QuarterNote 5
+        CDiese QuarterNote 5
+        FDiese QuarterNote 5
+        FDiese QuarterNote 5
+        E QuarterNote 5
+        CDiese Triolet 5
+        Sil Silence 0
+        CDiese QuarterNote 5
+        FDiese QuarterNote 5
+        FDiese QuarterNote 5
+        E QuarterNote 5
+        CDiese HalfNote 5
+        D HalfNote 5
+        E White 5
         |]
     
     // https://www.youtube.com/watch?v=eVTXPUF4Oz4
