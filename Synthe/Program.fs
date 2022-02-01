@@ -57,6 +57,34 @@ module Program =
                 -> AM "k" |> ignore ; printfn "k" 
             | "FM"
                 -> FM "l" |> ignore ; printfn "l"
+            | "help"
+                -> printfn  " 
+                            All the commands should start with 'dotnet run <commandName>'
+
+                            List of commands:
+                            - help                  Show all the listed commands
+                            - GoldenWind            Play the original theme from Jojo's Bizare Adventures part 5
+                            - Solvieg               Play 'Solvieg song' from Peer Gynt
+                            - RR                    Play 'Rick Roll, Never Gonna Give You Up'
+                            - Megalovania           Play the original theme from the game 'Undertale' 
+                            - Zelda                 Play the original theme from the game 'Zelda'
+                            - Kalinka               Play the traditional russian song 'Kalinka' from 'Ivan Larionov'
+                            - TOM                   Play 'A-ha, Take On Me'
+                            - Crazy                 Play 'CrazyFrog' from 'Alex F'
+                            - SinWave               Visualise a SinWave using GoogleCharts
+                            - SqWave                Visualise a SquareWave using GoogleCharts
+                            - SawWave               Visualise a SawToothWave using GoogleCharts
+                            - TriangleWave          Visualise a TriangleWave using GoogleCharts
+                            - ByFixedAmount         Visualise a sinWave using GoogleCharts with amplitude modified by a fixed amount
+                            - Overdrive             Visualise an overdriven sound
+                            - Envelope              Visualise a sinWave using GoogleCharts modified with an Envelope (ADSR)
+                            - Flange                Visualise a Flanged sound
+                            - Chords                Visualise two waves using GoogleCharts combined to get a Chords
+                            - Echo                  Visualise a echoed sound
+                            - AM                    Visualise a sinWave using GoogleCharts modified amplitude modulation
+                            - FM                    Visualise a sinWave using GoogleCharts modified frequency modulation
+                            
+                            "
             |_ 
                 -> printfn "Unknown command"  |> ignore
         0

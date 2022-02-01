@@ -117,10 +117,10 @@ module Effect =
 
     // In amplitude modulation, the amplitude of the carrier wave is varied in proportion to that of the message signal, such as an audio signal
     let AM (wavep: float array) (wavem: float array) = 
-        let newWave = Array.init limit (fun i -> wavem.[i] * wavep.[i])
+        let newWave = Array.init 44100 (fun i -> wavem.[i] * wavep.[i])
         newWave
 
     // Frequency modulation is the encoding of information in a carrier wave by varying the instantaneous frequency of the wave
     let FM (wavep: float array) (wavem: float array) =
-        let newWave = Array.init limit (fun i -> 1. * sin((2. * Pi * 500. * float i) + (1./10.)*(500. - 10.) * wavem.[i]))
+        let newWave = Array.init 44100 (fun i -> 1. * sin((2. * Pi * 500. * float i/sampleRate) + (1./10.)*(500. - 10.) * wavem.[i]))
         newWave
