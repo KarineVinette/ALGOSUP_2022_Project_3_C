@@ -49,8 +49,4 @@
       <GeneratePathProperty></GeneratePathProperty>
     </PackageReference>
   </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\Synthe\Synthez.fsproj" />
-  </ItemGroup>
 </Project>
