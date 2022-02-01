@@ -18,7 +18,7 @@ module Effect =
     // newwave |> Chart.Line |> Chart.Show
 
 // Cut off the wave at specific amplitude to given the “overdriven” often used in rock songs
-    let Overdrive (flatten:float) (wave: float array) limit =
+    let Overdrive (flatten:float) (wave: float array) =
         for i in 0..limit-1 do
             if wave.[i] > flatten then
                 wave.[i] <- flatten
