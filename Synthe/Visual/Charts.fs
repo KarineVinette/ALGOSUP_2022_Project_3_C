@@ -111,6 +111,15 @@ module Charts =
                 )
 
       Echo sinWave 0.5 0.1 |> Chart.Line |> Chart.WithOptions options |> Chart.Show 
+    let Reverbed title =
+      let options =
+              Options
+                (
+                title = " Echoed Sin Wave",
+                vAxis = Axis(title = "Amplitude"),
+                hAxis = Axis(title = "Frequency")
+                )
+      Reverb sinWave 2. |> Chart.Line |> Chart.WithOptions options |> Chart.Show 
 
     let AM title = 
       let options =

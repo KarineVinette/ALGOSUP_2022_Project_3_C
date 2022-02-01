@@ -36,6 +36,12 @@ module Program =
                 -> PlaySong(Crazy) |> ignore ; printfn "7"
             | "InTheEnd"
                 -> PlaySong(InTheEnd) |> ignore ; printfn "8"
+            | "PlayFile"
+                -> PlaySound |> ignore ; printfn "9"
+            | "ReadWOSave"
+                ->  ignore ; printfn "10"
+            | "SaveFile"
+                ->  ignore ; printfn "11"
             | "SinWave"
                 -> sinVisu "a" |> ignore ; printfn "a"
             | "SqWave"
@@ -56,6 +62,8 @@ module Program =
                 -> CombinedWaves "i" |> ignore ; printfn "i"
             | "Echo"
                 -> Echoed "j" |> ignore ; printfn "j"   
+            | "Reverb"
+                -> Reverbed "k" |> ignore ; printfn "j"   
             | "AM"
                 -> AM "k" |> ignore ; printfn "k" 
             | "FM"
@@ -74,6 +82,10 @@ module Program =
                             - Kalinka               Play the traditional russian song 'Kalinka' from 'Ivan Larionov'
                             - TOM                   Play 'A-ha, Take On Me'
                             - Crazy                 Play 'CrazyFrog' from 'Alex F'
+                            - InTheEnd              Play 'In The End' from 'Linkin Park'
+                            - PlayFile              Play a selected file
+                            - PlayWOSave            Play a without saving to disk
+                            - SaveFile              Save file on the disk in './Audio/CreatedSounds/SavedSound.wav'
                             - SinWave               Visualise a SinWave using GoogleCharts
                             - SqWave                Visualise a SquareWave using GoogleCharts
                             - SawWave               Visualise a SawToothWave using GoogleCharts
@@ -84,6 +96,7 @@ module Program =
                             - Flange                Visualise a Flanged sound
                             - Chords                Visualise two waves using GoogleCharts combined to get a Chords
                             - Echo                  Visualise a echoed sound
+                            - Reverb                Visualise a reberved sound
                             - AM                    Visualise a sinWave using GoogleCharts modified amplitude modulation
                             - FM                    Visualise a sinWave using GoogleCharts modified frequency modulation
                             
