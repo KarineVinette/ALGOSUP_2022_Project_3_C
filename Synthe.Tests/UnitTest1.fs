@@ -1,27 +1,31 @@
-﻿module Synthe.tests
+﻿namespace SyntheAudio
 
 open NUnit.Framework
+open Waves 
+open Effect
 
+module Test = 
 
-[<SetUp>]
-let Setup () =
-    ()
+    [<SetUp>]
+    let Setup () =
+        ()
 
 // [<Test>]
-// let sineWave() =
+// let SineWave() =
 //    let result = sinWave.Length
-//    Assert.AreEqual(120000, result)
+//    Assert.AreEqual(limit, result)
+
 // [<Test>]
-// let triangle() =
+// let TriangleWave() =
 //    let result = triangleWave.Length
 //    Assert.AreEqual(120000, result)
 
 // [<Test>]
-// let squarre() =
+// let SquareWave() =
 //    let result = squareWave.Length
-//    Assert.AreEqual(120000, result)
+//    Assert.AreEqual(limit, result)
 
 // [<Test>]
-// let Sawtooth() =
+// let SawtoothWave() =
 //    let result = sawWave.Length
 //    Assert.AreEqual(120000, result)
