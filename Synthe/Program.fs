@@ -7,11 +7,26 @@ open SyntheVisual
 open Song
 open Play
 open Charts
-
+open Url
 
 module Program =
-    let stream = File.Create("./Audio/CreatedSounds/soundTest3.wav") 
-    CreateWavFile.write stream (SongAssemble Megalovania)
+
+    let searchMusic (name:string) =
+        match name with
+        | "GoldenWind" -> GoldenWind
+        | "InTheEnd" -> InTheEnd
+        | "Lac" -> Lac
+        | "Solvieg" -> Solvieg
+        | "Gadjet" -> Gadjet
+        | "Unravel" -> Unravel
+        | "LVER" -> LVER
+        | "Kalinka" -> Kalinka
+        | "RR" -> RR
+        | "Megalovania" -> Megalovania
+        | "TOM" -> TOM
+        | "ZeldaOverworld" -> ZeldaOverworld
+        | "Crazy" -> Crazy
+        | _ -> raise (System.Exception("The song name is not valid / or doesn't exist, please try again"))
 
     [<EntryPoint>]
     let main argv = 
@@ -37,11 +52,18 @@ module Program =
             | "InTheEnd"
                 -> PlaySong(InTheEnd) |> ignore ; printfn "8"
             | "PlayFile"
-                -> PlaySound |> ignore ; printfn "9"
-            // | "ReadWOSave"
-            //     ->  ignore ; printfn "10"
-            // | "SaveFile"
-            //     ->  ignore ; printfn "11"
+                -> Console.Write("Enter your URL : ") 
+                   let url = Console.ReadLine()
+                   PlayURL url |> ignore ; printfn "9"
+            | "ReadWOSave"
+                ->  Console.Write("Enter your music name : ") 
+                    let name = Console.ReadLine()
+                    PlaySong (searchMusic(name)) |> ignore ; printfn "10"
+            | "SaveFile"
+                 ->  Console.Write("Enter your filename to save : ")
+                     let file = Console.ReadLine()
+                     let stream = File.Create($"./Audio/CreatedSounds/{file}.wav")
+                     CreateWavFile.write stream (SongAssemble (searchMusic(file))) |> ignore ; printfn "11"
             | "SinWave"
                 -> sinVisu "a" |> ignore ; printfn "a"
             | "SqWave"
