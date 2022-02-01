@@ -31,6 +31,8 @@ module Program =
                 -> PlaySong(TOM) |> ignore ; printfn "6"
             | "CrazyFrog"
                 -> PlaySong(Crazy) |> ignore ; printfn "7"
+            | "InTheEnd"
+                -> PlaySong(InTheEnd) |> ignore ; printfn "8"
             | "SinWave"
                 -> sinVisu "a" |> ignore ; printfn "a"
             | "SqWave"

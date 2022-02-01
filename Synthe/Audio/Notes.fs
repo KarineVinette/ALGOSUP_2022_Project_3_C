@@ -40,11 +40,11 @@ module Note =
         | HalfSilence -> 0.5
         | Silence -> 1.
         | MSilence -> 4.
+        | EightNote -> 0.125
+        | QuarterNote -> 0.25
+        | Triolet -> 0.33
         | HalfNote -> 0.5
         | PHalfNote -> 0.75
-        | Triolet -> 0.33
-        | QuarterNote -> 0.25
-        | EightNote -> 0.125
         | Black -> 1.
         | PBlack -> 1.5
         | White -> 2.

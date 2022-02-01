@@ -393,7 +393,6 @@ module Song =
         F PBlack 5;
         |]
     
-    
     let GoldenWind =[|
         FDiese Black 5; 
         F White 5;
@@ -524,8 +523,7 @@ module Song =
         GDiese HalfNote 5
         G HalfNote 5
         F HalfNote 5
-
-    |]
+        |]
 
     let Solvieg =[|
         E White 5
@@ -602,7 +600,7 @@ module Song =
         MSil Round 0 
         |]
         
-    //beginning of Unravel song 
+    // Beginning of Unravel song 
     let Unravel = [|
         ADiese HalfNote 5
         C Black 6
@@ -621,6 +619,7 @@ module Song =
         D Black 5
         |]
 
+    // La Vie En Rose, Edith Piaf
     let LVER = [|
         D PBlack 6
         CDiese HalfNote 6
@@ -891,8 +890,7 @@ module Song =
         F QuarterNote 4
         F HalfNote 4 
         F QuarterNote 4
-
-    |]
+        |]
 
     let Megalovania = [|  // A Finir
         D QuarterNote 4
@@ -950,7 +948,7 @@ module Song =
         D QuarterNote 4
         F QuarterNote 4
         G QuarterNote 4
-    |]
+        |]
 
     let TOM = [|
         FDiese HalfNote 5
@@ -985,7 +983,7 @@ module Song =
         E HalfNote 5
         FDiese HalfNote 5
         E HalfNote 5
-        //repeat
+        // Repeat
         FDiese HalfNote 5
         FDiese HalfNote 5
         E HalfNote 5
@@ -1018,7 +1016,8 @@ module Song =
         E HalfNote 5
         FDiese HalfNote 5
         E HalfNote 5
-        //refrain
+
+        // Chorus
         D PBlack 5
         D HalfNote 5
         D HalfNote 5
@@ -1133,10 +1132,7 @@ module Song =
         E QuarterNote 5
         E HalfNote 5
         E HalfNote 5
-
-
-
-    |]
+        |]
     
     let Crazy = [|
         D Black 5
@@ -1236,7 +1232,7 @@ module Song =
         HalfSil HalfSilence 0
         A HalfNote 5
         A White 5
-    |]
+        |]
 
     let test (song: byte [][] ) =  // The most unbelievable thing to play a song
             let mutable wave2 = sinbyte 1. 0.

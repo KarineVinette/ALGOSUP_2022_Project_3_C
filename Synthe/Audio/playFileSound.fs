@@ -14,5 +14,3 @@ let PlaySound (url:string) = //Allow to choose your file
         Thread.Sleep(100)
 
 // let play = PlaySound @"../../../createdSound/test1.wav"
-
-    
