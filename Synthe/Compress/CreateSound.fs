@@ -23,9 +23,9 @@ module CreateWavFile =
         writer.Write(data.Length)
         writer.Write(data)
 
-    let sample x = (x + 1.)/2. * 255. |> byte
+    // let sample x = (x + 1.)/2. * 255. |> byte
 
-    let data = Array.init 160000 (fun i -> sin (float i/float 8) |> sample) 
-    let stream = File.Create("./Audio/CreatedSounds/soundTest2.wav") 
+    // let data = Array.init 160000 (fun i -> sin (float i/float 8) |> sample) 
+    // let stream = File.Create("./Audio/CreatedSounds/soundTest2.wav") 
 
-    write stream data
+    // write stream data

@@ -10,6 +10,9 @@ open Charts
 
 
 module Program =
+    let stream = File.Create("./Audio/CreatedSounds/soundTest3.wav") 
+    CreateWavFile.write stream (SongAssemble Megalovania)
+
     [<EntryPoint>]
     let main argv = 
         //args["F", "White", "5"]
@@ -60,3 +63,6 @@ module Program =
             |_ 
                 -> printfn "Unknown command"  |> ignore
         0
+
+
+

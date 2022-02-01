@@ -20,7 +20,7 @@ module Play =
 
         let PlaySong (song:byte[][]) =
                 let sample x = (x + 1.)/2. * 255. |> byte
-                let data = test song
+                let data = SongAssemble song
 
                         
                 let p = new PlaySound()
