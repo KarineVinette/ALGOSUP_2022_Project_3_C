@@ -138,22 +138,22 @@ module Charts =
           )
       FM wavep wavem |> Chart.Line |> Chart.Show
 
-    // let HighPass title =
-    //   let options =
-    //     Options
-    //       (
-    //       title = " HighPass",
-    //       vAxis = Axis(title = "Amplitude"),
-    //       hAxis = Axis(title = "Frequency")
-    //       )
-    //   highPassFilter sinWave |> Chart.Line |> Chart.Show
+    let HighPass title =
+      let options =
+        Options
+          (
+          title = " HighPass",
+          vAxis = Axis(title = "Amplitude"),
+          hAxis = Axis(title = "Frequency")
+          )
+      highPassFilter sinWave |> Chart.Line |> Chart.Show
 
-    // let LowPass title =
-    //   let options =
-    //     Options
-    //       (
-    //       title = " HighPass",
-    //       vAxis = Axis(title = "Amplitude"),
-    //       hAxis = Axis(title = "Frequency")
-    //       )
-    //   LowPassFilter sinWave |> Chart.Line |> Chart.Show
+    let LowPass title =
+      let options =
+        Options
+          (
+          title = " HighPass",
+          vAxis = Axis(title = "Amplitude"),
+          hAxis = Axis(title = "Frequency")
+          )
+      LowPassFilter sinWave |> Chart.Line |> Chart.Show
