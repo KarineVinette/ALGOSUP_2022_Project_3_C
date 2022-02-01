@@ -1,5 +1,6 @@
 namespace SyntheAudio
 open XPlot.Plotly
+open MathNet.Filtering
 open System
 open System.IO
 open Waves
@@ -107,14 +108,6 @@ module Effect =
 
     // echo sinWave 0.5 0.1 |> Chart.Line |> Chart.Show
 
-
-    // let AM (wave:float array) maxAmp minAmp =
-    //     let mutable multiplicator = amp
-    //     while multiplicator in 0..maxAmp do 
-    //         if multiplicator < maxAmp then
-    //             multiplicator <- multiplicator + 0.1
-    //         else
-
     // In amplitude modulation, the amplitude of the carrier wave is varied in proportion to that of the message signal, such as an audio signal
     let AM (wavep: float array) (wavem: float array) = 
         let newWave = Array.init 44100 (fun i -> wavem.[i] * wavep.[i])
@@ -124,3 +117,21 @@ module Effect =
     let FM (wavep: float array) (wavem: float array) =
         let newWave = Array.init 44100 (fun i -> 1. * sin((2. * Pi * 500. * float i/sampleRate) + (1./10.)*(500. - 10.) * wavem.[i]))
         newWave
+
+    let LowPassFilter (sinWave: float []) =
+        let data = sinWave
+        
+        let lowPass = IIR.IirCoefficients.LowPass(44100., 2000., 1.);
+        let filter = new IIR.OnlineIirFilter(lowPass);        
+        let processed = filter.ProcessSamples(data);
+
+        processed
+
+    let highPassFilter (sinWave: float []) =
+        let data = sinWave
+        
+        let highPass = IIR.IirCoefficients.HighPass(44100., 1000., 1.);
+        let filter = new IIR.OnlineIirFilter(highPass);        
+        let processed = filter.ProcessSamples(data);
+
+        processed
