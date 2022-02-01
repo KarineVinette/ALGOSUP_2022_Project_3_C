@@ -101,6 +101,10 @@ module Program =
                             - FM                    Visualise a SinWave using GoogleCharts modified frequency modulation
                             
                             "
+            | "HighPass"
+                -> HighPass "m" |> ignore ; printfn "m"
+            | "LowPass"
+                -> LowPass "m" |> ignore ; printfn "m"
             |_ 
                 -> printfn "Unknown command"  |> ignore
         0
