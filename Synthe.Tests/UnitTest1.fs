@@ -10,30 +10,22 @@ module Test =
     let Setup () =
         ()
 
-    [<Test>]
-    let sineWave() =
-        let result = sinWave.Length
-        Assert.AreEqual(limit, result)
-    [<Test>]
-    let triangle() =
-        let result = triangleWave.Length
-        Assert.AreEqual(limit, result)
+// [<Test>]
+// let SineWave() =
+//    let result = sinWave.Length
+//    Assert.AreEqual(limit, result)
 
-    [<Test>]
-    let squarre() =
-        let result = squareWave.Length
-        Assert.AreEqual(limit, result)
+// [<Test>]
+// let TriangleWave() =
+//    let result = triangleWave.Length
+//    Assert.AreEqual(120000, result)
 
-    [<Test>]
-    let Sawtooth() =
-        let result = sawWave.Length
-        Assert.AreEqual(limit, result)
+// [<Test>]
+// let SquareWave() =
+//    let result = squareWave.Length
+//    Assert.AreEqual(limit, result)
 
-    [<Test>]
-    let Overdrive() =
-        let mutable result = 0
-        let wave = Overdrive 0.7 sinWave 
-        for i in 0..limit-1 do
-            if wave.[i] > 0.7 || wave.[i] < -0.7 then
-                result <- result + 1
-        Assert.AreEqual(0, result)
+// [<Test>]
+// let SawtoothWave() =
+//    let result = sawWave.Length
+//    Assert.AreEqual(120000, result)

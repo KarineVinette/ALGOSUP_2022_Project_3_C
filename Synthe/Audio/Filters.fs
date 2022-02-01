@@ -18,8 +18,7 @@ module Effect =
     // newwave |> Chart.Line |> Chart.Show
 
 // Cut off the wave at specific amplitude to given the “overdriven” often used in rock songs
-    let Overdrive (flatten:float) (wave: float array) =
-
+    let Overdrive (flatten:float) (wave: float array) limit =
         for i in 0..limit-1 do
             if wave.[i] > flatten then
                 wave.[i] <- flatten
@@ -92,7 +91,7 @@ module Effect =
 
     // reverb sinWave 0.6 |> Chart.Line |> Chart.Show
 
-    // In audio signal processing and acoustics, an echo is a reflection of sound that arrives at the listener with a delay after the direct sound
+// In audio signal processing and acoustics, an echo is a reflection of sound that arrives at the listener with a delay after the direct sound
     let Echo (wave: float []) reduc (delay:float) = 
         let mutable wave2 = wave
         let mutable amp2 = Waves.amp
@@ -106,16 +105,17 @@ module Effect =
 
     // echo sinWave 0.5 0.1 |> Chart.Line |> Chart.Show
 
-    // In amplitude modulation, the amplitude of the carrier wave is varied in proportion to that of the message signal, such as an audio signal
+// In amplitude modulation, the amplitude of the carrier wave is varied in proportion to that of the message signal, such as an audio signal
     let AM (wavep: float array) (wavem: float array) = 
         let newWave = Array.init 44100 (fun i -> wavem.[i] * wavep.[i])
         newWave
 
-    // Frequency modulation is the encoding of information in a carrier wave by varying the instantaneous frequency of the wave
+// Frequency modulation is the encoding of information in a carrier wave by varying the instantaneous frequency of the wave
     let FM (wavep: float array) (wavem: float array) =
         let newWave = Array.init 44100 (fun i -> 1. * sin((2. * Pi * 500. * float i/sampleRate) + (1./10.)*(500. - 10.) * wavem.[i]))
         newWave
 
+// A low-pass filter is a filter that passes signals with a frequency lower than a selected cutoff frequency and attenuates signals with frequencies higher than the cutoff frequency
     let LowPassFilter (sinWave: float []) =
         let data = sinWave
         
@@ -125,6 +125,7 @@ module Effect =
 
         processed
 
+// A high-pass filter is an electronic filter that passes signals with a frequency higher than a certain cutoff frequency and attenuates signals with frequencies lower than the cutoff frequency
     let highPassFilter (sinWave: float []) =
         let data = sinWave
         

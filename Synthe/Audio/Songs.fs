@@ -3,9 +3,39 @@ open Note
 open Waves
 
 module Song =
+
+    let Numb = [|
+        CDiese QuarterNote 5
+        E QuarterNote 5
+        CDiese QuarterNote 5
+        FDiese PHalfNote 5
+        A PHalfNote 5
+        GDiese PBlack 5
+        CDiese QuarterNote 5
+        E QuarterNote 5
+        CDiese QuarterNote 5
+        A PHalfNote 5
+        GDiese PHalfNote 5
+        E PBlack 5
+        CDiese QuarterNote 5
+        E QuarterNote 5
+        CDiese QuarterNote 5
+        FDiese PHalfNote 5
+        A PHalfNote 5
+        GDiese PBlack 5
+        CDiese QuarterNote 5
+        E QuarterNote 5
+        CDiese QuarterNote 5
+        A PHalfNote 5
+        GDiese PHalfNote 5
+        E PBlack 5
+        CDiese QuarterNote 5
+        E QuarterNote 5
+        CDiese QuarterNote 5
+        |]
     
     // https://www.youtube.com/watch?v=eVTXPUF4Oz4
-    let InTheEnd = [|
+    let InTheEnd = [| // Tempo: 60
         // Intro
         DDiese HalfNote 4;
         ADiese HalfNote 4;
@@ -437,7 +467,7 @@ module Song =
         B White 5;
         |]
 
-    let Lac = [|
+    let Lac = [| // Tempo: 100
         G Black 5
         Sil Silence 0
         DDiese Black 5
@@ -525,7 +555,7 @@ module Song =
         F HalfNote 5
         |]
 
-    let Solvieg =[|
+    let Solvieg =[| // Tempo: 90
         E White 5
         C HalfNote 5
         E HalfNote 5
@@ -550,7 +580,7 @@ module Song =
         MSil MSilence 0
         |]
 
-    let Gadjet = [|
+    let Gadjet = [| // Tempo: 80
         G QuarterNote 5
         ADiese QuarterNote 5
         B QuarterNote 5
@@ -601,7 +631,7 @@ module Song =
         |]
         
     // Beginning of Unravel song 
-    let Unravel = [|
+    let Unravel = [| // Tempo: 120
         ADiese HalfNote 5
         C Black 6
         ADiese Black 5
@@ -620,7 +650,7 @@ module Song =
         |]
 
     // La Vie En Rose, Edith Piaf
-    let LVER = [|
+    let LVER = [| // Tempo: 70
         D PBlack 6
         CDiese HalfNote 6
         B PHalfNote 5
@@ -706,14 +736,14 @@ module Song =
         C QuarterNote 5
         A QuarterNote 4
         |]
-    let Kalinka = [|
+    let Kalinka = [| // Tempo: 90
         E Black 6;
         D Black 6;
         B HalfNote 5;
         C HalfNote 6;
         D Black 6;
         B HalfNote 5;
-        C HalfNote 5;
+        C HalfNote 6;
         D Black 6;
         C HalfNote 6;
         B HalfNote 5;
@@ -962,7 +992,7 @@ module Song =
         G QuarterNote 4
         |]
 
-    let TOM = [|
+    let TOM = [| // Tempo: 170
         FDiese HalfNote 5
         FDiese HalfNote 5
         E HalfNote 5
@@ -1109,7 +1139,7 @@ module Song =
         E Black 5
         |]
 
-    let ZeldaOverworld = [| // tempo 130
+    let ZeldaOverworld = [| // Tempo: 130
         A White 5
         A Triolet 5
         A Triolet 5
@@ -1246,10 +1276,9 @@ module Song =
         E QuarterNote 5
         E HalfNote 5
         E HalfNote 5
-
-    |]
+        |]
     
-    let Crazy = [|  // tempo 200
+    let Crazy = [| // Tempo: 200
         D Black 5
         Sil Silence 0
         F Black 5
@@ -1347,6 +1376,20 @@ module Song =
         HalfSil HalfSilence 0
         A HalfNote 5
         A White 5
+        |]
+
+    let Amogus = [| // Tempo: 100
+        A HalfNote 4
+        C HalfNote 5
+        D HalfNote 5
+        DDiese HalfNote 5
+        D HalfNote 5
+        C HalfNote 5
+        A HalfNote 4
+        Sil Silence 0
+        G QuarterNote 4
+        C QuarterNote 5
+        A QuarterNote 4
         |]
 
     let SongAssemble (song: byte [][] ) = 
