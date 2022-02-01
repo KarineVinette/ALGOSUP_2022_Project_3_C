@@ -490,48 +490,177 @@ module Song =
         F PBlack 5;
         |]
     
-    let GoldenWind =[|
-        FDiese Black 5; 
-        F White 5;
-        D HalfNote 5;
-        E HalfNote 5;
-        F Black 5;
-        E HalfNote 5;
-        D HalfNote 5;
-        CDiese HalfNote 5;
-        D Black 5;
-        E Black 5;
-        FDiese White 5;
-        B White 5;
-        B HalfNote 4;
-        CDiese HalfNote 5;
-        D Black 5;
-        E HalfNote 5;
-        D HalfNote 5;
-        CDiese HalfNote 5;
-        A Black 5;
-        G Black 5;
-        FDiese Black 5; 
-        F White 5;
-        D HalfNote 5;
-        E HalfNote 5;
-        F HalfNote 5;
-        E Black 5;
-        D HalfNote 5;
-        CDiese HalfNote 5;
-        D HalfNote 5;
-        E Black 5;
-        FDiese Black 5;
-        B White 5;
-        B HalfNote 5;
-        CDiese HalfNote 6;
-        D HalfNote 6;
-        G Black 5;
-        FDiese HalfNote 5;
-        F HalfNote 5;
-        D Black 6;
-        ADiese HalfNote 5;
-        B White 5;
+    let GoldenWind =[| //tempo 150
+        D QuarterNote 6
+        CDiese QuarterNote 6
+        B HalfNote 5
+        A PHalfNote 5
+        B PHalfNote 5
+        B PHalfNote 5
+        QSilence QuarterSilence 0
+        FDiese HalfNote 5
+        A HalfNote 5
+        B HalfNote 5
+        CDiese PHalfNote 6
+        A PHalfNote 5
+        B PHalfNote 5
+        QSilence QuarterSilence 0
+        HalfSil HalfSilence 0
+        D QuarterNote 6
+        C QuarterNote 6
+        B HalfNote 5
+        A PHalfNote 5
+        B HalfNote 5
+        B HalfNote 5
+        QSilence QuarterSilence  0
+        FDiese HalfNote 5
+        CDiese HalfNote 6
+        D HalfNote 6
+        CDiese PHalfNote 6
+        A PHalfNote 5
+        E HalfNote 5
+        QSilence QuarterSilence 0
+        HalfSil HalfSilence 0
+        D QuarterNote 6
+        C QuarterNote 6
+        B HalfNote 5
+        A PHalfNote 6
+        B PHalfNote 6 
+        B PHalfNote 6
+        QSilence QuarterSilence  0
+        FDiese HalfNote 6
+        A PHalfNote 6
+        B PHalfNote 6
+        CDiese PHalfNote 7
+        A PHalfNote 6
+        B PHalfNote 6 
+        QSilence QuarterSilence   0
+        HalfSil HalfSilence 0
+        D QuarterNote 7
+        C QuarterNote 7
+        B HalfNote 6
+        B Triolet 6
+        D Triolet 7
+        FDiese Triolet 7
+        E Triolet 7
+        B Triolet 6
+        A Triolet 7
+        GDiese Triolet 7
+        FDiese Triolet 7
+        D Triolet 7
+        CDiese Triolet 7
+        B Triolet 6
+        A QuarterNote 5
+        B HalfNote 5
+        A QuarterNote 5
+        B HalfNote 5
+        A QuarterNote 5
+        B HalfNote 5
+        A QuarterNote 5
+        B HalfNote 5
+        B QuarterNote 5
+        CDiese QuarterNote 6
+        D QuarterNote 6
+        E QuarterNote 6
+        FDiese Black 6
+        HalfSil HalfSilence 0
+        F HalfNote 6
+        F PBlack 6
+        D QuarterNote 6
+        E QuarterNote 6
+        FDiese PHalfNote 6
+        F QuarterNote 6
+        F HalfNote 6
+        D HalfNote 6
+        CDiese PHalfNote 6
+        D QuarterNote 6
+        D HalfNote 6
+        E HalfNote 6
+        FDiese Black 6
+        F HalfNote 6
+        E HalfNote 6
+        E Black 6
+        E HalfNote 5
+        CDiese HalfNote 6
+        D PHalfNote 6
+        E QuarterNote 6
+        E HalfNote 6
+        D HalfNote 6
+        CDiese PHalfNote 6
+        A QuarterNote 6
+        A HalfNote 6
+        G HalfNote 6
+        FDiese Black 6
+        HalfSil HalfSilence 0
+        F HalfNote 6
+        F PBlack 6
+        D QuarterNote 6
+        E QuarterNote 6
+        FDiese PHalfNote 6
+        F QuarterNote 6
+        F HalfNote 6
+        D HalfNote 6
+        C PHalfNote 6
+        D QuarterNote 6
+        D HalfNote 6 
+        E HalfNote 6
+        FDiese Black 6
+        F HalfNote 6
+        E HalfNote 6
+        E Black 6
+        E HalfNote 6
+        CDiese HalfNote 7
+        D PHalfNote 7
+        G QuarterNote 6
+        G HalfNote 6
+        FDiese HalfNote 6
+        F PHalfNote 6
+        D QuarterNote 7
+        D HalfNote 7
+        ADiese HalfNote 6
+        Sil Silence 0
+        E Black 5
+        // FDiese Black 5; 
+        // F White 5;
+        // D HalfNote 5;
+        // E HalfNote 5;
+        // F Black 5;
+        // E HalfNote 5;
+        // D HalfNote 5;
+        // CDiese HalfNote 5;
+        // D Black 5;
+        // E Black 5;
+        // FDiese White 5;
+        // B White 5;
+        // B HalfNote 4;
+        // CDiese HalfNote 5;
+        // D Black 5;
+        // E HalfNote 5;
+        // D HalfNote 5;
+        // CDiese HalfNote 5;
+        // A Black 5;
+        // G Black 5;
+        // FDiese Black 5; 
+        // F White 5;
+        // D HalfNote 5;
+        // E HalfNote 5;
+        // F HalfNote 5;
+        // E Black 5;
+        // D HalfNote 5;
+        // CDiese HalfNote 5;
+        // D HalfNote 5;
+        // E Black 5;
+        // FDiese Black 5;
+        // B White 5;
+        // B HalfNote 5;
+        // CDiese HalfNote 6;
+        // D HalfNote 6;
+        // G Black 5;
+        // FDiese HalfNote 5;
+        // F HalfNote 5;
+        // D Black 6;
+        // ADiese HalfNote 5;
+        // B White 5;
         |]
 
     let Lac = [| // Tempo: 100

@@ -23,6 +23,7 @@ module Program =
         | "LVER" -> LVER
         | "Kalinka" -> Kalinka
         | "RR" -> RR
+        | "Sus" -> Amogus
         | "Megalovania" -> Megalovania
         | "TOM" -> TOM
         | "ZeldaOverworld" -> ZeldaOverworld
