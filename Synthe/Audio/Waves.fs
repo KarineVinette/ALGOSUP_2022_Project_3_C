@@ -4,11 +4,11 @@ open System
 module Waves =
 
     let sample x = (x + 1.)/2. * 255. |> byte
-    let Pi = Math.PI
-    let amp = 1.
-    let freq = 100000.
-    let sampleRate = 44100.
-    let limit = int(sampleRate/(130./60.))
+    let Pi = Math.PI // π = 3.14159265359...
+    let amp = 1. // Amplitude
+    let freq = 100000. // Frequence
+    let sampleRate = 44100. // = 1 second
+    let limit = int(sampleRate/(130./60.)) // Tempo
 
     let sinbyte (ti:float) freq  = Array.init (int(float(limit)*ti)) (fun i -> 1. * sin((2. * freq * Pi * float i)/sampleRate) |> sample)
     let sinWave = Array.init limit (fun i -> amp * sin((2. * freq * Pi * float i)/sampleRate))

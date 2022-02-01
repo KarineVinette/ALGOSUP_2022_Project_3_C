@@ -90,15 +90,15 @@ module Program =
                             - SqWave                Visualise a SquareWave using GoogleCharts
                             - SawWave               Visualise a SawToothWave using GoogleCharts
                             - TriangleWave          Visualise a TriangleWave using GoogleCharts
-                            - ByFixedAmount         Visualise a sinWave using GoogleCharts with amplitude modified by a fixed amount
+                            - ByFixedAmount         Visualise a SinWave using GoogleCharts with amplitude modified by a fixed amount
                             - Overdrive             Visualise an overdriven sound
-                            - Envelope              Visualise a sinWave using GoogleCharts modified with an Envelope (ADSR)
+                            - Envelope              Visualise a SinWave using GoogleCharts modified with an Envelope (ADSR)
                             - Flange                Visualise a Flanged sound
                             - Chords                Visualise two waves using GoogleCharts combined to get a Chords
                             - Echo                  Visualise a echoed sound
-                            - Reverb                Visualise a reberved sound
-                            - AM                    Visualise a sinWave using GoogleCharts modified amplitude modulation
-                            - FM                    Visualise a sinWave using GoogleCharts modified frequency modulation
+                            - Reverb                Visualise a reverbed sound
+                            - AM                    Visualise a SinWave using GoogleCharts modified amplitude modulation
+                            - FM                    Visualise a SinWave using GoogleCharts modified frequency modulation
                             
                             "
             |_ 

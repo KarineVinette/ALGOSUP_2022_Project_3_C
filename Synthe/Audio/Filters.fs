@@ -108,13 +108,6 @@ module Effect =
     // echo sinWave 0.5 0.1 |> Chart.Line |> Chart.Show
 
 
-    // let AM (wave:float array) maxAmp minAmp =
-    //     let mutable multiplicator = amp
-    //     while multiplicator in 0..maxAmp do 
-    //         if multiplicator < maxAmp then
-    //             multiplicator <- multiplicator + 0.1
-    //         else
-
     // In amplitude modulation, the amplitude of the carrier wave is varied in proportion to that of the message signal, such as an audio signal
     let AM (wavep: float array) (wavem: float array) = 
         let newWave = Array.init 44100 (fun i -> wavem.[i] * wavep.[i])
