@@ -5,7 +5,6 @@ open Waves
 module Song =
 
     let Numb = [|
-
         // Intro
         CDiese QuarterNote 5
         E QuarterNote 5
@@ -83,6 +82,114 @@ module Song =
         B HalfNote 4
         CDiese Black 5
         Sil Silence 0
+        CDiese QuarterNote 5
+        CDiese QuarterNote 5
+        CDiese QuarterNote 5
+        FDiese QuarterNote 5
+        FDiese QuarterNote 5
+        E QuarterNote 5
+        CDiese Triolet 5
+        Sil Silence 0
+        CDiese QuarterNote 5
+        FDiese QuarterNote 5
+        FDiese QuarterNote 5
+        E QuarterNote 5
+        CDiese HalfNote 5
+        D HalfNote 5
+        E PBlack 5
+        HalfSil HalfSilence 0
+
+        // Chorus
+        FDiese PHalfNote 5
+        FDiese QuarterNote 5
+        FDiese HalfNote 5
+        E HalfNote 5
+        FDiese HalfNote 5
+        FDiese QuarterNote 5
+        FDiese QuarterNote 5
+        FDiese HalfNote 5
+        GDiese HalfNote 5
+        E PHalfNote 5
+        FDiese QuarterNote 5
+        FDiese HalfNote 5
+        E HalfNote 5
+        FDiese HalfNote 5
+        FDiese QuarterNote 5
+        FDiese QuarterNote 5
+        FDiese HalfNote 5
+        E HalfNote 5
+        FDiese PHalfNote 5
+        FDiese QuarterNote 5
+        FDiese HalfNote 5
+        E HalfNote 5
+        FDiese HalfNote 5
+        FDiese QuarterNote 5
+        FDiese QuarterNote 5
+        FDiese HalfNote 5
+        GDiese HalfNote 5
+        E PHalfNote 5
+        FDiese EightNote 5
+        FDiese EightNote 5
+        FDiese HalfNote 5
+        E HalfNote 5
+        FDiese HalfNote 5
+        FDiese QuarterNote 5
+        FDiese QuarterNote 5
+        FDiese HalfNote 5
+        E HalfNote 5
+        FDiese HalfNote 5
+
+        // Second Verse
+        FDiese QuarterNote 5
+        FDiese QuarterNote 5
+        FDiese QuarterNote 5
+        FDiese QuarterNote 5
+        E QuarterNote 5
+        E QuarterNote 5
+        FDiese QuarterNote 5
+        E QuarterNote 5
+        E QuarterNote 5
+        E Black 5
+        HalfSil HalfSilence 0
+        FDiese QuarterNote 5
+        E QuarterNote 5
+        E QuarterNote 5
+        E HalfNote 5
+        CDiese HalfNote 5
+        FDiese QuarterNote 4
+        D QuarterNote 5
+        CDiese QuarterNote 5
+        B QuarterNote 4
+        B HalfNote 4
+        CDiese HalfNote 5
+        CDiese HalfNote 5
+        QSilence QuarterSilence 0
+
+        FDiese QuarterNote 4
+        CDiese QuarterNote 5
+        CDiese QuarterNote 5
+        CDiese QuarterNote 5
+        CDiese QuarterNote 5
+        D QuarterNote 5
+        CDiese HalfNote 5
+        CDiese QuarterNote 5
+        B QuarterNote 4
+        A PHalfNote 4
+        HalfSil HalfSilence 0
+
+        CDiese QuarterNote 5
+        CDiese QuarterNote 5
+        B QuarterNote 4
+        A Black 4
+        HalfSil HalfSilence 0
+        CDiese QuarterNote 5
+        B HalfNote 4
+        A HalfNote 4
+        B HalfNote 4
+        CDiese Black 5
+        Sil Silence 0
+        Sil Silence 0
+        HalfSil HalfSilence 0
 
         CDiese QuarterNote 5
         CDiese QuarterNote 5
@@ -98,7 +205,178 @@ module Song =
         E QuarterNote 5
         CDiese HalfNote 5
         D HalfNote 5
-        E White 5
+        E PBlack 5
+        Sil Silence 0
+        Sil Silence 0
+        CDiese QuarterNote 5
+        CDiese QuarterNote 5
+        CDiese QuarterNote 5
+        FDiese QuarterNote 5
+        FDiese QuarterNote 5
+        E QuarterNote 5
+        CDiese HalfNote 5
+        QSilence QuarterSilence 0
+        CDiese QuarterNote 5
+        CDiese QuarterNote 5
+        CDiese QuarterNote 5
+        A Triolet 5
+        GDiese Triolet 5
+        GDiese QuarterNote 5
+        A HalfNote 5
+        GDiese PHalfNote 5
+
+        // Chorus
+        FDiese PHalfNote 5
+        FDiese QuarterNote 5
+        FDiese HalfNote 5
+        E HalfNote 5
+        FDiese HalfNote 5
+        FDiese QuarterNote 5
+        FDiese QuarterNote 5
+        FDiese HalfNote 5
+        GDiese HalfNote 5
+        E PHalfNote 5
+        FDiese QuarterNote 5
+        FDiese HalfNote 5
+        E HalfNote 5
+        FDiese HalfNote 5
+        FDiese QuarterNote 5
+        FDiese QuarterNote 5
+        FDiese HalfNote 5
+        E HalfNote 5
+        FDiese PHalfNote 5
+        FDiese QuarterNote 5
+        FDiese HalfNote 5
+        E HalfNote 5
+        FDiese HalfNote 5
+        FDiese QuarterNote 5
+        FDiese QuarterNote 5
+        FDiese HalfNote 5
+        GDiese HalfNote 5
+        E PHalfNote 5
+        FDiese EightNote 5
+        FDiese EightNote 5
+        FDiese HalfNote 5
+        E HalfNote 5
+        FDiese HalfNote 5
+        FDiese QuarterNote 5
+        FDiese QuarterNote 5
+        FDiese HalfNote 5
+        E HalfNote 5
+        FDiese HalfNote 5
+        HalfSil HalfSilence 0
+
+        // Third Verse
+        FDiese QuarterNote 5
+        A QuarterNote 5
+        GDiese Black 5
+        HalfSil HalfSilence 0
+        FDiese QuarterNote 5
+        GDiese HalfNote 5
+        A Black 5
+        GDiese Black 5
+        A Black 5
+        GDiese HalfNote 5
+        FDiese QuarterNote 5
+        FDiese HalfNote 5
+        Sil Silence 0
+        QSilence QuarterSilence 0
+        FDiese QuarterNote 5
+        A QuarterNote 5
+        GDiese PHalfNote 5
+        Sil Silence 0
+        GDiese QuarterNote 5
+        FDiese QuarterNote 5
+        GDiese QuarterNote 5
+        GDiese HalfNote 5
+        GDiese HalfNote 5
+        FDiese QuarterNote 5
+        GDiese QuarterNote 5
+        FDiese QuarterNote 5
+        GDiese QuarterNote 5
+        GDiese HalfNote 5
+        GDiese HalfNote 5
+        FDiese QuarterNote 5
+        A QuarterNote 5
+        GDiese PHalfNote 5
+        HalfSil HalfSilence 0
+
+        // Chorus
+        FDiese PHalfNote 5
+        FDiese QuarterNote 5
+        FDiese HalfNote 5
+        E HalfNote 5
+        FDiese HalfNote 5
+        FDiese QuarterNote 5
+        FDiese QuarterNote 5
+        FDiese HalfNote 5
+        GDiese HalfNote 5
+        E PHalfNote 5
+        FDiese QuarterNote 5
+        FDiese HalfNote 5
+        E HalfNote 5
+        FDiese HalfNote 5
+        FDiese QuarterNote 5
+        FDiese QuarterNote 5
+        FDiese HalfNote 5
+        E HalfNote 5
+        FDiese PHalfNote 5
+        FDiese QuarterNote 5
+        FDiese HalfNote 5
+        E HalfNote 5
+        FDiese HalfNote 5
+        FDiese QuarterNote 5
+        FDiese QuarterNote 5
+        FDiese HalfNote 5
+        GDiese HalfNote 5
+        E PHalfNote 5
+        FDiese EightNote 5
+        FDiese EightNote 5
+        FDiese HalfNote 5
+        E HalfNote 5
+        FDiese HalfNote 5
+        FDiese QuarterNote 5
+        FDiese QuarterNote 5
+        FDiese HalfNote 5
+        E HalfNote 5
+        FDiese PHalfNote 5
+        FDiese QuarterNote 5
+        FDiese HalfNote 5
+        E HalfNote 5
+        FDiese PBlack 5
+        Sil Silence 0
+        CDiese QuarterNote 5
+        CDiese QuarterNote 5
+        CDiese QuarterNote 5
+        CDiese QuarterNote 5
+        D QuarterNote 5
+        CDiese HalfNote 5
+        CDiese QuarterNote 5
+        B QuarterNote 4
+        A PHalfNote 4
+        HalfSil HalfSilence 0
+        FDiese PHalfNote 5
+        FDiese QuarterNote 5
+        FDiese HalfNote 5
+        E HalfNote 5
+        FDiese PBlack 5
+        HalfSil HalfSilence 0
+        A White 5
+        GDiese Black 5
+
+        // Outro
+        CDiese QuarterNote 5
+        E QuarterNote 5
+        CDiese QuarterNote 5
+        FDiese PHalfNote 5
+        A PHalfNote 5
+        GDiese PBlack 5
+        CDiese QuarterNote 5
+        E QuarterNote 5
+        CDiese QuarterNote 5
+        A PHalfNote 5
+        GDiese PHalfNote 5
+        E PBlack 5
         |]
     
     // https://www.youtube.com/watch?v=eVTXPUF4Oz4
