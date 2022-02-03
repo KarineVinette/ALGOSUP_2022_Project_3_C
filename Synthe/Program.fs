@@ -141,8 +141,6 @@ module Program =
         | "help" ->
                 printfn
                     "
-                    All the commands should start with 'dotnet run <commandName>'.
-
                     List of commands:
                     - help                  Show all the listed commands
                     - songs                 List all the songs you can play using 'dotnet run PlaySong'
