@@ -11,25 +11,6 @@ open Charts
 open Url
 
 module Program =
-
-    let  arrCom(name: string) =
-        match name with
-            | "SinWave" -> sinVisu()
-            | "SqWave" -> SquareVisu()
-            | "SawWave" -> sawVisu()
-            // | "Sus" ->
-            // | "TriangleWave" ->
-            // | "ByFixedAmount" ->
-            // | "Overdrive" ->
-            // | "Envelope" ->
-            // | "Flange" ->
-            // | "Chords" ->
-            // | "Echo" ->
-            // | "Reverb" ->
-            // | "AM" ->
-            // | "FM" ->
-            |_ -> printfn "no match found"
-
     let searchMusic (name: string) =
         match name with
         | "GoldenWind" -> GoldenWind
@@ -49,17 +30,27 @@ module Program =
         | _ -> raise (System.Exception("The song name is not valid / or doesn't exist, please try again"))
     
 
-    let commands (name : string) =
+    let rec commands (name : string) =
         match name with
-        | "Mogus"-> PlaySong(Amogus)
+        | "Mogus"-> 
+            PlaySong(Amogus)
+            Console.Write("Please enter a command:")
+            let message = Console.ReadLine()
+            commands message |> ignore 
         | "PlayFile"-> 
                 Console.Write("Enter a valid path to your file: ")
                 let url = Console.ReadLine()
-                PlayURL url |> ignore
+                PlayURL url 
+                Console.Write("Please enter a command:")
+                let message = Console.ReadLine()
+                commands message |> ignore 
         | "PlaySong"-> 
                 Console.Write("Enter your music name : ")
                 let name = Console.ReadLine()
                 PlaySong(searchMusic (name)) 
+                Console.Write("Please enter a command:")
+                let message = Console.ReadLine()
+                commands message |> ignore 
         | "SaveFile"-> 
                 Console.Write("Enter your filename to save : ")
                 let file = Console.ReadLine()
@@ -68,29 +59,85 @@ module Program =
                     File.Create($"./Audio/CreatedSounds/{file}.wav")
 
                 CreateWavFile.write stream (SongAssemble(searchMusic (file)))
+                Console.Write("Please enter a command:")
+                let message = Console.ReadLine()
+                commands message |> ignore 
+                
         | "SinWave"-> 
             sinVisu()
             Console.Write("Please enter a command:")
             let message = Console.ReadLine()
-            arrCom message |> ignore 
-        | "SquareWave"-> SquareVisu()
+            commands message |> ignore 
+        | "SquareWave"-> 
+            SquareVisu()
+            Console.Write("Please enter a command:")
+            let message = Console.ReadLine()
+            commands message |> ignore 
         | "SawWave"->
             sawVisu()
             Console.Write("Please enter a command:")
             let message = Console.ReadLine()
-            arrCom message |> ignore 
-        | "TriangleWave"-> triVisu()
-        | "ByFixedAMP"-> ampByFixedAmound()
-        | "Overdrive"-> Overdrived()
-        | "Envelope"-> Enveloped()
-        | "Flange"-> Flanged()
-        | "Chords"-> CombinedWaves()
-        | "Echo"-> Echoed()
-        | "Reverb"-> Reverbed()
-        | "AM"-> AM()
-        | "FM"-> FM()
-        | "HighPass"-> HighPass()
-        | "LowPass" -> LowPass()   
+            commands message |> ignore 
+        | "TriangleWave"-> 
+            triVisu()
+            Console.Write("Please enter a command:")
+            let message = Console.ReadLine()
+            commands message |> ignore
+        | "ByFixedAMP"-> 
+            ampByFixedAmound()
+            Console.Write("Please enter a command:")
+            let message = Console.ReadLine()
+            commands message |> ignore
+        | "Overdrive"-> 
+            Overdrived()
+            Console.Write("Please enter a command:")
+            let message = Console.ReadLine()
+            commands message |> ignore
+        | "Envelope"-> 
+            Enveloped()
+            Console.Write("Please enter a command:")
+            let message = Console.ReadLine()
+            commands message |> ignore
+        | "Flange"-> 
+            Flanged()
+            Console.Write("Please enter a command:")
+            let message = Console.ReadLine()
+            commands message |> ignore
+        | "Chords"-> 
+            CombinedWaves()
+            Console.Write("Please enter a command:")
+            let message = Console.ReadLine()
+            commands message |> ignore
+        | "Echo"-> 
+            Echoed()
+            Console.Write("Please enter a command:")
+            let message = Console.ReadLine()
+            commands message |> ignore
+        | "Reverb"-> 
+            Reverbed()
+            Console.Write("Please enter a command:")
+            let message = Console.ReadLine()
+            commands message |> ignore
+        | "AM"-> 
+            AM()
+            Console.Write("Please enter a command:")
+            let message = Console.ReadLine()
+            commands message |> ignore
+        | "FM"-> 
+            FM()
+            Console.Write("Please enter a command:")
+            let message = Console.ReadLine()
+            commands message |> ignore
+        | "HighPass"-> 
+            HighPass()
+            Console.Write("Please enter a command:")
+            let message = Console.ReadLine()
+            commands message |> ignore
+        | "LowPass" -> 
+            LowPass()
+            Console.Write("Please enter a command:")
+            let message = Console.ReadLine()
+            commands message |> ignore   
         | "help" ->
                 printfn
                     "
@@ -107,17 +154,20 @@ module Program =
                     - SawWave               Visualise a SawToothWave using GoogleCharts
                     - Sus                   He does seems really sus...
                     - TriangleWave          Visualise a TriangleWave using GoogleCharts
-                    - ByFixedAmount         Visualise a SinWave using GoogleCharts with amplitude modified by a fixed amount
+                    - ByFixedAmount         Visualise a SinWave with amp modified by a fixed amount
                     - Overdrive             Visualise an overdriven sound
-                    - Envelope              Visualise a SinWave using GoogleCharts modified with an Envelope (ADSR)
+                    - Envelope              Visualise a SinWavew with an Envelope (ADSR)
                     - Flange                Visualise a Flanged sound
-                    - Chords                Visualise two waves using GoogleCharts combined to get a Chords
+                    - Chords                Visualise two waves combined to get a Chords
                     - Echo                  Visualise a echoed sound
                     - Reverb                Visualise a reverbed sound
-                    - AM                    Visualise a SinWave using GoogleCharts modified amplitude modulation
-                    - FM                    Visualise a SinWave using GoogleCharts modified frequency modulation
+                    - AM                    Visualise a SinWave using with amplitude modulation
+                    - FM                    Visualise a SinWave with frequency modulation
 
                     "
+                Console.Write("Please enter a command:")
+                let message = Console.ReadLine()
+                commands message |> ignore
         | "songs" ->
                 printfn
                     " 
@@ -142,6 +192,9 @@ module Program =
 
 
                     "
+                Console.Write("Please enter a command:")
+                let message = Console.ReadLine()
+                commands message |> ignore
         | "Sus" ->
             Mogus |> ignore
 
@@ -180,7 +233,15 @@ module Program =
 ⠀⠀⠀⠀⠀⠀⠀⠹⣿⣿⣿⣿⣦⣤⣤⣤⣤⣾⣿⣿⣿⣿⣿⣿⣿⣿⡟⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠻⢿⣿⣿⣿⣿⣿⣿⠿⠋⠉⠛⠋⠉⠉⠁⠀⠀⠀⠀
             "
-        | _ -> printfn "Unknown command, try typing 'help'" |> ignore
+            Console.Write("Please enter a command:")
+            let message = Console.ReadLine()
+            commands message |> ignore
+        | "quit" ->  raise (System.Exception("You ended the session"))
+        | _ -> 
+            printfn "Unknown command, try typing 'help'" 
+            Console.Write("Please enter a command:")
+            let message = Console.ReadLine()
+            commands message |> ignore
 
 
     [<EntryPoint>]
