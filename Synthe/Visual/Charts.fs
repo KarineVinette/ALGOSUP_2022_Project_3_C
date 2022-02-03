@@ -6,7 +6,7 @@ open Effect
 
 module Charts =
     // 4 basic waves
-    let sinVisu title = 
+    let sinVisu() = 
       let options =
         Options
           ( 
@@ -17,7 +17,7 @@ module Charts =
           )
       sinWave |> Chart.Line |> Chart.WithOptions options |> Chart.Show
 
-    let SquareVisu title = 
+    let SquareVisu() = 
       let options =
         Options
           ( 
@@ -27,7 +27,7 @@ module Charts =
           )
       squareWave |> Chart.Line |> Chart.WithOptions options  |> Chart.Show
 
-    let sawVisu title = 
+    let sawVisu() = 
       let options =
         Options
           (
@@ -37,7 +37,7 @@ module Charts =
           )
       sawWave |> Chart.Line |> Chart.WithOptions options |> Chart.Show
 
-    let triVisu title = 
+    let triVisu() = 
       let options =
         Options
           (
@@ -48,7 +48,7 @@ module Charts =
       triangleWave |> Chart.Line |> Chart.WithOptions options |> Chart.Show
 
     // Filters
-    let ampByFixedAmound title=
+    let ampByFixedAmound()=
       let options =
         Options
           (
@@ -58,7 +58,7 @@ module Charts =
           )
       ByFixedAmount 3. sinWave |> Chart.Line |> Chart.WithOptions options |> Chart.Show
 
-    let Overdrived title=
+    let Overdrived()=
       let options =
         Options
           (
@@ -68,7 +68,7 @@ module Charts =
           )
       Overdrive 0.6 sinWave  |> Chart.Line |> Chart.WithOptions options |> Chart.Show
 
-    let Enveloped title=
+    let Enveloped()=
       let options =
         Options
           (
@@ -78,7 +78,7 @@ module Charts =
           )
       Enveloppe 1. 2. 0.1 0.1 0.5 0.1 |> Chart.Line |> Chart.WithOptions options |> Chart.Show
 
-    let Flanged title=
+    let Flanged()=
       let options =
         Options
           (
@@ -88,7 +88,7 @@ module Charts =
           )
       Flange(sinWave) |> Chart.Line  |> Chart.WithOptions options |> Chart.Show
 
-    let CombinedWaves title=
+    let CombinedWaves()=
       let options =
         Options
           (
@@ -98,7 +98,7 @@ module Charts =
           )
       addWaves |> Chart.Line |> Chart.WithOptions options |> Chart.Show
       
-    let Echoed title=
+    let Echoed()=
       let options =
         Options
           (
@@ -108,7 +108,7 @@ module Charts =
           )
       Echo sinWave 0.5 0.1 |> Chart.Line |> Chart.WithOptions options |> Chart.Show
 
-    let Reverbed title =
+    let Reverbed() =
       let options =
         Options
           (
@@ -118,7 +118,7 @@ module Charts =
           )
       Reverb sinWave 2. |> Chart.Line |> Chart.WithOptions options |> Chart.Show 
 
-    let AM title = 
+    let AM() = 
       let options =
         Options
           (
@@ -128,7 +128,7 @@ module Charts =
           )
       AM wavep wavem |> Chart.Line |> Chart.Show
 
-    let FM title = 
+    let FM() = 
       let options =
         Options
           (
@@ -138,7 +138,7 @@ module Charts =
           )
       FM wavep wavem |> Chart.Line |> Chart.Show
 
-    let HighPass title =
+    let HighPass() =
       let options =
         Options
           (
@@ -148,7 +148,7 @@ module Charts =
           )
       highPassFilter sinWave |> Chart.Line |> Chart.Show
 
-    let LowPass title =
+    let LowPass() =
       let options =
         Options
           (
