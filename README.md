@@ -57,7 +57,7 @@ Software-Architecture : https://github.com/KarineVinette/ALGOSUP_2022_Project_3_
 
 ## Issues and how to correct them
 
-SFML isn't working well on mac.
+SFML isn't working well on mac.</br>
 8D-solving : </br>
 SFML : https://github.com/KarineVinette/ALGOSUP_2022_Project_3_C/blob/main/documents/8D_SFML.pdf </br>
 Documents : https://github.com/KarineVinette/ALGOSUP_2022_Project_3_C/blob/main/documents/8D_Documents.pdf </br>
