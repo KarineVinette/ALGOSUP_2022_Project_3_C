@@ -7,7 +7,7 @@ Tu run the project :
 ```
 dotnet run start
 Playsong
-LettreAElise (exemple)
+LettreAElise (example)
 ```
 ```
 dotnet run start
