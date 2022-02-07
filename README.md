@@ -61,7 +61,7 @@ SFML isn't working well on mac.</br>
 8D-solving : </br>
 SFML : https://github.com/KarineVinette/ALGOSUP_2022_Project_3_C/blob/main/documents/8D_SFML.pdf </br>
 Documents : https://github.com/KarineVinette/ALGOSUP_2022_Project_3_C/blob/main/documents/8D_Documents.pdf </br>
-Spectroscope :https://github.com/KarineVinette/ALGOSUP_2022_Project_3_C/blob/main/documents/8D_Spectroscope.pdf
+Spectroscope :https://github.com/KarineVinette/ALGOSUP_2022_Project_3_C/blob/main/documents/8D_spectroscope.pdf
 
 **All rights reserved©**
 
