@@ -35,11 +35,14 @@ coding music packages. The ultimate aim of this project is to be able to play mu
 
 ## Project progress:
 
-Project is done at 20%. We managed to finish "Create and Play a Basic Note" in a week.
+14_01_2022 : Project is done at 20%. We managed to finish "Create and Play a Basic Note" in a week.
+21_01_2022 : The second part of the project is done : basic filters, envelope and chords.
+28_01_2022 : The third part of the project is done : frequency analysis andadvanced filters.
+07_02_2022 : The project is done, we didn't do the MP3 Compression.
 
 ## How to install it and run it
 
-The project is using...
+The project is using F#, SFML.
 
 
 ## Technologies and Softwares
@@ -47,6 +50,8 @@ The project is using...
 [![made-with-FSharp](https://img.shields.io/badge/Language%20Used-FSharp-blue)](https://fsharp.org/) [![made-with-SFML](https://img.shields.io/badge/-SFML-brightgreen)](https://www.sfml-dev.org/index-fr.php) 
 
 [![made-with-Visual-Studio-Code](https://img.shields.io/badge/Softwares%20Used:-Visual%20Studio%20Code-0078d7.svg)](https://code.visualstudio.com) 
+
+Functional-Specifications : https://github.com/KarineVinette/ALGOSUP_2022_Project_3_C/documents/Functional-Specifications.md
 
 ## Issues and how to correct them
 
