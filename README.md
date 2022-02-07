@@ -14,6 +14,11 @@ dotnet run start
 songs
 --> list of songs
 ```
+```
+dotnet run start
+help
+--> list of commands
+```
 
 Link to trello : https://trello.com/b/l22gbvK3/algosup2022project3c
 
