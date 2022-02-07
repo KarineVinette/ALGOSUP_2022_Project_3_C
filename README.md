@@ -35,9 +35,9 @@ coding music packages. The ultimate aim of this project is to be able to play mu
 
 ## Project progress:
 
-14_01_2022 : Project is done at 20%. We managed to finish "Create and Play a Basic Note" in a week.
-21_01_2022 : The second part of the project is done : basic filters, envelope and chords.
-28_01_2022 : The third part of the project is done : frequency analysis andadvanced filters.
+14_01_2022 : Project is done at 20%. We managed to finish "Create and Play a Basic Note" in a week.</br>
+21_01_2022 : The second part of the project is done : basic filters, envelope and chords.</br>
+28_01_2022 : The third part of the project is done : frequency analysis andadvanced filters.</br>
 07_02_2022 : The project is done, we didn't do the MP3 Compression.
 
 ## How to install it and run it
