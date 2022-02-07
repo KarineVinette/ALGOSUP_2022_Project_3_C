@@ -3,6 +3,7 @@ module BasicFilters
     open XPlot.Plotly
     open System
 
+
     module byFixedAmount =
 
         let byFixedAmount (modifier:float) (wave:float array) =
