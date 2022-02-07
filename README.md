@@ -53,10 +53,15 @@ The project is using F#, SFML.
 
 Functional-Specifications : https://github.com/KarineVinette/ALGOSUP_2022_Project_3_C/blob/main/documents/Functional-Specifications.md </br>
 Technical-Specifications : https://github.com/KarineVinette/ALGOSUP_2022_Project_3_C/blob/main/documents/Technical-Specifications.md </br>
+Software-Architecture : https://github.com/KarineVinette/ALGOSUP_2022_Project_3_C/blob/main/documents/software_architecture.pdf</br>
 
 ## Issues and how to correct them
 
 SFML isn't working well on mac.
+8D-solving :
+SFML : https://github.com/KarineVinette/ALGOSUP_2022_Project_3_C/blob/main/documents/8D_SFML.pdf </br>
+Documents : https://github.com/KarineVinette/ALGOSUP_2022_Project_3_C/blob/main/documents/8D_Documents.pdf </br>
+Spectroscope :https://github.com/KarineVinette/ALGOSUP_2022_Project_3_C/blob/main/documents/8D_Spectroscope.pdf
 
 **All rights reserved©**
 
