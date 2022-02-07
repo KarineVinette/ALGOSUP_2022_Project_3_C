@@ -51,7 +51,8 @@ The project is using F#, SFML.
 
 [![made-with-Visual-Studio-Code](https://img.shields.io/badge/Softwares%20Used:-Visual%20Studio%20Code-0078d7.svg)](https://code.visualstudio.com) 
 
-Functional-Specifications : https://github.com/KarineVinette/ALGOSUP_2022_Project_3_C/blob/main/documents/Functional-Specifications.md
+Functional-Specifications : https://github.com/KarineVinette/ALGOSUP_2022_Project_3_C/blob/main/documents/Functional-Specifications.md </br>
+Technical-Specifications : https://github.com/KarineVinette/ALGOSUP_2022_Project_3_C/blob/main/documents/Technical-Specifications.md </br>
 
 ## Issues and how to correct them
 
