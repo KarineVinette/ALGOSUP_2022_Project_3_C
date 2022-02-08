@@ -22,5 +22,5 @@ module Waves =
     let squareWave = Array.init limit (fun i -> amp * float(Math.Sign(sin((2. * freq * Pi * float i)/sampleRate))))
     let squarebyte = Array.init limit (fun i -> amp * float(Math.Sign(sin((2. * freq * Pi * float i)/sampleRate))) |> sample)
 
-    let sawWave = Array.init limit (fun i -> (2.*amp/Pi)* Math.Atan(tan((2.*Pi*float i)/freq)))
-    let sawbyte = Array.init limit (fun i -> (2.*amp/Pi)* Math.Atan(tan((2.*Pi*float i)/freq)) |> sample)
+    let sawWave = Array.init 44100 (fun i -> (2.*amp/Pi)* Math.Atan(tan((Pi*float i*freq)/sampleRate)))
+    let sawbyte = Array.init 44100 (fun i -> (2.*amp/Pi)* Math.Atan(tan((Pi*float i*freq)/sampleRate)) |> sample)
