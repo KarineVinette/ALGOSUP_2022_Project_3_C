@@ -237,7 +237,7 @@ module Program =
                 let message = Console.ReadLine()
                 commands message |> ignore
         | "sus" ->
-            Mogus |> ignore
+            PlaySong(Amogus) |> ignore
 
             printfn
                 "

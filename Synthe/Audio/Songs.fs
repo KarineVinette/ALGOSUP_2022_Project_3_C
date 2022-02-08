@@ -1197,20 +1197,6 @@ module Song =
         B White 5
         A White 5
         |]
-
-    let Mogus = [| //temps 100
-        C HalfNote 5
-        DDiese HalfNote 5
-        F HalfNote 5
-        FDiese HalfNote 5
-        F HalfNote 5
-        DDiese HalfNote 5
-        C HalfNote 5
-        Sil Silence 0
-        ADiese HalfNote 5
-        D QuarterNote 5
-        C QuarterNote 5
-        |]
         
     let Kalinka = [| // Tempo: 90
         E Black 6;
