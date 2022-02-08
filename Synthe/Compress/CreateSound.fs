@@ -1,8 +1,10 @@
-module creation 
-    open System.IO
+namespace SyntheCompress
+open System.IO
+
+module CreateWavFile = 
 
     let write stream (data:byte[]) =
-        use writer = new BinaryWriter(stream)
+        let writer = new BinaryWriter(stream)
         // RIFF
         writer.Write("RIFF"B)
         let size = 36 + data.Length in writer.Write(size)
@@ -20,10 +22,3 @@ module creation
         writer.Write("data"B)
         writer.Write(data.Length)
         writer.Write(data)
-
-    let sample x = (x + 1.)/2. * 255. |> byte
-
-    let data = Array.init 160000 (fun i -> sin (float i/float 8) |> sample) 
-    let stream = File.Create("./Audio/CreatedSounds/soundTest1.wav") 
-
-    write stream data

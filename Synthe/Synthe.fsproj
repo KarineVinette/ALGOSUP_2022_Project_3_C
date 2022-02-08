@@ -13,14 +13,15 @@
 
   <ItemGroup>
     <Compile Include="Audio\Waves.fs" />
-    <!-- <Compile Include="Visual\Charts.fs" /> -->
+    <Compile Include="Audio\Notes.fs" />
+    <Compile Include="Audio\Filters.fs" />
+    <Compile Include="Audio\Songs.fs" />
     <Compile Include="Compress\CreateSound.fs" /> 
-    <Compile Include="Compress\PlayWithoutSaving.fs" />
-    <Compile Include="Audio/playFileSound.fs" />
-    <!-- <Compile Include="Audio/WriteWithoutSave.fs" /> -->
-    <Compile Include="Audio/ReadWithoutSave.fs" />
-    <Compile Include="basicFilters.fs" />
-    <!-- <Compile Include="Program.fs" /> -->
+    <!-- <Compile Include="Compress\PlayWithoutSaving.fs" /> -->
+    <Compile Include="Audio\playFileSound.fs" />
+    <Compile Include="Audio\ReadWithoutSave.fs" />
+    <Compile Include="Visual\Charts.fs" />
+    <Compile Include="Program.fs" />
   </ItemGroup>
 
   <ItemGroup>
@@ -43,6 +44,9 @@
       <GeneratePathProperty></GeneratePathProperty>
     </PackageReference>
     <PackageReference Include="sfml-system" Version="2.4.2">
+      <GeneratePathProperty></GeneratePathProperty>
+    </PackageReference>
+    <PackageReference Include="MathNet.Filtering" Version="0.7.0">
       <GeneratePathProperty></GeneratePathProperty>
     </PackageReference>
   </ItemGroup>
