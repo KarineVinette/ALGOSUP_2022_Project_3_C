@@ -2626,9 +2626,22 @@ module Song =
 
         |]
 
-    let testEcho = [|
-        A Round 4 |> Flange
-        |]
+    
+    let SoundOverdrived = [|
+        A Round 4 |> Overdrive 0.6
+    |]
+
+    let SoundFlanged = [|
+        A Round 4 |> Flange 
+    |]
+
+    let SoundReverbed = [|
+        A Black 4 |> Reverb 0.4
+    |]
+
+    let SoundEchoed = [|
+        A Black 4 |> Echo 0.4 0.1
+    |]
 
     let SongAssemble (song: byte [][] ) = 
             let mutable wave2 = sinbyte 0. 0.
