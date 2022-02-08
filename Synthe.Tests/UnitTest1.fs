@@ -29,7 +29,7 @@ module Test =
                 [<Test>]
                 let SawtoothWave() =
                     let result = sawWave.Length
-                    Assert.AreEqual(limit, result)
+                    Assert.AreEqual(44100, result)
 
                 [<Test>]
                 let numbSong()=
