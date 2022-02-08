@@ -177,7 +177,7 @@ module Program =
                     - playFile              Play a selected file
                     - saveFile              Save file on the disk in './Audio/CreatedSounds/SavedSound.wav'
                     - sinWave               Visualise a SinWave using GoogleCharts
-                    - sqWave                Visualise a SquareWave using GoogleCharts
+                    - squareWave            Visualise a SquareWave using GoogleCharts
                     - sawWave               Visualise a SawToothWave using GoogleCharts
                     - sus                   He does seems really sus...
                     - triangleWave          Visualise a TriangleWave using GoogleCharts
@@ -246,21 +246,21 @@ module Program =
                             ░▀▀█░█░█░▀▀█
                             ░▀▀▀░▀▀▀░▀▀▀
 
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣴⣶⣿⣿⣷⣶⣄⣀⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⣰⣾⣿⣿⡿⢿⣿⣿⣿⣿⣿⣿⣿⣷⣦⡀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⢀⣾⣿⣿⡟⠁⣰⣿⣿⣿⡿⠿⠻⠿⣿⣿⣿⣿⣧⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⣾⣿⣿⠏⠀⣴⣿⣿⣿⠉⠀⠀⠀⠀⠀⠈⢻⣿⣿⣇⠀⠀⠀
-⠀⠀⠀⠀⢀⣠⣼⣿⣿⡏⠀⢠⣿⣿⣿⠇⠀⠀⠀⠀⠀⠀⠀⠈⣿⣿⣿⡀⠀⠀
-⠀⠀⠀⣰⣿⣿⣿⣿⣿⡇⠀⢸⣿⣿⣿⡀⠀⠀⠀⠀⠀⠀⠀⠀⣿⣿⣿⡇⠀⠀
-⠀⠀⢰⣿⣿⡿⣿⣿⣿⡇⠀⠘⣿⣿⣿⣧⠀⠀⠀⠀⠀⠀⢀⣸⣿⣿⣿⠁⠀⠀
-⠀⠀⣿⣿⣿⠁⣿⣿⣿⡇⠀⠀⠻⣿⣿⣿⣷⣶⣶⣶⣶⣶⣿⣿⣿⣿⠃⠀⠀⠀
-⠀⢰⣿⣿⡇⠀⣿⣿⣿⠀⠀⠀⠀⠈⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⠟⠁⠀⠀⠀⠀
-⠀⢸⣿⣿⡇⠀⣿⣿⣿⠀⠀⠀⠀⠀⠀⠀⠉⠛⠛⠛⠉⢉⣿⣿⠀⠀⠀⠀⠀⠀
-⠀⢸⣿⣿⣇⠀⣿⣿⣿⠀⠀⠀⠀⠀⢀⣤⣤⣤⡀⠀⠀⢸⣿⣿⣿⣷⣦⠀⠀⠀
-⠀⠀⢻⣿⣿⣶⣿⣿⣿⠀⠀⠀⠀⠀⠈⠻⣿⣿⣿⣦⡀⠀⠉⠉⠻⣿⣿⡇⠀⠀
-⠀⠀⠀⠛⠿⣿⣿⣿⣿⣷⣤⡀⠀⠀⠀⠀⠈⠹⣿⣿⣇⣀⠀⣠⣾⣿⣿⡇⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠹⣿⣿⣿⣿⣦⣤⣤⣤⣤⣾⣿⣿⣿⣿⣿⣿⣿⣿⡟⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠻⢿⣿⣿⣿⣿⣿⣿⠿⠋⠉⠛⠋⠉⠉⠁⠀⠀⠀⠀
+                                      ⣠⣴⣶⣿⣿⣷⣶⣄⣀⣀         
+                                     ⣰⣾⣿⣿⡿⢿⣿⣿⣿⣿⣿⣿⣿⣷⣦⡀     
+                                   ⢀⣾⣿⣿⡟⠁⣰⣿⣿⣿⡿⠿⠻⠿⣿⣿⣿⣿⣧    
+                                   ⣾⣿⣿⠏ ⣴⣿⣿⣿⠉     ⠈⢻⣿⣿⣇   
+                                ⢀⣠⣼⣿⣿⡏ ⢠⣿⣿⣿⠇       ⠈⣿⣿⣿⡀  
+                               ⣰⣿⣿⣿⣿⣿⡇ ⢸⣿⣿⣿⡀        ⣿⣿⣿⡇  
+                              ⢰⣿⣿⡿⣿⣿⣿⡇ ⠘⣿⣿⣿⣧      ⢀⣸⣿⣿⣿⠁  
+                              ⣿⣿⣿⠁⣿⣿⣿⡇  ⠻⣿⣿⣿⣷⣶⣶⣶⣶⣶⣿⣿⣿⣿⠃   
+                             ⢰⣿⣿⡇ ⣿⣿⣿    ⠈⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⠟⠁    
+                             ⢸⣿⣿⡇ ⣿⣿⣿       ⠉⠛⠛⠛⠉⢉⣿⣿      
+                             ⢸⣿⣿⣇ ⣿⣿⣿     ⢀⣤⣤⣤⡀  ⢸⣿⣿⣿⣷⣦   
+                              ⢻⣿⣿⣶⣿⣿⣿     ⠈⠻⣿⣿⣿⣦⡀ ⠉⠉⠻⣿⣿⡇  
+                               ⠛⠿⣿⣿⣿⣿⣷⣤⡀    ⠈⠹⣿⣿⣇⣀ ⣠⣾⣿⣿⡇  
+                                   ⠹⣿⣿⣿⣿⣦⣤⣤⣤⣤⣾⣿⣿⣿⣿⣿⣿⣿⣿⡟   
+                                     ⠉⠻⢿⣿⣿⣿⣿⣿⣿⠿⠋⠉⠛⠋⠉⠉⠁    
             "
             Console.Write("Please enter a command >")
             let message = Console.ReadLine()
