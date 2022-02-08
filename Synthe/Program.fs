@@ -27,6 +27,10 @@ module Program =
         | "TOM" -> TOM
         | "zeldaOverworld" -> ZeldaOverworld
         | "crazy" -> Crazy
+        | "overdrive" -> SoundOverdrived
+        | "flange" -> SoundFlanged
+        | "reverb" -> SoundReverbed
+        | "echo" -> SoundEchoed
         | "song" ->  
                 printfn
                     " 
