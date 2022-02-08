@@ -50,6 +50,10 @@ module Program =
                     - numb                  Play 'Numb' from 'Linkin Park'
                     - inTheEnd              Play 'In The End' from 'Linkin Park'
                     - lettreAElise          Play 'Lettre A Elise' from 'Bethoveen'
+                    - overdrive             Play a note overdrived
+                    - flange                Play a note flanged
+                    - reverb                Play a note reverbed
+                    - echo                  Play a note echoed
 
 
                     "
@@ -123,6 +127,7 @@ module Program =
             commands message |> ignore
         | "overdrive"-> 
             Overdrived()
+            PlaySong(SoundOverdrived)
             Console.Write("Please enter a command >")
             let message = Console.ReadLine()
             commands message |> ignore
@@ -133,6 +138,7 @@ module Program =
             commands message |> ignore
         | "flange"-> 
             Flanged()
+            PlaySong(SoundFlanged)
             Console.Write("Please enter a command >")
             let message = Console.ReadLine()
             commands message |> ignore
@@ -143,11 +149,13 @@ module Program =
             commands message |> ignore
         | "echo"-> 
             Echoed()
+            PlaySong(SoundEchoed)
             Console.Write("Please enter a command >")
             let message = Console.ReadLine()
             commands message |> ignore
         | "reverb"-> 
             Reverbed()
+            PlaySong(SoundReverbed)
             Console.Write("Please enter a command >")
             let message = Console.ReadLine()
             commands message |> ignore
