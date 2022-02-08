@@ -10,6 +10,7 @@ module Note =
         | Silence
         | MSilence
         | EightNote
+        | FifthNote
         | QuarterNote
         | Triolet
         | HalfNote
@@ -41,6 +42,7 @@ module Note =
         | Silence -> 1.
         | MSilence -> 4.
         | EightNote -> 0.125
+        | FifthNote -> 0.2
         | QuarterNote -> 0.25
         | Triolet -> 0.33
         | HalfNote -> 0.5

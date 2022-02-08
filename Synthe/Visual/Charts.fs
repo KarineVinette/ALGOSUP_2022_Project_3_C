@@ -56,7 +56,7 @@ module Charts =
           vAxis = Axis(title = "Amplitude"),
           hAxis = Axis(title = "Frequency")
           )
-      ByFixedAmount 3. sinWave |> Chart.Line |> Chart.WithOptions options |> Chart.Show
+      ByFixedAmount 3. (sinbyte 1 100) |> Chart.Line |> Chart.WithOptions options |> Chart.Show
 
     let Overdrived()=
       let options =
@@ -66,7 +66,7 @@ module Charts =
           vAxis = Axis(title = "Amplitude"),
           hAxis = Axis(title = "Frequency")
           )
-      Overdrive 0.6 sinWave  |> Chart.Line |> Chart.WithOptions options |> Chart.Show
+      Overdrive 0.6 (sinbyte 1 100)   |> Chart.Line |> Chart.WithOptions options |> Chart.Show
 
     let Enveloped()=
       let options =
@@ -86,7 +86,7 @@ module Charts =
           vAxis = Axis(title = "Amplitude"),
           hAxis = Axis(title = "Frequency")
           )
-      Flange(sinWave) |> Chart.Line  |> Chart.WithOptions options |> Chart.Show
+      Flange((sinbyte 1 100)) |> Chart.Line  |> Chart.WithOptions options |> Chart.Show
 
     let CombinedWaves()=
       let options =
@@ -106,7 +106,7 @@ module Charts =
           vAxis = Axis(title = "Amplitude"),
           hAxis = Axis(title = "Frequency")
           )
-      Echo sinWave 0.5 0.1 |> Chart.Line |> Chart.WithOptions options |> Chart.Show
+      Echo 0.1 0.5 (sinbyte 1 100)|> Chart.Line |> Chart.WithOptions options |> Chart.Show
 
     let Reverbed() =
       let options =
@@ -116,7 +116,7 @@ module Charts =
           vAxis = Axis(title = "Amplitude"),
           hAxis = Axis(title = "Frequency")
           )
-      Reverb sinWave 2. |> Chart.Line |> Chart.WithOptions options |> Chart.Show 
+      Reverb 2. (sinbyte 1 100)  |> Chart.Line |> Chart.WithOptions options |> Chart.Show 
 
     let AM() = 
       let options =

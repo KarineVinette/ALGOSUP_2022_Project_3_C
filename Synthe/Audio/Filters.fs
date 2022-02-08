@@ -9,23 +9,25 @@ module Effect =
     let time = 0.5
 
 // Modify the wave’s amplitude by a fixed amount
-    let ByFixedAmount (modifier:float) (wave:float array) =
-        for i in 0..(Waves.limit-1) do
+    let ByFixedAmount (modifier:float) (wave:byte array) =
+        let wave = wave |> Array.map(unsample)
+        for i in 0..(wave.Length-1) do
             wave.[i] <- wave.[i] * modifier
-        wave
+        wave |> Array.map(sample)
 
     // let newwave = byFixedAmount 3. sinWave
     // newwave |> Chart.Line |> Chart.Show
 
 // Cut off the wave at specific amplitude to given the “overdriven” often used in rock songs
-    let Overdrive (flatten:float) (wave: float array) =
-        for i in 0..limit-1 do
+    let Overdrive (flatten:float) (wave: byte array) =
+        let wave = wave |> Array.map(unsample)
+        for i in 0..(wave.Length-1)  do
             if wave.[i] > flatten then
                 wave.[i] <- flatten
-            elif wave.[i] < 0.0 - flatten then
-                wave.[i] <- 0.0 - flatten
+            elif wave.[i] < 0.0  - flatten then
+                wave.[i] <- 0.0  - flatten
 
-        wave
+        wave |> Array.map(sample)
 
     // let sin = overdrive 0.7 sinWave (limit - 1)
 
@@ -55,53 +57,59 @@ module Effect =
     // Amp |> Chart.Line |> Chart.Show
 
 // Flanging is an audio effect produced by mixing two identical signals together, one signal delayed by a small and gradually changing period
-    let Flange (wave:float array) = 
-            [
-            let maxTimeDelay = 0.003
-            let speed = 1.
+    let Flange (wave:byte array) = 
+    
+            let newWave = wave |> Array.map(unsample)
+            let flangedWave =
+                [|
+                let maxTimeDelay = 0.003
+                let speed = 1.
 
-            let maxSampleDelay = int (maxTimeDelay * float sampleRate)
-            let mutable currentDelay = 0
+                let maxSampleDelay = int (maxTimeDelay * float sampleRate)
+                let mutable currentDelay = 0
 
-            let coefficient = 0.5
-            let mutable currentSine = 0.
+                let coefficient = 0.5
+                let mutable currentSine = 0.
 
-            for i in 0..wave.Length-1 do
-                if i < maxSampleDelay+1 then yield wave.[i]
-                else
-                    currentSine <- abs(sin((Waves.freq/ Waves.Pi) * (float i) * (speed / (float sampleRate))))
-                    currentDelay <- int(currentSine * (float maxSampleDelay))
-                    yield (coefficient * wave.[i]) + (coefficient * wave.[i-currentDelay])
-            ]
+                for i in 0..newWave.Length-1 do
+                    if i < maxSampleDelay+1 then yield newWave.[i]
+                    else
+                        currentSine <- abs(sin((freq/Pi) * (float i) * (speed / (float sampleRate))))
+                        currentDelay <- int(currentSine * (float maxSampleDelay))
+                        yield (coefficient * newWave.[i]) + (coefficient * newWave.[i-currentDelay])
+                |]
+            flangedWave |> Array.map(sample) 
     // Flange(sinWave) |> Chart.Line  |> Chart.Show
 
-    let addWaves = Array.map2(fun x y -> (x+y)/2.) Waves.sinWave Waves.squareWave
+    let addWaves = Array.map2(fun x y -> (x+y)/2.) sinWave squareWave
     // addWaves |> Chart.Line |> Chart.Show
 
 // Reverberation or reverb, is a persistence of sound, or echo after a sound is produced
-    let Reverb (wave: float []) reduc = 
-        let mutable wave2 = wave
-        let mutable amp2 = Waves.amp
+    let Reverb  reduc (wave: byte []) = 
+        let mutable wave2 = wave |> Array.map(unsample)
+        let freq = 440.
+        let mutable amp2 = amp
         while amp2 * reduc > 0.1 do
             amp2 <- amp2 * reduc
-            let r = Array.init (Waves.limit) (fun i -> amp2 * sin((2. * Waves.freq * Waves.Pi * float i)/sampleRate))
+            let r = Array.init (wave.Length) (fun i -> amp2 * sin((2. * freq * Pi * float i)/sampleRate))
             let newWave = Array.concat [|wave2; r|]
             wave2 <- newWave
-        wave2
+        wave2 |> Array.map(sample)
 
     // reverb sinWave 0.6 |> Chart.Line |> Chart.Show
 
 // In audio signal processing and acoustics, an echo is a reflection of sound that arrives at the listener with a delay after the direct sound
-    let Echo (wave: float []) reduc (delay:float) = 
-        let mutable wave2 = wave
-        let mutable amp2 = Waves.amp
+    let Echo reduc (delay:float) (wave: byte [])= 
+        let mutable wave2 = wave |> Array.map(unsample)
+        let freq = 440.
+        let mutable amp2 = amp
         while amp2 * reduc > 0.1 do
             amp2 <- amp2 * reduc
             let del = Array.init (int(delay * sampleRate))(fun i -> 0.)
-            let e = Array.init (Waves.limit) (fun i -> amp2 * sin((2. * Waves.freq * Waves.Pi * float i)/sampleRate))
+            let e = Array.init (wave.Length) (fun i -> amp2 * sin((2. * freq * Pi * float i)/sampleRate))
             let newWave = Array.concat [|wave2; del; e|]
             wave2 <- newWave
-        wave2
+        wave2 |> Array.map(sample)
 
     // echo sinWave 0.5 0.1 |> Chart.Line |> Chart.Show
 

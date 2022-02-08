@@ -14,17 +14,17 @@ module Test =
                 [<Test>]
                 let SineWave() =
                     let result = sinWave.Length
-                    Assert.AreEqual(limit, result)
+                    Assert.AreEqual(44100, result)
 
                 [<Test>]
                 let TriangleWave() =
                     let result = triangleWave.Length
-                    Assert.AreEqual(limit, result)
+                    Assert.AreEqual(44100, result)
 
                 [<Test>]
                 let SquareWave() =
                     let result = squareWave.Length
-                    Assert.AreEqual(limit, result)
+                    Assert.AreEqual(44100, result)
 
                 [<Test>]
                 let SawtoothWave() =
