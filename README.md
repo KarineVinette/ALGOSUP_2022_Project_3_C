@@ -46,11 +46,11 @@ let triangleWave = Array.init 44100  (fun i ->  (2.*amp/Pi)* Math.Asin(sin((2. *
 ```
 **Square Wave:**
 ```fs
-    let  squareWave  = Array.init 44100  (fun i -> amp * float(Math.Sign(sin((2.  * freq * Pi * float i)/sampleRate))))
+let  squareWave  = Array.init 44100  (fun i -> amp * float(Math.Sign(sin((2.  * freq * Pi * float i)/sampleRate))))
 ```
 **SawTooth Wave:**
 ```fs
-    let  sawWave  = Array.init 44100  (fun i ->  (2.*amp/Pi)* Math.Atan(tan((Pi*float i*freq)/sampleRate)))
+let  sawWave  = Array.init 44100  (fun i ->  (2.*amp/Pi)* Math.Atan(tan((Pi*float i*freq)/sampleRate)))
 ```
 Under all of its respective functions, you will find their transformation into an array of bytes
 
