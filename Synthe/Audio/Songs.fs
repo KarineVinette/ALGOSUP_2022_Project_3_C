@@ -57,8 +57,130 @@ module Song =
         C Black 5
         A Black 4
         A Black 4
+        Sil Silence 0
         // optional part
+        E Black 5
+        addWaves(GDiese HalfNote 4)(B HalfNote 4)
+        C HalfNote 5
+        D Black 5
+        addWaves(A HalfNote 4)(C HalfNote 5)
+        addWaves(G HalfNote 4)(B HalfNote 4)
 
+        addWaves(E Black 4)(A Black 4)
+        A HalfNote 4
+        C HalfNote 5
+        E Black 5
+        D HalfNote 5
+        C HalfNote 5
+
+        addWaves(GDiese Black 4)(B Black 4)
+        addWaves(G HalfNote 4)(B HalfNote 4)
+        addWaves(A HalfNote 4)(C HalfNote 5)
+        addWaves(B Black 4)(D Black 5)
+        E Black 5
+
+        C Black 5
+        A Black 4
+        A Black 4
+        Sil Silence 0
+
+        HalfSil HalfSilence 0
+        addWaves(F Black 4)(D Black 5)
+        addWaves(A HalfNote 4)(F HalfNote 5)
+        addWaves(C Black 5)(A Black 5)
+        addWaves(B HalfNote 4)(G HalfNote 5)
+        addWaves(A HalfNote 4)(F HalfNote 5)
+
+        addWaves(G PBlack 4)(E PBlack 5)
+        addWaves(E HalfNote 4)(C HalfNote 4)
+        addWaves(G Black 4)(E Black 5)
+        addWaves(F HalfNote 4)(D HalfNote 5)
+        addWaves(E HalfNote 4)(C HalfNote 5)
+
+        addWaves(GDiese Black 4)(B Black 4)
+        addWaves(G HalfNote 4)(B HalfNote 4)
+        addWaves(A HalfNote 4)(C HalfNote 5)
+        addWaves(B Black 4)(D Black 5)
+        E Black 5
+
+        C Black 5
+        A Black 4
+        A Black 4
+        Sil Silence 0
+
+        addWaves(C White 4)(E White 4)
+        addWaves(A White 3)(C White 4)
+        
+        addWaves(B White 3)(D White 4)
+        addWaves(GDiese White 3)(B White 3)
+
+        addWaves(A White 3)(C White 4)
+        addWaves(E White 3)(A White 3)
+
+        addWaves(E White 3)(GDiese White 3)
+        addWaves(G White 3)(B White 3)
+
+        addWaves(C White 4)(E White 4)
+        addWaves(A White 3)(C White 4)
+        
+        addWaves(B White 3)(D White 4)
+        addWaves(GDiese White 3)(B White 3)
+
+        addWaves(A Black 3)(C Black 4)
+        addWaves(C Black 4)(E Black 4)
+        addWaves(E Black 4)(A Black 4)
+        addWaves(E Black 4)(A Black 4)
+
+        addWaves3(B Round 3)(F Round 4)(GDiese Round 4)
+
+        E Black 5
+        addWaves(GDiese HalfNote 4)(B HalfNote 4)
+        C HalfNote 5
+        D Black 5
+        addWaves(A HalfNote 4)(C HalfNote 5)
+        addWaves(G HalfNote 4)(B HalfNote 4)
+
+        addWaves(E Black 4)(A Black 4)
+        A HalfNote 4
+        C HalfNote 5
+        E Black 5
+        D HalfNote 5
+        C HalfNote 5
+
+        addWaves(GDiese Black 4)(B Black 4)
+        addWaves(G HalfNote 4)(B HalfNote 4)
+        addWaves(A HalfNote 4)(C HalfNote 5)
+        addWaves(B Black 4)(D Black 5)
+        E Black 5
+
+        C Black 5
+        A Black 4
+        A Black 4
+        Sil Silence 0
+
+        HalfSil HalfSilence 0
+        addWaves(F Black 4)(D Black 5)
+        addWaves(A HalfNote 4)(F HalfNote 5)
+        addWaves(C Black 5)(A Black 5)
+        addWaves(B HalfNote 4)(G HalfNote 5)
+        addWaves(A HalfNote 4)(F HalfNote 5)
+
+        addWaves(G PBlack 4)(E PBlack 5)
+        addWaves(E HalfNote 4)(C HalfNote 4)
+        addWaves(G Black 4)(E Black 5)
+        addWaves(F HalfNote 4)(D HalfNote 5)
+        addWaves(E HalfNote 4)(C HalfNote 5)
+
+        addWaves(GDiese Black 4)(B Black 4)
+        addWaves(G HalfNote 4)(B HalfNote 4)
+        addWaves(A HalfNote 4)(C HalfNote 5)
+        addWaves(B Black 4)(D Black 5)
+        E Black 5
+
+        C Black 5
+        A Black 4
+        A Black 4
+        Sil Silence 0
         |]
 
     let Numb = [|

@@ -59,7 +59,7 @@ module Test =
                 [<Test>]
                 let KalinkaSong()=
                     let result = Kalinka.Length
-                    Assert.AreEqual(152, result)
+                    Assert.AreEqual(151, result)
 
                 [<Test>]
                 let RRSong()=

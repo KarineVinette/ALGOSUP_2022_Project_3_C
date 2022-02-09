@@ -229,6 +229,7 @@ module Program =
                     - numb                  Play 'Numb' from 'Linkin Park'
                     - inTheEnd              Play 'In The End' from 'Linkin Park'
                     - lettreAElise          Play 'Lettre A Elise' from 'Bethoveen'
+                    - tetris                   Play famous theme from Tetris 
 
 
                     "
@@ -292,7 +293,6 @@ module Program =
                 Console.Write("Welcome to Sound Synthesis, Please enter a command >")
                 let message = Console.ReadLine()
                 commands message |> ignore
-            |"tetris" -> PlaySong(Tetris)
             | _ -> printfn "Unknown command" |> ignore
 
         0
