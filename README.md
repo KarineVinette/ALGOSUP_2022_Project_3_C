@@ -56,11 +56,102 @@ Under all of its respective functions, you will find their transformation into a
 
 To play a song without saving it on your computer, use the function 
 ```fs
-    let  PlaySong  (song:byte[][]) 
+ PlaySong  (song:byte[][]) 
 ```  
 To play a file from a disk, use the function 
 ```fs
-    let  PlayURL  (url:string)
+ PlayURL  (url:string)
+```
+
+## ByFixedAmount 
+Parameter : a wave as a sin wave, an amplitude to put inside modifier.
+```fs
+ByFixedAmount (modifier:float) (wave:byte array) 
+```
+
+## Overdrive
+Parameter : a wave, a limit your amplitude cannot exceed (flatten).
+```fs
+Overdrive (flatten:float) (wave: byte array) 
+```
+
+## Envelope
+```fs
+let Enveloppe time amplitude At De Su Re =
+```
+ - Attack : progressive sound augmentation.
+ ```fs
+ let Attack = Array.init (int (time*sampleRate*At)) (fun i -> amplitude/(time*sampleRate*At)* float i)
+ ```
+ - Decay : progressive sound decrease.
+ ```fs
+ let Decay = Array.init (int (time*sampleRate*De)) (fun i -> amplitude - (amplitude-Su*amplitude)/(time*sampleRate*De) *float i)
+ ```
+ - Sustain : maintain the sound.
+ ```fs
+let Sustain = Array.init (int (time*(sampleRate - sampleRate*Re - sampleRate*De - sampleRate*At))) (fun _ -> Su*amplitude)
+```
+ - Release : release to zero.
+```fs
+let Release = Array.init (int (time*sampleRate*Re)) (fun i -> Su*amplitude - Su*amplitude/(time*sampleRate*Re) * float i)
+```
+Putting them together and we have an envelope:
+```fs
+let amp = Array.concat [|Attack; Decay; Sustain; Release|]
+```
+ 
+
+## Flange
+```fs  
+Flange (wave:byte array)
+```
+## addWaves
+Parameters : two waves.
+```fs
+addWaves (wave1: byte []) (wave2: byte []) 
+
+```
+
+## Reverb
+Parameters : a wave, a reducer multiplicator.
+```fs
+ Reverb  reduc (wave: byte []) 
+
+```
+
+## Echo
+Parameters : a wave, a reducer miltiplicator, a delay.
+```fs
+Echo reduc (delay:float) (wave: byte [])
+
+```
+
+## AM
+Parameters : two different sin waves.
+```fs
+AM (wavep: float array) (wavem: float array) 
+
+```
+
+## FM
+Parameter : two different sin waves.
+```fs
+FM (wavep: float array) (wavem: float array) 
+
+```
+
+## LowPassFilter
+Parameter : a sin wave.
+```fs
+LowPassFilter (sinWave: float []) 
+
+```
+
+## highPassFilter
+Parameter : a sin wave.
+```fs
+highPassFilter (sinWave: float []) 
+
 ```
 
 To use notes, use the function associated to the note
