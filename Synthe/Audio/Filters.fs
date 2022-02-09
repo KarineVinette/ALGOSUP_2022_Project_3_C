@@ -78,6 +78,20 @@ module Effect =
 
 
 
+
+    let addWaves (wave1: byte []) (wave2: byte []) = 
+    
+        let wave1 = wave1 |> Array.map(unsample)
+        let wave2 = wave2 |> Array.map(unsample)
+        Array.map2(fun x y  -> (x+y)/2.) wave1 wave2 |> Array.map(sample) 
+           // addWaves |> Chart.Line |> Chart.Show
+    let addWaves3 (wave1: byte []) (wave2: byte []) (wave3: byte []) = 
+    
+        let wave1 = wave1 |> Array.map(unsample)
+        let wave2 = wave2 |> Array.map(unsample)
+        let wave3 = wave3 |> Array.map(unsample)
+        Array.map3(fun x y z -> (x+y+z)/3.) wave1 wave2 wave3 |> Array.map(sample)  
+
 // Reverberation or reverb, is a persistence of sound, or echo after a sound is produced
     let Reverb (wave: byte []) = 
         let mutable wave2 = wave |> Array.map(unsample)
