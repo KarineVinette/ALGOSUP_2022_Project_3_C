@@ -1,5 +1,38 @@
 ## Technical Specifications ( 26/01/2022 )
 
+<details>
+<summary>Table of Contents</summary>
+ 
+- [1. Front Matter](#1-front-matter)
+- [2. Introduction](#2-introduction)
+    + [2.1: Summary](#21-summary)
+    + [2.2 Glossary:](#22-glossary)
+    + [2.3: Context](#23-context)
+    + [2.4: Requirements](#24-requirements)
+    + [2.5: Out Of Scope](#25-out-of-scope)
+- [3. Solution](#3-solution)
+    + [3.1: Current Solution](#31-current-solution)
+    + [3.2: Solution Design:](#32-solution-design)
+    + [3.3: Testing:](#33-testing)
+- [4. Further Considerations](#4-further-considerations)
+    + [4.1: Impact on other teams:](#41-impact-on-other-teams)
+    + [4.2: Cost Analysis:](#42-cost-analysis)
+    + [4.3: Security consideration](#43-security-consideration)
+    + [4.4: Privacy considerations:](#44-privacy-considerations)
+    + [4.5: Accessibility considerations:](#45-accessibility-considerations)
+    + [4.6: Risks:](#46-risks)
+    + [4.7: Support considerations](#47-support-considerations)
+- [5. Work](#5-work)
+    + [5.1: Work estimates and timelines](#51-work-estimates-and-timelines)
+    + [5.2: Prioritization](#52-prioritization)
+    + [5.3 Milestones](#53-milestones)
+- [6. End Matter](#6-end-matter)
+    + [6.1: Related Work](#61-related-work)
+    + [6.2: References](#62-references)
+    + [6.3: Acknowledgments](#63-acknowledgments)
+</details>
+
+
 ## 1. Front Matter
 	
 
