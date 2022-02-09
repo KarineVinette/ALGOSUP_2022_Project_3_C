@@ -81,8 +81,11 @@ module Effect =
             flangedWave |> Array.map(sample) 
     // Flange(sinWave) |> Chart.Line  |> Chart.Show
 
-    let addWaves = Array.map2(fun x y -> (x+y)/2.) sinWave squareWave
-    // addWaves |> Chart.Line |> Chart.Show
+    let addWaves (wave1: byte []) (wave2: byte []) = 
+    
+        let wave1 = wave1 |> Array.map(unsample)
+        let wave2 = wave2 |> Array.map(unsample)
+        Array.map2(fun x y  -> (x+y)/2.) wave1 wave2 |> Array.map(sample)    // addWaves |> Chart.Line |> Chart.Show
 
 // Reverberation or reverb, is a persistence of sound, or echo after a sound is produced
     let Reverb  reduc (wave: byte []) = 
