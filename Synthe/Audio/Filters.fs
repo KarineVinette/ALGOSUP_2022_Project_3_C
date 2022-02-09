@@ -70,11 +70,7 @@ module Effect =
     
 
 
-    let addWaves (wave1: byte []) (wave2: byte []) = 
-    
-        let wave1 = wave1 |> Array.map(unsample)
-        let wave2 = wave2 |> Array.map(unsample)
-        Array.map2(fun x y -> (x+y)/2.) wave1 wave2 |> Array.map(sample)
+   
 
 
 
