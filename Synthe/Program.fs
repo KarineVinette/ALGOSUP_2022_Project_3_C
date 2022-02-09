@@ -8,7 +8,6 @@ open SyntheVisual
 open Song
 open Play
 open Charts
-open Url
 
 module Program =
     let rec searchMusic (name: string) =
@@ -27,10 +26,8 @@ module Program =
         | "TOM" -> TOM
         | "zeldaOverworld" -> ZeldaOverworld
         | "crazy" -> Crazy
-        | "overdrive" -> SoundOverdrived
-        | "flange" -> SoundFlanged
+        | "envelope" -> testenvelope
         | "reverb" -> SoundReverbed
-        | "echo" -> SoundEchoed
         | "song" ->  
                 printfn
                     " 
@@ -95,11 +92,17 @@ module Program =
                 let stream =
                     File.Create($"./Audio/CreatedSounds/{file}.wav")
 
-                CreateWavFile.write stream (SongAssemble(searchMusic (file)))
+                createSound.write stream (SongAssemble(searchMusic (file)))
                 Console.Write("Please enter a command >")
                 let message = Console.ReadLine()
                 commands message |> ignore 
-                
+        | "readSection" ->
+                Console.WriteLine("Enter the path of the file : ") 
+                let path = Console.ReadLine()
+                Console.WriteLine("From how many seconds you want to play the file ?")   
+                let s = Convert.ToInt32(Console.ReadLine())
+                PlayWithOffsetFromPath s path 
+
         | "sinWave"-> 
             sinVisu()
             Console.Write("Please enter a command >")
@@ -127,18 +130,19 @@ module Program =
             commands message |> ignore
         | "overdrive"-> 
             Overdrived()
-            PlaySong(SoundOverdrived)
+            //PlaySong(SoundOverdrived)
             Console.Write("Please enter a command >")
             let message = Console.ReadLine()
             commands message |> ignore
         | "envelope"-> 
             Enveloped()
+            PlaySong(testenvelope)
             Console.Write("Please enter a command >")
             let message = Console.ReadLine()
             commands message |> ignore
         | "flange"-> 
             Flanged()
-            PlaySong(SoundFlanged)
+            //PlaySong(SoundFlanged)
             Console.Write("Please enter a command >")
             let message = Console.ReadLine()
             commands message |> ignore
@@ -149,7 +153,7 @@ module Program =
             commands message |> ignore
         | "echo"-> 
             Echoed()
-            PlaySong(SoundEchoed)
+            // PlaySong(SoundEchoed)
             Console.Write("Please enter a command >")
             let message = Console.ReadLine()
             commands message |> ignore
@@ -188,6 +192,7 @@ module Program =
                     - playSong              Play selected song from the 'Song's list
                     - playFile              Play a selected file
                     - saveFile              Save file on the disk in './Audio/CreatedSounds/SavedSound.wav'
+                    - readSection           Read a section of an audio file from disk
                     - sinWave               Visualise a SinWave using GoogleCharts
                     - squareWave            Visualise a SquareWave using GoogleCharts
                     - sawWave               Visualise a SawToothWave using GoogleCharts

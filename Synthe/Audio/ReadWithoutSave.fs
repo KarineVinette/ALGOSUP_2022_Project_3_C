@@ -1,9 +1,8 @@
 namespace SyntheAudio
-open System
 open System.Threading
 open SFML.Audio
+open SFML.System
 open System.IO
-open Waves
 open Song
 open SyntheCompress
 
@@ -17,6 +16,15 @@ module Play =
                         do while sound.Status = SoundStatus.Playing do 
                                 Thread.Sleep(1)
 
+        
+        let PlayURL (url:string) = //Allow to choose your file
+                let buffer = new SoundBuffer(url) //Storage for audio sample defining a sound
+                let sound = new Sound(buffer) 
+                sound.Play() 
+
+                while sound.Status = SoundStatus.Playing do
+                Thread.Sleep(100)
+
 
         let PlaySong (song:byte[][]) =
                 let sample x = (x + 1.)/2. * 255. |> byte
@@ -28,6 +36,18 @@ module Play =
                         // convert is used to convert data's bytes in stream
 
                 let convert = new MemoryStream()
-                CreateWavFile.write convert data
+                createSound.write convert data
 
                 p.play(convert)
+                
+
+        // Read a section of an audio file from disk with a Offset
+        let PlayWithOffsetFromPath (offset) (filePath:string) =
+                let stream = File.Open (filePath, FileMode.Open)
+                let music = new Music(stream)
+                let timeOffset = Time.FromSeconds(float32(offset))
+                music.PlayingOffset <- timeOffset
+                music.Play()
+
+                while music.Status = SoundStatus.Playing do
+                      Thread.Sleep(100)

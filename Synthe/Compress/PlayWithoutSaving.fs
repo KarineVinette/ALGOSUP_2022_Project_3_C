@@ -1,7 +1,9 @@
-﻿namespace SyntheCompress 
+﻿namespace SyntheCompress
 open System.IO
 open SFML.Audio
 open System.Threading
+open SyntheAudio.Waves
+open SyntheAudio.Note
 
 module createSound = 
     let fusedData wave =
@@ -29,7 +31,7 @@ module createSound =
 
     let sample x = (x + 1.)/2. * 255. |> byte 
 
-    let data = sawbyte
+    let data = QSilence QuarterSilence 4
 
     type PlaySound()=
             member x.play stream =
