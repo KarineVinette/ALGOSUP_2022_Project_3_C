@@ -44,7 +44,7 @@ module Test =
                 [<Test>]
                 let GoldenWindSong()=
                     let result = GoldenWind.Length
-                    Assert.AreEqual(129, result)
+                    Assert.AreEqual(130, result)
 
                 [<Test>]
                 let SolviegSong()=
