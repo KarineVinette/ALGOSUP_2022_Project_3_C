@@ -99,7 +99,13 @@ module Program =
                 Console.Write("Please enter a command >")
                 let message = Console.ReadLine()
                 commands message |> ignore 
-                
+        | "readSection" ->
+                Console.WriteLine("Enter the path of the file : ") 
+                let path = Console.ReadLine()
+                Console.WriteLine("From how many seconds you want to play the file ?")   
+                let s = Convert.ToInt32(Console.ReadLine())
+                PlayWithOffsetFromPath s path 
+
         | "sinWave"-> 
             sinVisu()
             Console.Write("Please enter a command >")
@@ -188,6 +194,7 @@ module Program =
                     - playSong              Play selected song from the 'Song's list
                     - playFile              Play a selected file
                     - saveFile              Save file on the disk in './Audio/CreatedSounds/SavedSound.wav'
+                    - readSection           Read a section of an audio file from disk
                     - sinWave               Visualise a SinWave using GoogleCharts
                     - squareWave            Visualise a SquareWave using GoogleCharts
                     - sawWave               Visualise a SawToothWave using GoogleCharts

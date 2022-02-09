@@ -1,9 +1,8 @@
 namespace SyntheAudio
-open System
 open System.Threading
 open SFML.Audio
+open SFML.System
 open System.IO
-open Waves
 open Song
 open SyntheCompress
 
@@ -31,3 +30,15 @@ module Play =
                 CreateWavFile.write convert data
 
                 p.play(convert)
+                
+
+        // Read a section of an audio file from disk with a Offset
+        let PlayWithOffsetFromPath (offset) (filePath:string) =
+                let stream = File.Open (filePath, FileMode.Open)
+                let music = new Music(stream)
+                let timeOffset = Time.FromSeconds(float32(offset))
+                music.PlayingOffset <- timeOffset
+                music.Play()
+
+                while music.Status = SoundStatus.Playing do
+                      Thread.Sleep(100)
