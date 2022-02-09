@@ -96,7 +96,7 @@ module Charts =
           vAxis = Axis(title = "Amplitude"),
           hAxis = Axis(title = "Frequency")
           )
-      addWaves (sinbyte 1. 440.) (sinbyte 1. 261.26)|> Chart.Line |> Chart.WithOptions options |> Chart.Show
+      addWaves (sinbyte 1. 440.) (sinbyte 1. 261.26) |> Chart.Line |> Chart.WithOptions options |> Chart.Show
       
     let Echoed()=
       let options =
