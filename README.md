@@ -188,7 +188,7 @@ let  Amogus  =  [|  // Tempo: 100
 			A QuarterNote 5
 
 |]
-```fs
+```
 You can choose to visualise charts from waves you create using Xplot as the function below:
 ```fs
 let  sinVisu()  =
