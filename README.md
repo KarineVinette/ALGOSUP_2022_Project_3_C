@@ -23,11 +23,11 @@ songs
 ```
 You can always add commands by creating new functions or songs and adding them to the list in **program.fs**.
 To add a song, create it in **Songs.fs** and then add it in **program.fs** in:
-```
+```fs
 let rec searchMusic (name: string) 
 ```
 To add a command, create it and then add it in **program.fs** in:
-```
+```fs
 let rec commands (name : string)
 ```
 ## Library:
@@ -35,42 +35,43 @@ As a library, you can use the function build in.
 
 You can find here the four basic waves:
 **Sinusoidal wave:**
-````
+```fs
 let sinWave = Array.init 44100 (fun i -> amp * sin((2. * freq * Pi * float i)/sampleRate))
 
-````
+```
 **Triangle Wave:**
-````
+```fs
 let triangleWave = Array.init 44100  (fun i ->  (2.*amp/Pi)* Math.Asin(sin((2. * freq * Pi * float i)/sampleRate)))
 
-````
+```
 **Square Wave:**
-
+```fs
     let  squareWave  = Array.init 44100  (fun i -> amp * float(Math.Sign(sin((2.  * freq * Pi * float i)/sampleRate))))
-
+```
 **SawTooth Wave:**
-
+```fs
     let  sawWave  = Array.init 44100  (fun i ->  (2.*amp/Pi)* Math.Atan(tan((Pi*float i*freq)/sampleRate)))
-
+```
 Under all of its respective functions, you will find their transformation into an array of bytes
 
 To play a song without saving it on your computer, use the function 
-
+```fs
     let  PlaySong  (song:byte[][]) 
-  
+```  
 To play a file from a disk, use the function 
-
+```fs
     let  PlayURL  (url:string)
+```
 
-To create a sound
 To use notes, use the function associated to the note
-
+```fs
     ADiese  (length:Length)  (octave:int)
-	example: ADiese White 5
+	example: ADiese White 
+```
 All note's lengths have been defined into notes.fs.
 
 You can find premade songs in songs in the Songs.fs.
-````
+```fs
 let  Amogus  =  [|  // Tempo: 100
 
 			A HalfNote 5
@@ -96,9 +97,9 @@ let  Amogus  =  [|  // Tempo: 100
 			A QuarterNote 5
 
 |]
-````
+```fs
 You can choose to visualise charts from waves you create using Xplot as the function below:
-```
+```fs
 let  sinVisu()  =
 
 		let  options  =
