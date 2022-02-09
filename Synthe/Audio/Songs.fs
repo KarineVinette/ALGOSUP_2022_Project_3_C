@@ -2612,22 +2612,10 @@ module Song =
 
         |]
 
-    
-    let SoundOverdrived = [|
-        A Round 4 |> Overdrive 0.6
-    |]
+    let envelope = Enveloppe 1. 1. 0.2 0.1 0.5 0.3
+    let testenvelope = [|Array.init (44100) (fun i -> envelope.[i] * sin((2. * 440. * Pi * float i)/sampleRate) |> sample)|]
 
-    let SoundFlanged = [|
-        A Round 4 |> Flange 
-    |]
-
-    let SoundReverbed = [|
-        A Black 4 |> Reverb 0.4
-    |]
-
-    let SoundEchoed = [|
-        A Black 4 |> Echo 0.4 0.1
-    |]
+    let SoundReverbed = [|A Black 4 |> Reverb |]
 
     let SongAssemble (song: byte [][] ) = 
             let mutable wave2 = sinbyte 0. 0.

@@ -16,6 +16,15 @@ module Play =
                         do while sound.Status = SoundStatus.Playing do 
                                 Thread.Sleep(1)
 
+        
+        let PlayURL (url:string) = //Allow to choose your file
+                let buffer = new SoundBuffer(url) //Storage for audio sample defining a sound
+                let sound = new Sound(buffer) 
+                sound.Play() 
+
+                while sound.Status = SoundStatus.Playing do
+                Thread.Sleep(100)
+
 
         let PlaySong (song:byte[][]) =
                 let sample x = (x + 1.)/2. * 255. |> byte
@@ -27,7 +36,7 @@ module Play =
                         // convert is used to convert data's bytes in stream
 
                 let convert = new MemoryStream()
-                CreateWavFile.write convert data
+                createSound.write convert data
 
                 p.play(convert)
                 

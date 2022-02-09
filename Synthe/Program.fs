@@ -8,7 +8,6 @@ open SyntheVisual
 open Song
 open Play
 open Charts
-open Url
 
 module Program =
     let rec searchMusic (name: string) =
@@ -27,10 +26,8 @@ module Program =
         | "TOM" -> TOM
         | "zeldaOverworld" -> ZeldaOverworld
         | "crazy" -> Crazy
-        | "overdrive" -> SoundOverdrived
-        | "flange" -> SoundFlanged
+        | "envelope" -> testenvelope
         | "reverb" -> SoundReverbed
-        | "echo" -> SoundEchoed
         | "song" ->  
                 printfn
                     " 
@@ -95,7 +92,7 @@ module Program =
                 let stream =
                     File.Create($"./Audio/CreatedSounds/{file}.wav")
 
-                CreateWavFile.write stream (SongAssemble(searchMusic (file)))
+                createSound.write stream (SongAssemble(searchMusic (file)))
                 Console.Write("Please enter a command >")
                 let message = Console.ReadLine()
                 commands message |> ignore 
@@ -133,18 +130,19 @@ module Program =
             commands message |> ignore
         | "overdrive"-> 
             Overdrived()
-            PlaySong(SoundOverdrived)
+            //PlaySong(SoundOverdrived)
             Console.Write("Please enter a command >")
             let message = Console.ReadLine()
             commands message |> ignore
         | "envelope"-> 
             Enveloped()
+            PlaySong(testenvelope)
             Console.Write("Please enter a command >")
             let message = Console.ReadLine()
             commands message |> ignore
         | "flange"-> 
             Flanged()
-            PlaySong(SoundFlanged)
+            //PlaySong(SoundFlanged)
             Console.Write("Please enter a command >")
             let message = Console.ReadLine()
             commands message |> ignore
@@ -155,7 +153,7 @@ module Program =
             commands message |> ignore
         | "echo"-> 
             Echoed()
-            PlaySong(SoundEchoed)
+            // PlaySong(SoundEchoed)
             Console.Write("Please enter a command >")
             let message = Console.ReadLine()
             commands message |> ignore
