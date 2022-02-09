@@ -41,7 +41,7 @@ module Play =
                 p.play(convert)
                 
 
-        // Read a section of an audio file from disk with a Offset
+        // Read a section of an audio file from disk with a Offset (number of seconds before it starts)
         let PlayWithOffsetFromPath (offset) (filePath:string) =
                 let stream = File.Open (filePath, FileMode.Open)
                 let music = new Music(stream)

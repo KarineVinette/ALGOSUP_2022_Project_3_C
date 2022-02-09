@@ -69,12 +69,6 @@ module Effect =
             flangedWave |> Array.map(sample) 
     
 
-
-   
-
-
-
-
     let addWaves (wave1: byte []) (wave2: byte []) = 
     
         let wave1 = wave1 |> Array.map(unsample)

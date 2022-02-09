@@ -5,6 +5,62 @@ open Effect
 
 module Song =
 
+    let Tetris = [| //tempo 140
+        addWaves(B Black 4)(E Black 5)
+
+        E Black 5
+        addWaves(GDiese HalfNote 4)(B HalfNote 4)
+        C HalfNote 5
+        D HalfNote 5
+        E QuarterNote 5
+        D QuarterNote 5
+        addWaves(A HalfNote 4)(C HalfNote 5)
+        addWaves(G HalfNote 4)(B HalfNote 4)
+
+        addWaves(E Black 4)(A Black 4)
+        A HalfNote 4
+        C HalfNote 5
+        E Black 5
+        D HalfNote 5
+        C HalfNote 5
+
+        addWaves(GDiese Black 4)(B Black 4)
+        addWaves(G HalfNote 4)(B HalfNote 4)
+        addWaves(A HalfNote 4)(C HalfNote 5)
+        addWaves(B Black 4)(D Black 5)
+        E Black 5
+
+        C Black 5
+        A  Black 4
+        A  Black 4
+        Sil Silence 0
+
+        HalfSil HalfSilence 0
+        addWaves(F Black 4)(D Black 5)
+        addWaves(A  HalfNote 4)(F  HalfNote 5)
+        addWaves(C Black 5)(A Black 5)
+        addWaves(B HalfNote 4)(G HalfNote 5)
+        addWaves(A HalfNote 4)(F HalfNote 5)
+
+        addWaves(G PBlack 4)(E PBlack 5)
+        addWaves(E HalfNote 4)(C HalfNote 5)
+        addWaves(G Black 4)(E Black 5)
+        addWaves(F HalfNote 4)(D HalfNote 5)
+        addWaves(E HalfNote 4)(C HalfNote 5)
+
+        addWaves(GDiese Black 4)(B Black 4)
+        addWaves(C HalfNote 4)(B HalfNote 4)
+        addWaves(A HalfNote 4)(C HalfNote 5)
+        addWaves(B Black 4)(D Black 5)
+        E Black 5
+
+        C Black 5
+        A Black 4
+        A Black 4
+        // optional part
+
+        |]
+
     let Numb = [|
         // Intro
         CDiese QuarterNote 5
@@ -1171,7 +1227,7 @@ module Song =
         |]
         
     let Kalinka = [| // Tempo: 90
-        E Black 6;
+        
         D Black 6;
         B HalfNote 5;
         C HalfNote 6;
@@ -1950,18 +2006,6 @@ module Song =
         B Black 5
     |]
 
-    let intro = [|
-        CDiese HalfNote 4
-        GDiese QuarterNote 4
-        C QuarterNote 4
-        DDiese QuarterNote 4
-        C HalfNote 4
-        GDiese HalfNote 4
-        C QuarterNote 4
-        DDiese HalfNote 4
-        GDiese HalfNote 4
-        |]
-
     let GaurPlain = [|  //tempo 120
     
         G QuarterNote 4
@@ -2584,12 +2628,8 @@ module Song =
 
         |]
 
-    let envelope = Enveloppe 1. 1. 0.2 0.1 0.5 0.3
-    let testenvelope = [|Array.init (44100) (fun i -> envelope.[i] * sin((2. * 440. * Pi * float i)/sampleRate) |> sample)|]
 
-    let SoundReverbed = [|A Black 4 |> Reverb |]
-
-    let SongAssemble (song: byte [][] ) = 
+    let SongAssemble (song: byte [][] ) = //add delay between each note to hear if same notre is following and concat them into array of byte array
             let mutable wave2 = sinbyte 0. 0.
             for j in 0..song.Length-1 do
                 let delay = Array.init (int(sampleRate/1000.)) (fun i -> 0. |> sample)

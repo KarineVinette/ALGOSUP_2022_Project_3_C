@@ -17,10 +17,9 @@
     <Compile Include="Audio\Filters.fs" />
     <Compile Include="Audio\Songs.fs" />
     <Compile Include="Compress\PlayWithoutSaving.fs" />
-    <!-- <Compile Include="Audio\playFileSound.fs" /> -->
     <Compile Include="Audio\ReadWithoutSave.fs" />
     <Compile Include="Visual\Charts.fs" />
-    <Compile Include="Program.fs" />
+    <Compile Include="Program.fs" />  <!-- comment this line to desactivate console app version -->
   </ItemGroup>
 
   <ItemGroup>
