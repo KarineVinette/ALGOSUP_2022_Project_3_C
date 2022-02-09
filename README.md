@@ -2,12 +2,14 @@
 
 
 
-Tu run the project :
+Tu run the project as
+## Console App:
 
 ```
 dotnet run start
+(example)
 Playsong
-LettreAElise (example)
+LettreAElise 
 ```
 ```
 dotnet run start
@@ -19,6 +21,107 @@ dotnet run start
 songs
 --> list of songs
 ```
+You can always add commands by creating new functions or songs and adding them to the list in **program.fs**.
+To add a song, create it in **Songs.fs** and then add it in **program.fs** in:
+```
+let rec searchMusic (name: string) 
+```
+To add a command, create it and then add it in **program.fs** in:
+```
+let rec commands (name : string)
+```
+## Library:
+As a library, you can use the function build in.
+
+You can find here the four basic waves:
+**Sinusoidal wave:**
+````
+let sinWave = Array.init 44100 (fun i -> amp * sin((2. * freq * Pi * float i)/sampleRate))
+
+````
+**Triangle Wave:**
+````
+let triangleWave = Array.init 44100  (fun i ->  (2.*amp/Pi)* Math.Asin(sin((2. * freq * Pi * float i)/sampleRate)))
+
+````
+**Square Wave:**
+
+    let  squareWave  = Array.init 44100  (fun i -> amp * float(Math.Sign(sin((2.  * freq * Pi * float i)/sampleRate))))
+
+**SawTooth Wave:**
+
+    let  sawWave  = Array.init 44100  (fun i ->  (2.*amp/Pi)* Math.Atan(tan((Pi*float i*freq)/sampleRate)))
+
+Under all of its respective functions, you will find their transformation into an array of bytes
+
+To play a song without saving it on your computer, use the function 
+
+    let  PlaySong  (song:byte[][]) 
+  
+To play a file from a disk, use the function 
+
+    let  PlayURL  (url:string)
+
+To create a sound
+To use notes, use the function associated to the note
+
+    ADiese  (length:Length)  (octave:int)
+	example: ADiese White 5
+All note's lengths have been defined into notes.fs.
+
+You can find premade songs in songs in the Songs.fs.
+````
+let  Amogus  =  [|  // Tempo: 100
+
+			A HalfNote 5
+
+			C HalfNote 6
+
+			D HalfNote 6
+
+			DDiese HalfNote 6
+
+			D HalfNote 6
+
+			C HalfNote 6
+
+			A PHalfNote 5
+
+			Sil Silence 0
+
+			G QuarterNote 5
+
+			C QuarterNote 6
+
+			A QuarterNote 5
+
+|]
+````
+You can choose to visualise charts from waves you create using Xplot as the function below:
+```
+let  sinVisu()  =
+
+let  options  =
+
+				Options
+
+				(
+
+				title =  "Sinusoidal Wave",
+
+				curveType =  "function",
+
+				vAxis = Axis(title =  "Amplitude"),
+
+				hAxis = Axis(title =  "Frequency")
+
+				)
+
+sinWave |> Chart.Line |> Chart.WithOptions options |> Chart.Show
+```
+
+
+
 Management has been done using Trello:
 https://trello.com/b/l22gbvK3/algosup2022project3c
 
