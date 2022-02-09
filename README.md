@@ -11,16 +11,16 @@ LettreAElise (example)
 ```
 ```
 dotnet run start
-songs
---> list of songs
-```
-```
-dotnet run start
 help
 --> list of commands
 ```
-
-Link to trello : https://trello.com/b/l22gbvK3/algosup2022project3c
+```
+dotnet run start
+songs
+--> list of songs
+```
+Management has been done using Trello:
+https://trello.com/b/l22gbvK3/algosup2022project3c
 
 
 ## Project Name:
@@ -37,19 +37,21 @@ coding music packages. The ultimate aim of this project is to be able to play mu
 
 14_01_2022 : Project is done at 20%. We managed to finish "Create and Play a Basic Note" in a week.</br>
 21_01_2022 : The second part of the project is done : basic filters, envelope and chords.</br>
-28_01_2022 : The third part of the project is done : frequency analysis andadvanced filters.</br>
+28_01_2022 : The third part of the project is done : frequency analysis and advanced filters.</br>
 07_02_2022 : The project is done, we didn't do the MP3 Compression.
 
 ## How to install it and run it
 
-The project is using F#, SFML.
+The project is using F#, SFML and XPlot.
 
 
 ## Technologies and Softwares
 
-[![made-with-FSharp](https://img.shields.io/badge/Language%20Used-FSharp-blue)](https://fsharp.org/) [![made-with-SFML](https://img.shields.io/badge/-SFML-brightgreen)](https://www.sfml-dev.org/index-fr.php) 
+[![made-with-FSharp](https://img.shields.io/badge/Language%20Used-FSharp-blue)](https://fsharp.org/) 
 
-[![made-with-Visual-Studio-Code](https://img.shields.io/badge/Softwares%20Used:-Visual%20Studio%20Code-0078d7.svg)](https://code.visualstudio.com) 
+[![made-with-Packages](https://img.shields.io/badge/Packages%20used-XPlot.GoogleCharts-brightgreen)](https://fslab.org/XPlot//chart/google-line-chart.html) [![made-with-SFML](https://img.shields.io/badge/-SFML-brightgreen)](https://www.sfml-dev.org/index-fr.php) 
+
+[![made-with-Visual-Studio-Code](https://img.shields.io/badge/IDE-Visual%20Studio-blueviolet)](https://code.visualstudio.com) 
 
 Functional-Specifications : https://github.com/KarineVinette/ALGOSUP_2022_Project_3_C/blob/main/documents/Functional-Specifications.md </br>
 Technical-Specifications : https://github.com/KarineVinette/ALGOSUP_2022_Project_3_C/blob/main/documents/Technical-Specifications.md </br>
@@ -63,7 +65,6 @@ SFML : https://github.com/KarineVinette/ALGOSUP_2022_Project_3_C/blob/main/docum
 Documents : https://github.com/KarineVinette/ALGOSUP_2022_Project_3_C/blob/main/documents/8D_Documents.pdf </br>
 Spectroscope :https://github.com/KarineVinette/ALGOSUP_2022_Project_3_C/blob/main/documents/8D_spectroscope.pdf
 
-**All rights reserved©**
 
 
 
