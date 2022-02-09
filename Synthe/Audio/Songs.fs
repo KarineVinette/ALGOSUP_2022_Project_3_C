@@ -769,6 +769,7 @@ module Song =
         |]
     
     let GoldenWind =[| //tempo 150
+        addWaves(B Black 4)(B Black 5)
         D QuarterNote 6
         CDiese QuarterNote 6
         B HalfNote 5
@@ -802,32 +803,35 @@ module Song =
         D QuarterNote 6
         C QuarterNote 6
         B HalfNote 5
-        A PHalfNote 6
-        B PHalfNote 6 
-        B PHalfNote 6
+        addWaves( A PHalfNote 5)(A PHalfNote 6)
+        addWaves(B PHalfNote 5)(B PHalfNote 6) 
+        addWaves(B PHalfNote 5)(B PHalfNote 6) 
         QSilence QuarterSilence  0
-        FDiese HalfNote 6
-        A PHalfNote 6
-        B PHalfNote 6
-        CDiese PHalfNote 7
-        A PHalfNote 6
-        B PHalfNote 6 
+        addWaves(FDiese HalfNote 5)(FDiese HalfNote 6)
+        addWaves(A PHalfNote 5)(A PHalfNote 6)
+        addWaves(B PHalfNote 5)(B PHalfNote 6)
+        addWaves(CDiese PHalfNote 6)(CDiese PHalfNote 7)
+        addWaves(A PHalfNote 5)(A PHalfNote 6)
+        addWaves(B PHalfNote 5)(B PHalfNote 6) 
         QSilence QuarterSilence   0
         HalfSil HalfSilence 0
-        D QuarterNote 7
-        C QuarterNote 7
-        B HalfNote 6
-        B Triolet 6
-        D Triolet 7
-        FDiese Triolet 7
-        E Triolet 7
-        B Triolet 6
-        A Triolet 7
-        GDiese Triolet 7
-        FDiese Triolet 7
-        D Triolet 7
-        CDiese Triolet 7
-        B Triolet 6
+        addWaves(D QuarterNote 5)(D QuarterNote 6)
+        addWaves(C QuarterNote 5)(C QuarterNote 6)
+        addWaves(B HalfNote 5)(B HalfNote 6)
+        addWaves(B Triolet 5)(B Triolet 6)
+        addWaves(D Triolet 5)(D Triolet 6)
+        addWaves(FDiese Triolet 6)(FDiese Triolet 7)
+        addWaves(E Triolet 6)(E Triolet 7)
+        addWaves(D Triolet 6)(D Triolet 7)
+        addWaves(B Triolet 6)(B Triolet 7)
+        addWaves(A Triolet 6)(A Triolet 7)
+        addWaves(GDiese Triolet 6)(GDiese Triolet 7)
+        addWaves(FDiese Triolet 6)(FDiese Triolet 7)
+        addWaves(D Triolet 6)(D Triolet 7)
+        addWaves(CDiese Triolet 6)(CDiese Triolet 7)
+        addWaves(B Triolet 6)(B Triolet 6)
+        
+        
         A QuarterNote 5
         B HalfNote 5
         A QuarterNote 5
@@ -840,55 +844,80 @@ module Song =
         CDiese QuarterNote 6
         D QuarterNote 6
         E QuarterNote 6
-        FDiese Black 6
+        
+        addWaves3(B Black 5)(D Black 6)(FDiese Black 6)
         HalfSil HalfSilence 0
-        F HalfNote 6
-        F PBlack 6
+        addWaves3(GDiese HalfNote 5)(B HalfNote 5)(F HalfNote 6)
+        addWaves3(GDiese PBlack 5)(B PBlack 5)(F PBlack 6)
+        
         D QuarterNote 6
         E QuarterNote 6
-        FDiese PHalfNote 6
+        addWaves3(GDiese PHalfNote 5)(B PHalfNote 5)(FDiese PHalfNote 6)
+        
         F QuarterNote 6
         F HalfNote 6
         D HalfNote 6
-        CDiese PHalfNote 6
+        addWaves3(E PHalfNote 5)(ADiese PHalfNote 5)(CDiese PHalfNote 6)
+        
         D QuarterNote 6
         D HalfNote 6
         E HalfNote 6
-        FDiese Black 6
+        addWaves3(B Black 5)(D Black 6)(FDiese Black 6)
+        
         F HalfNote 6
-        E HalfNote 6
-        E Black 6
+        addWaves3(F HalfNote 6)(GDiese HalfNote 6)(E HalfNote 6)
+        addWaves3(F Black 6)(GDiese Black 6)(E Black 6)
+        
         E HalfNote 5
         CDiese HalfNote 6
+
+        addWaves3(GDiese PHalfNote 5)(B PHalfNote 5)(D PHalfNote 6)
         D PHalfNote 6
         E QuarterNote 6
         E HalfNote 6
+        
+        addWaves3(E PHalfNote 5)(ADiese PHalfNote 5)(CDiese PHalfNote 6)
+        E QuarterNote 6
+        E HalfNote 6
         D HalfNote 6
-        CDiese PHalfNote 6
+
+        addWaves3(E PHalfNote 5)(ADiese PHalfNote 5)(CDiese PHalfNote 6)
         A QuarterNote 6
         A HalfNote 6
         G HalfNote 6
-        FDiese Black 6
+        
+        addWaves3(B Black 5)(D Black 6)(FDiese Black 6)
         HalfSil HalfSilence 0
-        F HalfNote 6
-        F PBlack 6
+
+        addWaves3(GDiese HalfNote 5)(B HalfNote 5)(F HalfNote 6)
+        addWaves3(GDiese PBlack 5)(B PBlack 5)(F PBlack 6)
+        
+        
         D QuarterNote 6
         E QuarterNote 6
-        FDiese PHalfNote 6
+
+        addWaves3(GDiese PHalfNote 5)(B PHalfNote 5)(FDiese PHalfNote 6)
+        
         F QuarterNote 6
         F HalfNote 6
         D HalfNote 6
-        C PHalfNote 6
+
+        addWaves3(E PHalfNote 5)(ADiese PHalfNote 5)(CDiese PHalfNote 6)
         D QuarterNote 6
         D HalfNote 6 
         E HalfNote 6
-        FDiese Black 6
+
+        addWaves3(B Black 5)(D Black 5)(FDiese Black 6)
+        
         F HalfNote 6
-        E HalfNote 6
-        E Black 6
+        addWaves3(F HalfNote 5)(GDiese HalfNote 5)(E HalfNote 6)
+        addWaves3(F Black 5)(GDiese Black 5)(E Black 6)
+        
+        
         E HalfNote 6
         CDiese HalfNote 7
-        D PHalfNote 7
+        addWaves3(GDiese HalfNote 7)(B PHalfNote 7)(D PHalfNote 7)
+        
         G QuarterNote 6
         G HalfNote 6
         FDiese HalfNote 6
@@ -897,7 +926,7 @@ module Song =
         D HalfNote 7
         ADiese HalfNote 6
         Sil Silence 0
-        E Black 5
+        addWaves3(D Black 6)(FDiese Black 6)(E Black 6)
         // FDiese Black 5; 
         // F White 5;
         // D HalfNote 5;
