@@ -140,9 +140,9 @@ We have no other way than to wait for comments to start supporting the app. Howe
  11. AM/FM
  12. Low Pass/High Pass 
 #### 5.3 Milestones
-**14/01/22:** Oscillator function: Sine, Square, Triangle, Sawtooth
-**21/01/22:** Part 2 - Basic Filters, Envelopes, and Chords
-**28/01/22:** Spectroscope
+**14/01/22:** Oscillator function: Sine, Square, Triangle, Sawtooth </br>
+**21/01/22:** Part 2 - Basic Filters, Envelopes, and Chords </br>
+**28/01/22:** Spectroscope </br>
 ## 6. End Matter
 #### 6.1: Related Work
 This project was inspired by [Sonic Pi ](https://sonic-pi.net/) and other live  
