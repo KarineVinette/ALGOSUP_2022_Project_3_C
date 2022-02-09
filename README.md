@@ -101,7 +101,7 @@ You can choose to visualise charts from waves you create using Xplot as the func
 ```
 let  sinVisu()  =
 
-let  options  =
+		let  options  =
 
 				Options
 
